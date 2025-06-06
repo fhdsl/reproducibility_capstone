@@ -72,3 +72,8 @@ PRs
 Resubmission
 scm
 YAML
+bioinformaticians
+bioinformatics
+proteomic
+proteomics
+shareability
