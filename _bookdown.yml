@@ -2,6 +2,7 @@ book_filename: "Reproducibility Capstone Course"
 chapter_name: "Chapter "
 repo: https://github.com/fhdsl/reproducibility_capstone
 rmd_files: ["index.Rmd",
+            "01-intro.Rmd",
             "02-setting-up.Rmd",
             "03-build-an-image.Rmd",
             "04-building-a-gha.Rmd",
