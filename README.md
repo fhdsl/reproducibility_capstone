@@ -1,21 +1,18 @@
-# {Course Name}
+# Reproducibility Capstone Course
 
-This course was created from [this GitHub template](https://github.com/jhudsl/OTTR_Template).
+This course is the culmination of the Reproducibility Specialization Series from the ITCR Training Network. It helps learners translate their practical skill sets that we learned in previous courses into hands-on experience for creating reproducible scientific projects.
 
 You can see the rendered course material here: {Link to rendered bookdown and/or to the Leanpub.}
-
 If you would like to contribute to this course material, take a look at the [OTTR documentation](https://www.ottrproject.org/).
-
-## About this course
-
-This course introduces {info on what this course introduces}
 
 ## Learning Objectives
 
 This course will teach learners to:  
 
-- {You can use https://www.bobpikegroup.com/trainer-blog/5-steps-to-writing-clear-and-measurable-learning-objectives to define some learning objectives here}
-- {More learning objectives}
+- Recap the best practices of reproducibility we have covered in this specialization 
+- Create an original docker image 
+- Create an original GitHub Action 
+- Have your original docker image and github action work together
 
 ## Encountering problems?
 
