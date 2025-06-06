@@ -26,23 +26,12 @@ Conduct computational analyses for cancer research, including genomics, proteomi
 - Need to collaborate with team members or share computational workflows with the scientific community
 - Are interested in meeting emerging standards for reproducible research and open science
 
-```{r for_individuals_who, out.width = "100%", fig.alt = "Target audience: Cancer researchers and bioinformaticians who conduct computational analyses, use GitHub, write analysis code, face reproducibility challenges, want to learn best practices, need to collaborate and share workflows, and aim to meet reproducible research standards", echo = FALSE}
-ottrpal::include_slide("https://docs.google.com/presentation/d/1PLACEHOLDER/edit#slide=id.g2942096bb40_0_787")
-```
-
 This capstone course builds on foundational concepts from the ITCR Training Network's [Reproducibility in Cancer Informatics](https://jhudatascience.org/Reproducibility_in_Cancer_Informatics/introduction.html), [Advanced Reproducibility in Cancer Informatics](https://jhudatascience.org/Adv_Reproducibility_in_Cancer_Informatics/introduction.html), [Containers for Scientists](https://hutchdatascience.org/Containers_for_Scientists/), and [GitHub Automation for Scientists](https://hutchdatascience.org/GitHub_Automation_for_Scientists/) courses. Students should be comfortable with basic GitHub operations, including creating repositories, making commits, and opening pull requests before beginning this capstone.
 
-```{r prereqs, out.width = "100%", fig.alt = "This capstone builds on previous ITCR courses: Reproducibility in Cancer Informatics, Advanced Reproducibility, Containers for Scientists, and GitHub Automation for Scientists. Students should be comfortable with basic GitHub operations.", echo = FALSE}
-ottrpal::include_slide("https://docs.google.com/presentation/d/1PLACEHOLDER/edit#slide=id.g101867ebdaa_18_0")
-```
 
 ## Curriculum
 
 The course covers practical application of containerization and automation technologies specifically tailored for cancer informatics workflows. Unlike introductory courses that focus on individual concepts, this capstone emphasizes integration and real-world application of multiple technologies working together.
-
-```{r learning_objectives, out.width = "100%", fig.alt = "Learning Objectives: Apply containerization to cancer informatics workflows, Implement automated testing and deployment, Integrate multiple reproducibility technologies, Create shareable computational environments, Develop maintainable analysis pipelines", echo = FALSE}
-ottrpal::include_slide("https://docs.google.com/presentation/d/1PLACEHOLDER/edit#slide=id.g2942096bb40_0_464")
-```
 
 **Assessment Approach:**
 
