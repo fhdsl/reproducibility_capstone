@@ -1,83 +1,66 @@
-
 # Introduction
+
 
 
 ## Motivation
 
+Cancer research in the 21st century is increasingly data-driven, with researchers generating and analyzing vast amounts of genomic, proteomic, imaging, and clinical data. The ability to effectively manage, analyze, and share these complex datasets has become as crucial as traditional laboratory skills. However, many cancer researchers find themselves working with computational tools and workflows that were developed in isolation, making it difficult to reproduce results, collaborate effectively, or scale their analyses.
 
-## Target Audience  
-
-The course is intended for ...
-
-## Curriculum  
-
-The course covers...
+The modern cancer informatics landscape demands not just analytical skills, but also proficiency in reproducible computational practices. Research has shown that computational analyses are often difficult or impossible to reproduce without direct contact with the original researchers [@BeaulieuJones2017]. This reproducibility crisis extends beyond academic concerns—it directly impacts the translation of research findings into clinical applications and the overall efficiency of cancer research efforts.
 
 
+## Target Audience
 
-``` r
-devtools::session_info()
-```
+The course is intended for cancer researchers, bioinformaticians, and data scientists who work with computational analyses in cancer research contexts and want to enhance the reproducibility, efficiency, and shareability of their work.
 
-```
-## ─ Session info ───────────────────────────────────────────────────────────────
-##  setting  value
-##  version  R version 4.3.2 (2023-10-31)
-##  os       Ubuntu 22.04.4 LTS
-##  system   x86_64, linux-gnu
-##  ui       X11
-##  language (EN)
-##  collate  en_US.UTF-8
-##  ctype    en_US.UTF-8
-##  tz       Etc/UTC
-##  date     2025-03-31
-##  pandoc   3.1.1 @ /usr/local/bin/ (via rmarkdown)
-## 
-## ─ Packages ───────────────────────────────────────────────────────────────────
-##  package     * version date (UTC) lib source
-##  bookdown      0.41    2024-10-16 [1] CRAN (R 4.3.2)
-##  cachem        1.0.8   2023-05-01 [1] RSPM (R 4.3.0)
-##  cli           3.6.2   2023-12-11 [1] RSPM (R 4.3.0)
-##  devtools      2.4.5   2022-10-11 [1] RSPM (R 4.3.0)
-##  digest        0.6.34  2024-01-11 [1] RSPM (R 4.3.0)
-##  ellipsis      0.3.2   2021-04-29 [1] RSPM (R 4.3.0)
-##  evaluate      0.23    2023-11-01 [1] RSPM (R 4.3.0)
-##  fastmap       1.1.1   2023-02-24 [1] RSPM (R 4.3.0)
-##  fs            1.6.3   2023-07-20 [1] RSPM (R 4.3.0)
-##  glue          1.7.0   2024-01-09 [1] RSPM (R 4.3.0)
-##  htmltools     0.5.7   2023-11-03 [1] RSPM (R 4.3.0)
-##  htmlwidgets   1.6.4   2023-12-06 [1] RSPM (R 4.3.0)
-##  httpuv        1.6.14  2024-01-26 [1] RSPM (R 4.3.0)
-##  knitr         1.48    2024-07-07 [1] CRAN (R 4.3.2)
-##  later         1.3.2   2023-12-06 [1] RSPM (R 4.3.0)
-##  lifecycle     1.0.4   2023-11-07 [1] RSPM (R 4.3.0)
-##  magrittr      2.0.3   2022-03-30 [1] RSPM (R 4.3.0)
-##  memoise       2.0.1   2021-11-26 [1] RSPM (R 4.3.0)
-##  mime          0.12    2021-09-28 [1] RSPM (R 4.3.0)
-##  miniUI        0.1.1.1 2018-05-18 [1] RSPM (R 4.3.0)
-##  pkgbuild      1.4.3   2023-12-10 [1] RSPM (R 4.3.0)
-##  pkgload       1.3.4   2024-01-16 [1] RSPM (R 4.3.0)
-##  profvis       0.3.8   2023-05-02 [1] RSPM (R 4.3.0)
-##  promises      1.2.1   2023-08-10 [1] RSPM (R 4.3.0)
-##  purrr         1.0.2   2023-08-10 [1] RSPM (R 4.3.0)
-##  R6            2.5.1   2021-08-19 [1] RSPM (R 4.3.0)
-##  Rcpp          1.0.12  2024-01-09 [1] RSPM (R 4.3.0)
-##  remotes       2.4.2.1 2023-07-18 [1] RSPM (R 4.3.0)
-##  rlang         1.1.4   2024-06-04 [1] CRAN (R 4.3.2)
-##  rmarkdown     2.25    2023-09-18 [1] RSPM (R 4.3.0)
-##  sessioninfo   1.2.2   2021-12-06 [1] RSPM (R 4.3.0)
-##  shiny         1.8.0   2023-11-17 [1] RSPM (R 4.3.0)
-##  stringi       1.8.3   2023-12-11 [1] RSPM (R 4.3.0)
-##  stringr       1.5.1   2023-11-14 [1] RSPM (R 4.3.0)
-##  urlchecker    1.0.1   2021-11-30 [1] RSPM (R 4.3.0)
-##  usethis       2.2.3   2024-02-19 [1] RSPM (R 4.3.0)
-##  vctrs         0.6.5   2023-12-01 [1] RSPM (R 4.3.0)
-##  xfun          0.48    2024-10-03 [1] CRAN (R 4.3.2)
-##  xtable        1.8-4   2019-04-21 [1] RSPM (R 4.3.0)
-##  yaml          2.3.8   2023-12-11 [1] RSPM (R 4.3.0)
-## 
-##  [1] /usr/local/lib/R/site-library
-##  [2] /usr/local/lib/R/library
-## 
-## ──────────────────────────────────────────────────────────────────────────────
-```
+_This capstone course is written for individuals who:_
+
+- This capstone course builds on foundational concepts from the ITCR Training Network's Reproducibility Series (see list below)
+Conduct computational analyses for cancer research, including genomics, proteomics, imaging, or clinical data analysis
+- Have basic familiarity with command line interfaces and version control (GitHub)
+- Write code or scripts for data analysis, whether in R, Python, or other programming languages
+- Have experienced challenges with reproducing their own or others' computational analyses
+- Want to learn modern best practices for scientific computing and workflow management
+- Need to collaborate with team members or share computational workflows with the scientific community
+- Are interested in meeting emerging standards for reproducible research and open science
+
+This capstone course builds on foundational concepts from the ITCR Training Network's [Reproducibility in Cancer Informatics](https://jhudatascience.org/Reproducibility_in_Cancer_Informatics/introduction.html), [Advanced Reproducibility in Cancer Informatics](https://jhudatascience.org/Adv_Reproducibility_in_Cancer_Informatics/introduction.html), [Containers for Scientists](https://hutchdatascience.org/Containers_for_Scientists/), and [GitHub Automation for Scientists](https://hutchdatascience.org/GitHub_Automation_for_Scientists/) courses. Students should be comfortable with basic GitHub operations, including creating repositories, making commits, and opening pull requests before beginning this capstone.
+
+
+## Curriculum
+
+The course covers practical application of containerization and automation technologies specifically tailored for cancer informatics workflows. Unlike introductory courses that focus on individual concepts, this capstone emphasizes integration and real-world application of multiple technologies working together.
+
+**Assessment Approach:**
+
+The capstone uses a practical, project-based assessment model where students work with a provided computational sandbox environment to complete real-world tasks. Rather than traditional exams, students demonstrate mastery by successfully implementing containerized workflows and automated pipelines that pass automated evaluation criteria.
+
+**Assignment 1: Custom Container Development** - Students modify and extend Docker containers to support specific cancer analysis requirements, demonstrating understanding of containerization principles and bioinformatics software management.
+
+**Assignment 2: Automated Workflow Implementation** - Students create GitHub Actions that automatically execute and validate cancer data analysis pipelines, showing proficiency in continuous integration concepts and workflow automation.
+
+Each assignment utilizes automated evaluation systems that provide immediate feedback and validation codes upon successful completion, simulating real-world development environments where code must pass automated testing before deployment.
+
+**Goal of this course:**
+Enable cancer researchers to create, maintain, and share reproducible computational workflows that meet the evolving standards of modern cancer informatics while enhancing collaboration and accelerating scientific discovery.
+
+**What is not the goal:**
+This course does not aim to teach cancer biology, statistical analysis methods, or introductory programming concepts. Students are expected to bring domain expertise and basic computational skills to the course, focusing instead on learning to apply advanced reproducibility technologies to their existing research workflows.
+
+## How to use the course
+
+This capstone course is designed as a hands-on, practical experience that builds directly on the foundational knowledge from previous ITCR Training Network courses. Students should approach the course with an active learning mindset, ready to experiment, troubleshoot, and iterate on their solutions.
+
+**Working with the Course Sandbox:**
+The course utilizes a GitHub-based sandbox environment that simulates real-world research collaboration workflows. Students will work with template repositories, create branches for different assignments, and receive automated feedback through pull request evaluations. This approach mirrors modern software development practices and prepares students for collaborative research environments.
+
+**Iterative Learning Approach:**
+Unlike traditional courses where concepts are learned in isolation, this capstone emphasizes the iterative refinement of working systems. Students are encouraged to start with simple implementations and gradually add complexity, using automated feedback to guide their development process. This mirrors the reality of computational research, where solutions evolve through experimentation and refinement.
+
+**Integration Focus:**
+Each assignment builds on previous work and integrates multiple technologies. Students should be prepared to synthesize knowledge from containerization, automation, version control, and domain-specific cancer informatics concepts. The goal is to create holistic solutions rather than demonstrate isolated technical skills.
+
+**Real-world Application:**
+Throughout the course, students are encouraged to consider how the techniques they're learning apply to their own research contexts. The assignments use cancer informatics examples, but the principles and technologies transfer to a wide range of computational research domains.
+
+We also recommend that students leverage the broader ITCR Training Network community and resources, including the [GitHub repository discussions](https://www.itcrtraining.org/), course forums, and peer collaboration opportunities to enhance their learning experience and build lasting professional connections in the cancer informatics community.

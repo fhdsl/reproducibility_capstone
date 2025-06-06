@@ -1,5 +1,5 @@
 ---
-title: "Course Name"
+title: "Reproducibility Capstone"
 date: "June, 2025"
 site: bookdown::bookdown_site
 documentclass: book
