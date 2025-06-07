@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 2 Setting up for this course | Reproducibility Capstone</title>
+  <title>Chapter 6 Check these items: | Reproducibility Capstone</title>
   <meta name="description" content="Description about Course/Book." />
   <meta name="generator" content="bookdown 0.41 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 2 Setting up for this course | Reproducibility Capstone" />
+  <meta property="og:title" content="Chapter 6 Check these items: | Reproducibility Capstone" />
   <meta property="og:type" content="book" />
   
   <meta property="og:description" content="Description about Course/Book." />
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 2 Setting up for this course | Reproducibility Capstone" />
+  <meta name="twitter:title" content="Chapter 6 Check these items: | Reproducibility Capstone" />
   
   <meta name="twitter:description" content="Description about Course/Book." />
   
@@ -28,8 +28,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   <link rel="shortcut icon" href="assets/dasl_favicon.ico" type="image/x-icon" />
-<link rel="prev" href="introduction.html"/>
-<link rel="next" href="assignment-1-building-your-capstone-dockerfile.html"/>
+<link rel="prev" href="storing-github-secrets-a-step-by-step-guide-for-assignment-3.html"/>
+<link rel="next" href="about-the-authors.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -368,317 +368,39 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div class="hero-image-container">
   <img class= "hero-image" src= "https://github.com/jhudsl/OTTR_Template/raw/main/assets/dasl_thin_main_image.png">
 </div>
-<div id="setting-up-for-this-course" class="section level1 hasAnchor" number="2">
-<h1><span class="header-section-number">Chapter 2</span> Setting up for this course<a href="setting-up-for-this-course.html#setting-up-for-this-course" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<div id="phase-1-creating-your-repository-from-template" class="section level2 hasAnchor" number="2.1">
-<h2><span class="header-section-number">2.1</span> Phase 1: Creating Your Repository from Template<a href="setting-up-for-this-course.html#phase-1-creating-your-repository-from-template" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<div id="step-1-access-the-course-template" class="section level3 hasAnchor" number="2.1.1">
-<h3><span class="header-section-number">2.1.1</span> Step 1: Access the Course Template<a href="setting-up-for-this-course.html#step-1-access-the-course-template" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="check-these-items" class="section level1 hasAnchor" number="6">
+<h1><span class="header-section-number">Chapter 6</span> Check these items:<a href="check-these-items.html#check-these-items" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 <ul>
-<li>Navigate to the <a href="https://github.com/fhdsl/capstone-sandbox">course sandbox template repository</a></li>
-<li>Look for the green “Use this template” button at the top of the repository page</li>
-<li>Important: Do NOT fork the repository - you must use the template option</li>
+<li>Secret name is exactly: ASSIGNMENT_SECRET</li>
+<li>Secret is stored in your copy of the capstone-sandbox repository settings</li>
+<li>The repository is the correct sandbox repository (not fhdsl/capstone-sandbox but instead your own copy)</li>
 </ul>
+<p><em>The following troubleshooting tips do not apply to the assignment itself but may apply in other scenarios where you are using a similar setup</em>:</p>
+<div id="invalid-token-error" class="section level3 hasAnchor" number="6.0.1">
+<h3><span class="header-section-number">6.0.1</span> “Invalid token” Error<a href="check-these-items.html#invalid-token-error" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Verify:
+- Token was copied correctly (no extra spaces)
+- Token hasn’t expired
+- Token has ‘repo’ scope permissions
+- Token was generated for the correct GitHub account</p>
+<p>What to do to fix:
+- Generate a new PAT: Your token may have expired or been created incorrectly
+- Check scopes: Ensure “repo” permission is selected
+- Update the secret: Replace the old token with the new one</p>
 </div>
-<div id="step-2-configure-your-new-repository" class="section level3 hasAnchor" number="2.1.2">
-<h3><span class="header-section-number">2.1.2</span> Step 2: Configure Your New Repository<a href="setting-up-for-this-course.html#step-2-configure-your-new-repository" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<ul>
-<li>Click “Use this template” → “Create a new repository”</li>
-<li>Fill out the repository creation form:
-<ul>
-<li>Repository name: Choose a meaningful name (e.g., <code>your-username-capstone-sandbox</code>)</li>
-<li>Description: Add a brief description of your capstone project</li>
-<li>Visibility: Set to Public (required for the automated evaluation system to work)</li>
-<li>Include all branches: Leave unchecked (we only need the main branch)</li>
-</ul></li>
-</ul>
-</div>
-<div id="step-3-create-your-repository" class="section level3 hasAnchor" number="2.1.3">
-<h3><span class="header-section-number">2.1.3</span> Step 3: Create Your Repository<a href="setting-up-for-this-course.html#step-3-create-your-repository" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<ul>
-<li>Click “Create repository”</li>
-<li>Wait for GitHub to finish creating your repository</li>
-<li>You’ll be redirected to your new repository page</li>
-<li>Verify: The repository should show your username as the owner and contain all the template files</li>
-</ul>
-</div>
-</div>
-<div id="phase-2-local-setup-and-cloning" class="section level2 hasAnchor" number="2.2">
-<h2><span class="header-section-number">2.2</span> Phase 2: Local Setup and Cloning<a href="setting-up-for-this-course.html#phase-2-local-setup-and-cloning" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<div id="step-4-prepare-your-local-environment" class="section level3 hasAnchor" number="2.2.1">
-<h3><span class="header-section-number">2.2.1</span> Step 4: Prepare Your Local Environment<a href="setting-up-for-this-course.html#step-4-prepare-your-local-environment" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<ul>
-<li>Ensure you have Git installed on your computer</li>
-<li>Check Git installation: Open terminal/command prompt and run <code>git --version</code></li>
-<li>If Git isn’t installed, download it from <a href="https://git-scm.com/">git-scm.com</a></li>
-<li>Optional but recommended: Install <a href="https://desktop.github.com/">GitHub Desktop</a> for a visual interface</li>
-</ul>
-</div>
-<div id="step-5-clone-your-repository" class="section level3 hasAnchor" number="2.2.2">
-<h3><span class="header-section-number">2.2.2</span> Step 5: Clone Your Repository<a href="setting-up-for-this-course.html#step-5-clone-your-repository" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<div id="option-a-using-command-line" class="section level4 hasAnchor" number="2.2.2.1">
-<h4><span class="header-section-number">2.2.2.1</span> Option A: Using Command Line<a href="setting-up-for-this-course.html#option-a-using-command-line" class="anchor-section" aria-label="Anchor link to header"></a></h4>
-<ol style="list-style-type: decimal">
-<li><p>Copy the repository URL:</p>
-<ul>
-<li>On your repository page, click the green “Code” button</li>
-<li>Copy the HTTPS URL (should look like: <code>https://github.com/yourusername/your-repo-name.git</code>)</li>
-</ul></li>
-<li><p>Clone the repository:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb1-1"><a href="setting-up-for-this-course.html#cb1-1" tabindex="-1"></a><span class="co"># Navigate to where you want to store the project</span></span>
-<span id="cb1-2"><a href="setting-up-for-this-course.html#cb1-2" tabindex="-1"></a><span class="bu">cd</span> ~/Desktop  <span class="co"># or your preferred location</span></span>
-<span id="cb1-3"><a href="setting-up-for-this-course.html#cb1-3" tabindex="-1"></a></span>
-<span id="cb1-4"><a href="setting-up-for-this-course.html#cb1-4" tabindex="-1"></a><span class="co"># Clone the repository</span></span>
-<span id="cb1-5"><a href="setting-up-for-this-course.html#cb1-5" tabindex="-1"></a><span class="fu">git</span> clone https://github.com/yourusername/your-repo-name.git</span>
-<span id="cb1-6"><a href="setting-up-for-this-course.html#cb1-6" tabindex="-1"></a></span>
-<span id="cb1-7"><a href="setting-up-for-this-course.html#cb1-7" tabindex="-1"></a><span class="co"># Navigate into the repository</span></span>
-<span id="cb1-8"><a href="setting-up-for-this-course.html#cb1-8" tabindex="-1"></a><span class="bu">cd</span> your-repo-name</span></code></pre></div></li>
-</ol>
-</div>
-<div id="option-b-using-github-desktop" class="section level4 hasAnchor" number="2.2.2.2">
-<h4><span class="header-section-number">2.2.2.2</span> Option B: Using GitHub Desktop<a href="setting-up-for-this-course.html#option-b-using-github-desktop" class="anchor-section" aria-label="Anchor link to header"></a></h4>
-<ol style="list-style-type: decimal">
-<li>Open GitHub Desktop</li>
-<li>Click “Clone a repository from the Internet”</li>
-<li>Select your repository from the list or enter the URL</li>
-<li>Choose a local path where you want to store the repository</li>
-<li>Click “Clone”</li>
-</ol>
-</div>
-</div>
-<div id="step-6-verify-your-local-setup" class="section level3 hasAnchor" number="2.2.3">
-<h3><span class="header-section-number">2.2.3</span> Step 6: Verify Your Local Setup<a href="setting-up-for-this-course.html#step-6-verify-your-local-setup" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<ul>
-<li><p>Check repository contents:</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb2-1"><a href="setting-up-for-this-course.html#cb2-1" tabindex="-1"></a><span class="fu">ls</span> <span class="at">-la</span></span>
-<span id="cb2-2"><a href="setting-up-for-this-course.html#cb2-2" tabindex="-1"></a><span class="co"># You should see the template files and folders</span></span></code></pre></div></li>
-<li><p>Verify Git connection:</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb3-1"><a href="setting-up-for-this-course.html#cb3-1" tabindex="-1"></a><span class="fu">git</span> status</span>
-<span id="cb3-2"><a href="setting-up-for-this-course.html#cb3-2" tabindex="-1"></a><span class="co"># Should show &quot;On branch main&quot; and &quot;working tree clean&quot;</span></span></code></pre></div></li>
-</ul>
-</div>
-</div>
-<div id="phase-3-branch-creation-and-workflow" class="section level2 hasAnchor" number="2.3">
-<h2><span class="header-section-number">2.3</span> Phase 3: Branch Creation and Workflow<a href="setting-up-for-this-course.html#phase-3-branch-creation-and-workflow" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<div id="step-7-create-your-first-assignment-branch" class="section level3 hasAnchor" number="2.3.1">
-<h3><span class="header-section-number">2.3.1</span> Step 7: Create Your First Assignment Branch<a href="setting-up-for-this-course.html#step-7-create-your-first-assignment-branch" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<div id="command-line-method" class="section level4 hasAnchor" number="2.3.1.1">
-<h4><span class="header-section-number">2.3.1.1</span> Command Line Method:<a href="setting-up-for-this-course.html#command-line-method" class="anchor-section" aria-label="Anchor link to header"></a></h4>
-<div class="sourceCode" id="cb4"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb4-1"><a href="setting-up-for-this-course.html#cb4-1" tabindex="-1"></a><span class="co"># Create and switch to a new branch for Assignment 1</span></span>
-<span id="cb4-2"><a href="setting-up-for-this-course.html#cb4-2" tabindex="-1"></a><span class="fu">git</span> checkout <span class="at">-b</span> assignment-1-dockerfile</span>
-<span id="cb4-3"><a href="setting-up-for-this-course.html#cb4-3" tabindex="-1"></a></span>
-<span id="cb4-4"><a href="setting-up-for-this-course.html#cb4-4" tabindex="-1"></a><span class="co"># Verify you&#39;re on the new branch</span></span>
-<span id="cb4-5"><a href="setting-up-for-this-course.html#cb4-5" tabindex="-1"></a><span class="fu">git</span> branch</span>
-<span id="cb4-6"><a href="setting-up-for-this-course.html#cb4-6" tabindex="-1"></a><span class="co"># The asterisk (*) should be next to &quot;assignment-1-dockerfile&quot;</span></span></code></pre></div>
-</div>
-<div id="github-desktop-method" class="section level4 hasAnchor" number="2.3.1.2">
-<h4><span class="header-section-number">2.3.1.2</span> GitHub Desktop Method:<a href="setting-up-for-this-course.html#github-desktop-method" class="anchor-section" aria-label="Anchor link to header"></a></h4>
-<ol style="list-style-type: decimal">
-<li>Click on the “Current branch” dropdown (shows “main”)</li>
-<li>Click “New branch”</li>
-<li>Name your branch: <code>assignment-1-dockerfile</code></li>
-<li>Click “Create branch”</li>
-</ol>
-</div>
-</div>
-<div id="step-8-understand-branch-naming-strategy" class="section level3 hasAnchor" number="2.3.2">
-<h3><span class="header-section-number">2.3.2</span> Step 8: Understand Branch Naming Strategy<a href="setting-up-for-this-course.html#step-8-understand-branch-naming-strategy" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>For each assignment, create descriptive branch names. Here are examples:
-- Assignment 1: <code>assignment-1-dockerfile</code> or <code>dockerfile-build</code>
-- Assignment 2: <code>assignment-2-github-action</code> or <code>gha-creation</code>
-- Future work: <code>feature-data-analysis</code>, <code>fix-container-issue</code>, etc.</p>
-</div>
-</div>
-<div id="phase-4-making-changes-and-committing" class="section level2 hasAnchor" number="2.4">
-<h2><span class="header-section-number">2.4</span> Phase 4: Making Changes and Committing<a href="setting-up-for-this-course.html#phase-4-making-changes-and-committing" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<div id="step-9-make-your-assignment-changes" class="section level3 hasAnchor" number="2.4.1">
-<h3><span class="header-section-number">2.4.1</span> Step 9: Make Your Assignment Changes<a href="setting-up-for-this-course.html#step-9-make-your-assignment-changes" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<ul>
-<li>Work on your assignment files according to the specific assignment instructions</li>
-<li>For Assignment 1: Edit the <code>docker/Dockerfile</code></li>
-<li>For Assignment 2: Edit and move the <code>ASSIGNMENT_2.yml</code> file</li>
-<li>Save your changes in your preferred editor</li>
-</ul>
-</div>
-<div id="step-10-stage-and-commit-your-changes" class="section level3 hasAnchor" number="2.4.2">
-<h3><span class="header-section-number">2.4.2</span> Step 10: Stage and Commit Your Changes<a href="setting-up-for-this-course.html#step-10-stage-and-commit-your-changes" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<div id="command-line-method-1" class="section level4 hasAnchor" number="2.4.2.1">
-<h4><span class="header-section-number">2.4.2.1</span> Command Line Method:<a href="setting-up-for-this-course.html#command-line-method-1" class="anchor-section" aria-label="Anchor link to header"></a></h4>
-<div class="sourceCode" id="cb5"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb5-1"><a href="setting-up-for-this-course.html#cb5-1" tabindex="-1"></a><span class="co"># Check what files have changed</span></span>
-<span id="cb5-2"><a href="setting-up-for-this-course.html#cb5-2" tabindex="-1"></a><span class="fu">git</span> status</span>
-<span id="cb5-3"><a href="setting-up-for-this-course.html#cb5-3" tabindex="-1"></a></span>
-<span id="cb5-4"><a href="setting-up-for-this-course.html#cb5-4" tabindex="-1"></a><span class="co"># Add specific files (recommended)</span></span>
-<span id="cb5-5"><a href="setting-up-for-this-course.html#cb5-5" tabindex="-1"></a><span class="fu">git</span> add docker/Dockerfile  <span class="co"># for Assignment 1 for example</span></span>
-<span id="cb5-6"><a href="setting-up-for-this-course.html#cb5-6" tabindex="-1"></a>                                  </span>
-<span id="cb5-7"><a href="setting-up-for-this-course.html#cb5-7" tabindex="-1"></a><span class="co"># OR add all changes (use carefully)</span></span>
-<span id="cb5-8"><a href="setting-up-for-this-course.html#cb5-8" tabindex="-1"></a><span class="fu">git</span> add .</span>
-<span id="cb5-9"><a href="setting-up-for-this-course.html#cb5-9" tabindex="-1"></a></span>
-<span id="cb5-10"><a href="setting-up-for-this-course.html#cb5-10" tabindex="-1"></a><span class="co"># Commit with a descriptive message</span></span>
-<span id="cb5-11"><a href="setting-up-for-this-course.html#cb5-11" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">&quot;Add package installations to Dockerfile for Assignment 1&quot;</span></span>
-<span id="cb5-12"><a href="setting-up-for-this-course.html#cb5-12" tabindex="-1"></a></span>
-<span id="cb5-13"><a href="setting-up-for-this-course.html#cb5-13" tabindex="-1"></a><span class="co"># Alternative: Add and commit in one step</span></span>
-<span id="cb5-14"><a href="setting-up-for-this-course.html#cb5-14" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-am</span> <span class="st">&quot;Add package installations to Dockerfile for Assignment 1&quot;</span></span></code></pre></div>
-</div>
-<div id="github-desktop-method-1" class="section level4 hasAnchor" number="2.4.2.2">
-<h4><span class="header-section-number">2.4.2.2</span> GitHub Desktop Method:<a href="setting-up-for-this-course.html#github-desktop-method-1" class="anchor-section" aria-label="Anchor link to header"></a></h4>
-<ol style="list-style-type: decimal">
-<li>Review changed files in the left sidebar</li>
-<li>Check the boxes next to files you want to include</li>
-<li>Write a descriptive commit message in the bottom left</li>
-<li>Click “Commit to assignment-1-dockerfile”</li>
-</ol>
-</div>
-</div>
-<div id="step-11-push-your-branch-to-github" class="section level3 hasAnchor" number="2.4.3">
-<h3><span class="header-section-number">2.4.3</span> Step 11: Push Your Branch to GitHub<a href="setting-up-for-this-course.html#step-11-push-your-branch-to-github" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<div id="command-line-method-2" class="section level4 hasAnchor" number="2.4.3.1">
-<h4><span class="header-section-number">2.4.3.1</span> Command Line Method:<a href="setting-up-for-this-course.html#command-line-method-2" class="anchor-section" aria-label="Anchor link to header"></a></h4>
-<div class="sourceCode" id="cb6"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb6-1"><a href="setting-up-for-this-course.html#cb6-1" tabindex="-1"></a><span class="co"># Push your new branch to GitHub (first time)</span></span>
-<span id="cb6-2"><a href="setting-up-for-this-course.html#cb6-2" tabindex="-1"></a><span class="fu">git</span> push <span class="at">--set-upstream</span> origin assignment-1-dockerfile</span>
-<span id="cb6-3"><a href="setting-up-for-this-course.html#cb6-3" tabindex="-1"></a></span>
-<span id="cb6-4"><a href="setting-up-for-this-course.html#cb6-4" tabindex="-1"></a><span class="co"># For subsequent pushes to the same branch</span></span>
-<span id="cb6-5"><a href="setting-up-for-this-course.html#cb6-5" tabindex="-1"></a><span class="fu">git</span> push</span></code></pre></div>
-</div>
-<div id="github-desktop-method-2" class="section level4 hasAnchor" number="2.4.3.2">
-<h4><span class="header-section-number">2.4.3.2</span> GitHub Desktop Method:<a href="setting-up-for-this-course.html#github-desktop-method-2" class="anchor-section" aria-label="Anchor link to header"></a></h4>
-<ol style="list-style-type: decimal">
-<li>Click “Publish branch” (for first push)</li>
-<li>For subsequent changes, click “Push origin”</li>
-</ol>
-</div>
-</div>
-</div>
-<div id="phase-5-opening-pull-requests" class="section level2 hasAnchor" number="2.5">
-<h2><span class="header-section-number">2.5</span> Phase 5: Opening Pull Requests<a href="setting-up-for-this-course.html#phase-5-opening-pull-requests" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<div id="step-12-create-your-pull-request" class="section level3 hasAnchor" number="2.5.1">
-<h3><span class="header-section-number">2.5.1</span> Step 12: Create Your Pull Request<a href="setting-up-for-this-course.html#step-12-create-your-pull-request" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<ol style="list-style-type: decimal">
-<li>Navigate to your repository on GitHub.com</li>
-<li>You should see a yellow banner saying “assignment-1-dockerfile had recent pushes” with a “Compare &amp; pull request” button</li>
-<li>Click “Compare &amp; pull request”</li>
-</ol>
-<div id="alternative-method-if-no-banner-appears" class="section level4 hasAnchor" number="2.5.1.1">
-<h4><span class="header-section-number">2.5.1.1</span> Alternative method if no banner appears:<a href="setting-up-for-this-course.html#alternative-method-if-no-banner-appears" class="anchor-section" aria-label="Anchor link to header"></a></h4>
-<ol style="list-style-type: decimal">
-<li>Click the “Pull requests” tab</li>
-<li>Click “New pull request”</li>
-<li>Set the base branch to <code>main</code> and compare branch to your assignment branch</li>
-<li>Click “Create pull request”</li>
-</ol>
-</div>
-</div>
-<div id="step-13-configure-your-pull-request" class="section level3 hasAnchor" number="2.5.2">
-<h3><span class="header-section-number">2.5.2</span> Step 13: Configure Your Pull Request<a href="setting-up-for-this-course.html#step-13-configure-your-pull-request" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<ul>
-<li><p>Title: Use a descriptive title (e.g., “Assignment 1: Docker container with required packages”)</p></li>
-<li><p>Description: Add details about what you implemented:</p>
-<pre><code>## Assignment 1 Submission
+<div id="workflow-doesnt-run" class="section level3 hasAnchor" number="6.0.2">
+<h3><span class="header-section-number">6.0.2</span> Workflow Doesn’t Run<a href="check-these-items.html#workflow-doesnt-run" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Ensure:
+- You’re triggering from the correct repository
+- You’re selecting the main branch
+- The workflow file exists in .github/workflows/
+- You have permissions to run workflows</p>
+<p>This assignment teaches a crucial skill for modern computational research: secure credential management.
+In real research environments, you’ll use these same techniques to store API keys for cancer databases,
+authentication tokens for computing clusters, and credentials for automated research workflows.
+The ability to securely manage secrets enables sophisticated automation while maintaining security standards required
+for sensitive cancer research data.</p>
 
-This PR adds the following to the Dockerfile:
-- [List the packages you added]
-- [Any other changes you made]
-
-Ready for automated evaluation.</code></pre></li>
-<li><p>Labels: Add any relevant labels if available</p></li>
-<li><p>Assignees: Assign yourself</p></li>
-</ul>
-</div>
-<div id="step-14-submit-and-monitor-your-pull-request" class="section level3 hasAnchor" number="2.5.3">
-<h3><span class="header-section-number">2.5.3</span> Step 14: Submit and Monitor Your Pull Request<a href="setting-up-for-this-course.html#step-14-submit-and-monitor-your-pull-request" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<ol style="list-style-type: decimal">
-<li>Click “Create pull request”</li>
-<li>Wait for automated checks to run - you should see status indicators at the bottom of the PR</li>
-<li>Monitor for the evaluation comment - the automated system will comment with results</li>
-<li>Keep the PR open until you receive your validation code</li>
-</ol>
-</div>
-</div>
-<div id="phase-6-iteration-and-resubmission" class="section level2 hasAnchor" number="2.6">
-<h2><span class="header-section-number">2.6</span> Phase 6: Iteration and Resubmission<a href="setting-up-for-this-course.html#phase-6-iteration-and-resubmission" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<div id="step-15-handle-evaluation-feedback" class="section level3 hasAnchor" number="2.6.1">
-<h3><span class="header-section-number">2.6.1</span> Step 15: Handle Evaluation Feedback<a href="setting-up-for-this-course.html#step-15-handle-evaluation-feedback" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>If your submission needs changes:</p>
-<ol style="list-style-type: decimal">
-<li><p>Stay on your assignment branch:</p>
-<div class="sourceCode" id="cb8"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb8-1"><a href="setting-up-for-this-course.html#cb8-1" tabindex="-1"></a><span class="fu">git</span> checkout assignment-1-dockerfile  <span class="co"># if not already there</span></span></code></pre></div></li>
-<li><p>Make necessary changes based on the automated feedback</p></li>
-<li><p>Commit and push updates:</p>
-<div class="sourceCode" id="cb9"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb9-1"><a href="setting-up-for-this-course.html#cb9-1" tabindex="-1"></a><span class="fu">git</span> add .</span>
-<span id="cb9-2"><a href="setting-up-for-this-course.html#cb9-2" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">&quot;Fix Dockerfile syntax based on evaluation feedback&quot;</span></span>
-<span id="cb9-3"><a href="setting-up-for-this-course.html#cb9-3" tabindex="-1"></a><span class="fu">git</span> push</span></code></pre></div></li>
-<li><p>The pull request will automatically update and trigger re-evaluation</p></li>
-</ol>
-</div>
-<div id="step-16-success-and-next-steps" class="section level3 hasAnchor" number="2.6.2">
-<h3><span class="header-section-number">2.6.2</span> Step 16: Success and Next Steps<a href="setting-up-for-this-course.html#step-16-success-and-next-steps" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>When you receive your validation code:
-1. Copy the validation code from the automated comment
-2. Keep your PR open (don’t merge or close it yet)
-3. Submit the code in your Coursera quiz
-4. Start the next assignment by creating a new branch from main</p>
-</div>
-</div>
-<div id="reminders-of-best-practices-for-success" class="section level2 hasAnchor" number="2.7">
-<h2><span class="header-section-number">2.7</span> Reminders of Best Practices for Success<a href="setting-up-for-this-course.html#reminders-of-best-practices-for-success" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<div id="repository-organization" class="section level3 hasAnchor" number="2.7.1">
-<h3><span class="header-section-number">2.7.1</span> Repository Organization<a href="setting-up-for-this-course.html#repository-organization" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<ul>
-<li>One branch per assignment - keeps work organized</li>
-<li>Descriptive commit messages - helps track your progress</li>
-<li>Regular pushes - protects your work and enables evaluation</li>
-</ul>
-</div>
-<div id="pull-request-hygiene" class="section level3 hasAnchor" number="2.7.2">
-<h3><span class="header-section-number">2.7.2</span> Pull Request Hygiene<a href="setting-up-for-this-course.html#pull-request-hygiene" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<ul>
-<li>Clear titles and descriptions - will help you and your collaborators know what the work in the branch is.</li>
-<li>Don’t merge your PR before you get the validation code</li>
-<li>Monitor automated feedback - respond to evaluation comments promptly</li>
-</ul>
-</div>
-<div id="troubleshooting-common-issues" class="section level3 hasAnchor" number="2.7.3">
-<h3><span class="header-section-number">2.7.3</span> Troubleshooting Common Issues<a href="setting-up-for-this-course.html#troubleshooting-common-issues" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<div id="repository-not-found-when-cloning" class="section level4 hasAnchor" number="2.7.3.1">
-<h4><span class="header-section-number">2.7.3.1</span> “Repository not found” when cloning:<a href="setting-up-for-this-course.html#repository-not-found-when-cloning" class="anchor-section" aria-label="Anchor link to header"></a></h4>
-<ul>
-<li>Check that the repository is public</li>
-<li>Verify the URL is correct</li>
-<li>Ensure you have access to the repository</li>
-</ul>
-</div>
-<div id="permission-denied-when-pushing" class="section level4 hasAnchor" number="2.7.3.2">
-<h4><span class="header-section-number">2.7.3.2</span> “Permission denied” when pushing:<a href="setting-up-for-this-course.html#permission-denied-when-pushing" class="anchor-section" aria-label="Anchor link to header"></a></h4>
-<ul>
-<li>Check that you’re pushing to your own repository (not the template)</li>
-<li>Verify your Git credentials are set up correctly</li>
-<li>Try using a personal access token instead of password</li>
-</ul>
-</div>
-<div id="automated-evaluation-not-running" class="section level4 hasAnchor" number="2.7.3.3">
-<h4><span class="header-section-number">2.7.3.3</span> Automated evaluation not running:<a href="setting-up-for-this-course.html#automated-evaluation-not-running" class="anchor-section" aria-label="Anchor link to header"></a></h4>
-<ul>
-<li>Ensure your PR is against the main branch</li>
-<li>Check that required files are in the correct locations</li>
-<li>Verify the repository is public</li>
-</ul>
-</div>
-<div id="branch-confusion" class="section level4 hasAnchor" number="2.7.3.4">
-<h4><span class="header-section-number">2.7.3.4</span> Branch confusion:<a href="setting-up-for-this-course.html#branch-confusion" class="anchor-section" aria-label="Anchor link to header"></a></h4>
-<div class="sourceCode" id="cb10"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb10-1"><a href="setting-up-for-this-course.html#cb10-1" tabindex="-1"></a><span class="co"># Check current branch</span></span>
-<span id="cb10-2"><a href="setting-up-for-this-course.html#cb10-2" tabindex="-1"></a><span class="fu">git</span> branch</span>
-<span id="cb10-3"><a href="setting-up-for-this-course.html#cb10-3" tabindex="-1"></a></span>
-<span id="cb10-4"><a href="setting-up-for-this-course.html#cb10-4" tabindex="-1"></a><span class="co"># Switch to main branch</span></span>
-<span id="cb10-5"><a href="setting-up-for-this-course.html#cb10-5" tabindex="-1"></a><span class="fu">git</span> checkout main</span>
-<span id="cb10-6"><a href="setting-up-for-this-course.html#cb10-6" tabindex="-1"></a></span>
-<span id="cb10-7"><a href="setting-up-for-this-course.html#cb10-7" tabindex="-1"></a><span class="co"># Create new branch from main</span></span>
-<span id="cb10-8"><a href="setting-up-for-this-course.html#cb10-8" tabindex="-1"></a><span class="fu">git</span> checkout <span class="at">-b</span> new-assignment-branch</span></code></pre></div>
-<p>This setup process creates the foundation for all your capstone assignments.
-Each assignment will follow a similar pattern:
-create branch → make changes → commit → push → open PR → receive evaluation → iterate if needed.
-The automated evaluation system depends on this workflow, so following these steps precisely is crucial for getting your validation codes!</p>
-
-</div>
-</div>
 </div>
 </div>
 <hr>
@@ -703,8 +425,8 @@ The automated evaluation system depends on this workflow, so following these ste
           </div>
         </div>
       </div>
-<a href="introduction.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="assignment-1-building-your-capstone-dockerfile.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="storing-github-secrets-a-step-by-step-guide-for-assignment-3.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="about-the-authors.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
