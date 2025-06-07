@@ -1,7 +1,0 @@
-1-Introduction.md
-2-Setting-up-for-this-course.md
-3-Assignment-1:-Building-Your-Capstone-Dockerfile.md
-4-Assignment-2:-Building-Your-Capstone-GitHub-Action.md
-5-References.md
-About-this-Course.md
-About-the-Authors.md
