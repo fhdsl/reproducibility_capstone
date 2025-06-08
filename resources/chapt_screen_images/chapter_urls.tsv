@@ -4,7 +4,6 @@ http://hutchdatascience.org/reproducibility_capstone/introduction.html	1 Introdu
 http://hutchdatascience.org/reproducibility_capstone/setting-up-for-this-course.html	2 Setting up for this course	./resources/chapt_screen_images/setting-up-for-this-course.png
 http://hutchdatascience.org/reproducibility_capstone/assignment-1-building-your-capstone-dockerfile.html	3 Assignment 1: Building Your Capstone Dockerfile	./resources/chapt_screen_images/assignment-1-building-your-capstone-dockerfile.png
 http://hutchdatascience.org/reproducibility_capstone/assignment-2-building-your-capstone-github-action.html	4 Assignment 2: Building Your Capstone GitHub Action	./resources/chapt_screen_images/assignment-2-building-your-capstone-github-action.png
-http://hutchdatascience.org/reproducibility_capstone/storing-github-secrets-a-step-by-step-guide-for-assignment-3.html	5 Storing GitHub Secrets: A Step-by-Step Guide for Assignment 3	./resources/chapt_screen_images/storing-github-secrets-a-step-by-step-guide-for-assignment-3.png
-http://hutchdatascience.org/reproducibility_capstone/check-these-items.html	6 Check these items:	./resources/chapt_screen_images/check-these-items.png
+http://hutchdatascience.org/reproducibility_capstone/assignment-3-storing-github-secrets.html	5 Assignment 3: Storing GitHub Secrets	./resources/chapt_screen_images/assignment-3-storing-github-secrets.png
 http://hutchdatascience.org/reproducibility_capstone/about-the-authors.html	About the Authors	./resources/chapt_screen_images/about-the-authors.png
-http://hutchdatascience.org/reproducibility_capstone/references.html	7 References	./resources/chapt_screen_images/references.png
+http://hutchdatascience.org/reproducibility_capstone/references.html	6 References	./resources/chapt_screen_images/references.png
