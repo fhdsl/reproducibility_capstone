@@ -1,5 +1,8 @@
 # Assignment 3: Storing GitHub Secrets
 
+
+<img src="05-secret-storage_files/figure-html//1ExTZsKDHKM0fIi0_tB80qd8cHvqjEDyNJp-OsnvZ19o_g360ed975019_0_0.png" alt="This course will demonstrate how to: Recap GitHub secrets. Create an a Personal Access Token. Store a GitHub secret Access that secret" width="100%" />
+
 ## Phase 1: Understanding GitHub Secrets
 
 ### Step 1: What Are GitHub Secrets?

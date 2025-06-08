@@ -2,6 +2,8 @@
 
 ## Phase 1: Creating Your Repository from Template
 
+<img src="02-setting-up_files/figure-html//1ExTZsKDHKM0fIi0_tB80qd8cHvqjEDyNJp-OsnvZ19o_g360ed975019_0_188.png" alt="Welcome to Reproducibility Capstone. This course is brought to you by the I T C R Training Network." width="100%" />
+
 ### Step 1: Access the Course Template
 - Navigate to the [course sandbox template repository](https://github.com/fhdsl/capstone-sandbox)
 - Look for the green "Use this template" button at the top of the repository page
@@ -24,10 +26,8 @@
 ## Phase 2: Local Setup and Cloning
 
 ### Step 4: Prepare Your Local Environment
-- Ensure you have Git installed on your computer
-- Check Git installation: Open terminal/command prompt and run `git --version`
-- If Git isn't installed, download it from [git-scm.com](https://git-scm.com/)
-- Optional but recommended: Install [GitHub Desktop](https://desktop.github.com/) for a visual interface
+For this course you may use whatever git client (GitHub Desktop, Git Kraken, etc) you are most comfortable with, or no git client at all. 
+If you need any recap on how to file pull requests remember you can return to the other courses in this series for reference. Particularly the [Advanced Reproducibility course](https://jhudatascience.org/Adv_Reproducibility_in_Cancer_Informatics/using-version-control-with-github.html)
 
 ### Step 5: Clone Your Repository
 
@@ -55,21 +55,11 @@
 4. Choose a local path where you want to store the repository
 5. Click "Clone"
 
-### Step 6: Verify Your Local Setup
-- Check repository contents:
-  ```bash
-  ls -la
-  # You should see the template files and folders
-  ```
-- Verify Git connection:
-  ```bash
-  git status
-  # Should show "On branch main" and "working tree clean"
-  ```
-
 ## Phase 3: Branch Creation and Workflow
 
 ### Step 7: Create Your First Assignment Branch
+
+You may name your working branch whatever you like for these assignments. 
 
 #### Command Line Method:
 ```bash
@@ -86,123 +76,6 @@ git branch
 2. Click "New branch"
 3. Name your branch: `assignment-1-dockerfile`
 4. Click "Create branch"
-
-### Step 8: Understand Branch Naming Strategy
-For each assignment, create descriptive branch names. Here are examples: 
-- Assignment 1: `assignment-1-dockerfile` or `dockerfile-build`
-- Assignment 2: `assignment-2-github-action` or `gha-creation`
-- Future work: `feature-data-analysis`, `fix-container-issue`, etc.
-
-## Phase 4: Making Changes and Committing
-
-### Step 9: Make Your Assignment Changes
-- Work on your assignment files according to the specific assignment instructions
-- For Assignment 1: Edit the `docker/Dockerfile`
-- For Assignment 2: Edit and move the `ASSIGNMENT_2.yml` file
-- Save your changes in your preferred editor
-
-### Step 10: Stage and Commit Your Changes
-
-#### Command Line Method:
-```bash
-# Check what files have changed
-git status
-
-# Add specific files (recommended)
-git add docker/Dockerfile  # for Assignment 1 for example
-                                  
-# OR add all changes (use carefully)
-git add .
-
-# Commit with a descriptive message
-git commit -m "Add package installations to Dockerfile for Assignment 1"
-
-# Alternative: Add and commit in one step
-git commit -am "Add package installations to Dockerfile for Assignment 1"
-```
-
-#### GitHub Desktop Method:
-1. Review changed files in the left sidebar
-2. Check the boxes next to files you want to include
-3. Write a descriptive commit message in the bottom left
-4. Click "Commit to assignment-1-dockerfile"
-
-### Step 11: Push Your Branch to GitHub
-
-#### Command Line Method:
-```bash
-# Push your new branch to GitHub (first time)
-git push --set-upstream origin assignment-1-dockerfile
-
-# For subsequent pushes to the same branch
-git push
-```
-
-#### GitHub Desktop Method:
-1. Click "Publish branch" (for first push)
-2. For subsequent changes, click "Push origin"
-
-## Phase 5: Opening Pull Requests
-
-### Step 12: Create Your Pull Request
-1. Navigate to your repository on GitHub.com
-2. You should see a yellow banner saying "assignment-1-dockerfile had recent pushes" with a "Compare & pull request" button
-3. Click "Compare & pull request"
-
-#### Alternative method if no banner appears:
-1. Click the "Pull requests" tab
-2. Click "New pull request"
-3. Set the base branch to `main` and compare branch to your assignment branch
-4. Click "Create pull request"
-
-### Step 13: Configure Your Pull Request
-- Title: Use a descriptive title (e.g., "Assignment 1: Docker container with required packages")
-- Description: Add details about what you implemented:
-  ```
-  ## Assignment 1 Submission
-  
-  This PR adds the following to the Dockerfile:
-  - [List the packages you added]
-  - [Any other changes you made]
-  
-  Ready for automated evaluation.
-  ```
-- Labels: Add any relevant labels if available
-- Assignees: Assign yourself
-
-### Step 14: Submit and Monitor Your Pull Request
-1. Click "Create pull request"
-2. Wait for automated checks to run - you should see status indicators at the bottom of the PR
-3. Monitor for the evaluation comment - the automated system will comment with results
-4. Keep the PR open until you receive your validation code
-
-## Phase 6: Iteration and Resubmission
-
-### Step 15: Handle Evaluation Feedback
-If your submission needs changes:
-
-1. Stay on your assignment branch:
-   ```bash
-   git checkout assignment-1-dockerfile  # if not already there
-   ```
-
-2. Make necessary changes based on the automated feedback
-
-3. Commit and push updates:
-   ```bash
-   git add .
-   git commit -m "Fix Dockerfile syntax based on evaluation feedback"
-   git push
-   ```
-
-4. The pull request will automatically update and trigger re-evaluation
-
-### Step 16: Success and Next Steps
-When you receive your validation code:
-1. Copy the validation code from the automated comment
-2. Keep your PR open (don't merge or close it yet)
-3. Submit the code in your Coursera quiz
-4. Start the next assignment by creating a new branch from main
 
 ## Reminders of Best Practices for Success
 
@@ -233,19 +106,10 @@ When you receive your validation code:
 - Check that required files are in the correct locations
 - Verify the repository is public
 
-#### Branch confusion:
-```bash
-# Check current branch
-git branch
-
-# Switch to main branch
-git checkout main
-
-# Create new branch from main
-git checkout -b new-assignment-branch
-```
-
 This setup process creates the foundation for all your capstone assignments. 
-Each assignment will follow a similar pattern: 
+The first two assignment will follow a similar pattern: 
 create branch → make changes → commit → push → open PR → receive evaluation → iterate if needed. 
 The automated evaluation system depends on this workflow, so following these steps precisely is crucial for getting your validation codes!
+
+Note that the validation codes are really only needed for if you are doing this capstone as a part of the Coursera or Leanpub platforms (for certification). If you are not taking this course for certification you may ignore the validation codes. 
+
