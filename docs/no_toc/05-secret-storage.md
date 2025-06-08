@@ -1,4 +1,4 @@
-# Storing GitHub Secrets: A Step-by-Step Guide for Assignment 3
+# Assignment 3: Storing GitHub Secrets
 
 ## Phase 1: Understanding GitHub Secrets
 
@@ -166,7 +166,7 @@ After completing the assignment:
 ## Troubleshooting Common Issues
 
 ### "Secret not found" Error
-# Check these items:
+Check these items:
 - Secret name is exactly: ASSIGNMENT_SECRET
 - Secret is stored in your copy of the capstone-sandbox repository settings
 - The repository is the correct sandbox repository (not fhdsl/capstone-sandbox but instead your own copy)

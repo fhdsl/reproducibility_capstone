@@ -102,7 +102,7 @@ leverage-course-materials
 use-the-evaluation-system-effectively
 think-like-a-developer
 common-useful-actions-for-capstone-projects
-storing-github-secrets-a-step-by-step-guide-for-assignment-3
+assignment-3-storing-github-secrets
 phase-1-understanding-github-secrets
 step-1-what-are-github-secrets
 step-2-why-personal-access-tokens-matter
@@ -133,7 +133,6 @@ secret-storage-best-practices
 research-context-applications
 troubleshooting-common-issues-1
 secret-not-found-error
-check-these-items
 invalid-token-error
 workflow-doesnt-run
 references
