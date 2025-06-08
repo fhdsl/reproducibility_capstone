@@ -1,5 +1,10 @@
 # Assignment 2: Building Your Capstone GitHub Action
 
+
+```{r, out.width = "100%", fig.alt = "This course will demonstrate how to: Recap GitHub Action building techniques Create an original GitHub Action", echo = FALSE}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1ExTZsKDHKM0fIi0_tB80qd8cHvqjEDyNJp-OsnvZ19o/edit?slide=id.g361b9572af4_0_186#slide=id.g361b9572af4_0_186")
+```
+
 ## Phase 1: Repository Setup and Planning
 
 ### Step 1: Set Up Your Working Environment
@@ -142,6 +147,10 @@ jobs:
 - Missing dependencies: Check if your chosen environment has required software
 - Silent failures: Verify your action actually does what you expect
 
+
+```{r, out.width = "100%", fig.alt = "Troubleshooting tips for GitHub Actions. Tip Details General Debugging. Look out for silent errors. Actions may fail without obvious error messages. Look at the logs closely! Detailed examination of workflow logs is essential. Use workflow_dispatch/pull_request triggers for development. These triggers help test workflows during development. Print out things to test your assumptions. Add debug output to verify your workflow logic. Marketplace Actions. Read the docs carefully! Thoroughly review documentation before implementation. Try updating to later versions to fix problems.Newer versions often contain bug fixes. Avoid poorly documented or poorly maintained actions. Choose well-supported actions for reliability. Startup Issues. Check for missing essential specifications. Ensure all required parameters and configurations are present.Look for syntax issues. Verify YAML syntax and GitHub Actions syntax.Check for spacing issues.YAML is sensitive to indentation and spacing", echo = FALSE}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1ExTZsKDHKM0fIi0_tB80qd8cHvqjEDyNJp-OsnvZ19o/edit?slide=id.g361b9572af4_0_382#slide=id.g361b9572af4_0_382")
+```
 ### Step 14: Apply Troubleshooting Strategies
 - Read error messages carefully: They often contain the exact solution
 - Check the logs: Go to Actions tab and examine detailed output
@@ -157,21 +166,14 @@ jobs:
 ## Phase 6: Completion
 
 ### Step 16: Collect Your Validation Code
-- Once your GitHub Action runs successfully, copy the validation code from the PR comment
-- Verify: Make sure it's a real validation code, not an error message
-- Keep this code safe for your quiz submission
-
-### Step 17: Submit Your Quiz
-- Navigate to your Coursera Capstone Quiz
-- Paste the validation code when prompted
-- Submit the quiz to receive credit for your work
+Once your GitHub Action runs successfully, copy the validation code from the PR comment. Keep this code safe for your quiz submission. Note that if you are not taking this course through Coursera or Leanpub for certification then you can ignore this step 
 
 ## Pro Tips for Success
 
 ### Choose Appropriate Scope
 - Your action should be useful but not overly complex
 - Focus on demonstrating GitHub Actions concepts rather than building production software
-- A working simple action is better than a broken complex one
+- A working simple action is better than a broken complex one - iterate, knowing if you need more features you can add these incrementally. Start a new pull request for each new feature. 
 
 ### Leverage Course Materials
 - Use troubleshooting strategies from the GitHub Actions course
@@ -182,12 +184,6 @@ jobs:
 - The automated evaluator provides immediate feedback
 - Don't be afraid to make multiple attempts - each iteration teaches you something
 - Read the evaluator's comments carefully for specific guidance
-
-### Think Like a Developer
-- Consider when your action should run (triggers)
-- Think about error handling and edge cases
-- Include meaningful logging and output messages
-- Test your assumptions about what the action environment provides
 
 ### Common Useful Actions for Capstone Projects
 - Data validation: Check that uploaded data meets expected formats
