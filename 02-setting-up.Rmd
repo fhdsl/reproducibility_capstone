@@ -67,7 +67,7 @@ If you need any recap on how to file pull requests remember you can return to th
 
 ### Step 6: Create Your First Assignment Branch
 
-You may name your working branch whatever you like for these assignments. The examples/instructions use the name `assignment-1-dockerfile`
+You may name your working branch whatever you like for these assignments. The examples/instructions use the name `assignment-1-dockerfile`.
 
 #### Command Line Method:
 
