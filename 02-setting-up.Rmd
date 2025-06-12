@@ -86,7 +86,7 @@ git branch
 3. Name your branch: `assignment-1-dockerfile`
 4. Click "Create branch"
 
-## Your Setup is Complete.... What are the Next steps?
+## Your Setup is Complete.... What are the Next Steps?
 
 This setup process creates the foundation for all your capstone assignments. The first two assignments will follow a similar pattern:
 
@@ -106,19 +106,19 @@ Note that the validation codes are really only needed if you are participating i
 - Don't merge your pull request before you get the validation code - outside of this assignment, wait for approval from a team member or collaborator
 - Monitor automated feedback - respond to or handle issues identified by evaluation promptly
 
-### Troubleshooting Common Issues
+## Troubleshooting Common Issues
 
-#### "Repository not found" when cloning:
+### "Repository not found" when cloning:
 - Check that the repository is public
 - Verify the URL you've copy/pasted is correct
 - Ensure you have access to the repository
 
-#### "Permission denied" when pushing:
+### "Permission denied" when pushing:
 - Check that you're pushing to your own repository (not the template)
 - Verify your Git credentials are set up correctly
 - Try using a personal access token instead of password
 
-#### Automated evaluation not running:
+### Automated evaluation not running:
 - Ensure your pull request is against the main branch
 - Check that required files are in the correct locations
 - Verify the repository is public
