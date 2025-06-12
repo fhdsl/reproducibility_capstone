@@ -28,7 +28,7 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1ExTZsKDHKM0fIi0_
 ## Phase 2: Local Setup and Cloning
 
 ### Step 4: Prepare Your Local Environment
-For this course you may use whatever git client (GitHub Desktop, GitKraken, etc) you are most comfortable with, or no git client at all. 
+For this course you may use whatever git client (GitHub Desktop, GitKraken, etc) you are most comfortable with, or no git client at all.
 If you need any recap on how to file pull requests remember you can return to the other courses in this series for reference. Particularly the [Advanced Reproducibility course](https://jhudatascience.org/Adv_Reproducibility_in_Cancer_Informatics/using-version-control-with-github.html)
 
 ### Step 5: Clone Your Repository
@@ -59,11 +59,12 @@ If you need any recap on how to file pull requests remember you can return to th
 
 ## Phase 3: Branch Creation and Workflow
 
-### Step 7: Create Your First Assignment Branch
+### Step 6: Create Your First Assignment Branch
 
-You may name your working branch whatever you like for these assignments.
+You may name your working branch whatever you like for these assignments. The examples/instructions use the name `assignment-1-dockerfile`
 
 #### Command Line Method:
+
 ```bash
 # Create and switch to a new branch for Assignment 1
 git checkout -b assignment-1-dockerfile
@@ -79,23 +80,31 @@ git branch
 3. Name your branch: `assignment-1-dockerfile`
 4. Click "Create branch"
 
-## Reminders of Best Practices for Success
+## Your Setup is Complete.... What are the Next steps?
 
-### Repository Organization
-- One branch per assignment - keeps work organized
-- Descriptive commit messages - helps track your progress
-- Regular pushes - protects your work and enables evaluation
+This setup process creates the foundation for all your capstone assignments. The first two assignments will follow a similar pattern:
 
-### Pull Request Hygiene
-- Clear titles and descriptions - will help you and your collaborators know what the work in the branch is.
-- Don't merge your PR before you get the validation code
-- Monitor automated feedback - respond to evaluation comments promptly
+create branch → make changes → commit → push → open PR → receive evaluation → iterate if needed.
+
+The automated evaluation system depends on this workflow, so following these steps precisely is crucial for getting your validation codes!
+
+Note that the validation codes are really only needed if you are participating in this capstone as a part of the Coursera or Leanpub platforms (for certification). If you are not taking this course for certification, there is no structure in place to verify the validation code you receive.
+
+
+### Reminders of Best Practices for Success while Working with GitHub
+
+- Use one branch per assignment - keeps work organized
+- Write descriptive commit messages - helps track your progress
+- Regularly push your work - protects your work and enables evaluation
+- Use clear titles and descriptions for pull requests - will help you and your collaborators know what the work in the branch is
+- Don't merge your pull request before you get the validation code - outside of this assignment, wait for approval from a team member or collaborator
+- Monitor automated feedback - respond to or handle issues identified by evaluation promptly
 
 ### Troubleshooting Common Issues
 
 #### "Repository not found" when cloning:
 - Check that the repository is public
-- Verify the URL is correct
+- Verify the URL you've copy/pasted is correct
 - Ensure you have access to the repository
 
 #### "Permission denied" when pushing:
@@ -104,13 +113,6 @@ git branch
 - Try using a personal access token instead of password
 
 #### Automated evaluation not running:
-- Ensure your PR is against the main branch
+- Ensure your pull request is against the main branch
 - Check that required files are in the correct locations
 - Verify the repository is public
-
-This setup process creates the foundation for all your capstone assignments.
-The first two assignment will follow a similar pattern:
-create branch → make changes → commit → push → open PR → receive evaluation → iterate if needed.
-The automated evaluation system depends on this workflow, so following these steps precisely is crucial for getting your validation codes!
-
-Note that the validation codes are really only needed for if you are doing this capstone as a part of the Coursera or Leanpub platforms (for certification). If you are not taking this course for certification you may ignore the validation codes.
