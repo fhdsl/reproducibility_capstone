@@ -7,19 +7,23 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1ExTZsKDHKM0fIi0_
 ```
 
 ### Step 1: Access the Course Template
+
 - Navigate to the [course sandbox template repository](https://github.com/fhdsl/capstone-sandbox)
 - Look for the green "Use this template" button at the top of the repository page
 - Important: Do NOT fork the repository - you must use the template option
 
 ### Step 2: Configure Your New Repository
+
 - Click "Use this template" → "Create a new repository"
 - Fill out the repository creation form:
+  - Include all branches: Leave unchecked (we only need the main branch)
   - Repository name: Choose a meaningful name (e.g., `your-username-capstone-sandbox`)
   - Description: Add a brief description of your capstone project
   - Visibility: Set to Public (required for the automated evaluation system to work)
-  - Include all branches: Leave unchecked (we only need the main branch)
+
 
 ### Step 3: Create Your Repository
+
 - Click "Create repository"
 - Wait for GitHub to finish creating your repository
 - You'll be redirected to your new repository page
@@ -34,11 +38,12 @@ If you need any recap on how to file pull requests remember you can return to th
 ### Step 5: Clone Your Repository
 
 #### Option A: Using Command Line
+
 1. Copy the repository URL:
    - On your repository page, click the green "Code" button
    - Copy the HTTPS URL (should look like: `https://github.com/yourusername/your-repo-name.git`)
 
-2. Clone the repository:
+2. Clone the repository, using the HTTPS URL you've just copied:
    ```bash
    # Navigate to where you want to store the project
    cd ~/Desktop  # or your preferred location
@@ -51,9 +56,10 @@ If you need any recap on how to file pull requests remember you can return to th
    ```
 
 #### Option B: Using GitHub Desktop
+
 1. Open GitHub Desktop
 2. Click "Clone a repository from the Internet"
-3. Select your repository from the list or enter the URL
+3. Select your repository from the list or paste the URL you copied
 4. Choose a local path where you want to store the repository
 5. Click "Clone"
 
