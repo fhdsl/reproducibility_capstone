@@ -120,6 +120,28 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
   
   div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 </style>
+<style type="text/css">
+/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
 
 <link rel="stylesheet" href="assets/style_ITN.css" type="text/css" />
 </head>
@@ -134,7 +156,7 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
       <nav role="navigation">
 
 <ul class="summary">
-<a href="https://hutchdatascience.org/" target="_blank"><img src="assets/big-dasl-stacked.png" style="width: 80%; padding-left: 34px; padding-top: 8px;"</a>
+<a href="https://hutchdatascience.org/" target="_blank"><img src="assets/ITN_logo.png" style="width: 80%; padding-left: 34px; padding-top: 8px;"</a>
 
 <li class="divider"></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>About this Course</a></li>
@@ -143,7 +165,8 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="1.1" data-path="introduction.html"><a href="introduction.html#motivation"><i class="fa fa-check"></i><b>1.1</b> Motivation</a></li>
 <li class="chapter" data-level="1.2" data-path="introduction.html"><a href="introduction.html#target-audience"><i class="fa fa-check"></i><b>1.2</b> Target Audience</a></li>
 <li class="chapter" data-level="1.3" data-path="introduction.html"><a href="introduction.html#curriculum"><i class="fa fa-check"></i><b>1.3</b> Curriculum</a></li>
-<li class="chapter" data-level="1.4" data-path="introduction.html"><a href="introduction.html#how-to-use-the-course"><i class="fa fa-check"></i><b>1.4</b> How to use the course</a></li>
+<li class="chapter" data-level="1.4" data-path="introduction.html"><a href="introduction.html#objectives"><i class="fa fa-check"></i><b>1.4</b> Objectives</a></li>
+<li class="chapter" data-level="1.5" data-path="introduction.html"><a href="introduction.html#how-to-use-the-course"><i class="fa fa-check"></i><b>1.5</b> How to use the course</a></li>
 </ul></li>
 <li class="chapter" data-level="2" data-path="setting-up-for-this-course.html"><a href="setting-up-for-this-course.html"><i class="fa fa-check"></i><b>2</b> Setting up for this course</a>
 <ul>
@@ -160,13 +183,17 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 <li class="chapter" data-level="2.3" data-path="setting-up-for-this-course.html"><a href="setting-up-for-this-course.html#phase-3-branch-creation-and-workflow"><i class="fa fa-check"></i><b>2.3</b> Phase 3: Branch Creation and Workflow</a>
 <ul>
-<li class="chapter" data-level="2.3.1" data-path="setting-up-for-this-course.html"><a href="setting-up-for-this-course.html#step-7-create-your-first-assignment-branch"><i class="fa fa-check"></i><b>2.3.1</b> Step 7: Create Your First Assignment Branch</a></li>
+<li class="chapter" data-level="2.3.1" data-path="setting-up-for-this-course.html"><a href="setting-up-for-this-course.html#step-6-create-your-first-assignment-branch"><i class="fa fa-check"></i><b>2.3.1</b> Step 6: Create Your First Assignment Branch</a></li>
 </ul></li>
-<li class="chapter" data-level="2.4" data-path="setting-up-for-this-course.html"><a href="setting-up-for-this-course.html#reminders-of-best-practices-for-success"><i class="fa fa-check"></i><b>2.4</b> Reminders of Best Practices for Success</a>
+<li class="chapter" data-level="2.4" data-path="setting-up-for-this-course.html"><a href="setting-up-for-this-course.html#your-setup-is-complete.-what-are-the-next-steps"><i class="fa fa-check"></i><b>2.4</b> Your Setup is Complete…. What are the Next Steps?</a>
 <ul>
-<li class="chapter" data-level="2.4.1" data-path="setting-up-for-this-course.html"><a href="setting-up-for-this-course.html#repository-organization"><i class="fa fa-check"></i><b>2.4.1</b> Repository Organization</a></li>
-<li class="chapter" data-level="2.4.2" data-path="setting-up-for-this-course.html"><a href="setting-up-for-this-course.html#pull-request-hygiene"><i class="fa fa-check"></i><b>2.4.2</b> Pull Request Hygiene</a></li>
-<li class="chapter" data-level="2.4.3" data-path="setting-up-for-this-course.html"><a href="setting-up-for-this-course.html#troubleshooting-common-issues"><i class="fa fa-check"></i><b>2.4.3</b> Troubleshooting Common Issues</a></li>
+<li class="chapter" data-level="2.4.1" data-path="setting-up-for-this-course.html"><a href="setting-up-for-this-course.html#reminders-of-best-practices-for-success-while-working-with-github"><i class="fa fa-check"></i><b>2.4.1</b> Reminders of Best Practices for Success while Working with GitHub</a></li>
+</ul></li>
+<li class="chapter" data-level="2.5" data-path="setting-up-for-this-course.html"><a href="setting-up-for-this-course.html#troubleshooting-common-issues"><i class="fa fa-check"></i><b>2.5</b> Troubleshooting Common Issues</a>
+<ul>
+<li class="chapter" data-level="2.5.1" data-path="setting-up-for-this-course.html"><a href="setting-up-for-this-course.html#repository-not-found-when-cloning"><i class="fa fa-check"></i><b>2.5.1</b> “Repository not found” when cloning:</a></li>
+<li class="chapter" data-level="2.5.2" data-path="setting-up-for-this-course.html"><a href="setting-up-for-this-course.html#permission-denied-when-pushing"><i class="fa fa-check"></i><b>2.5.2</b> “Permission denied” when pushing:</a></li>
+<li class="chapter" data-level="2.5.3" data-path="setting-up-for-this-course.html"><a href="setting-up-for-this-course.html#automated-evaluation-not-running"><i class="fa fa-check"></i><b>2.5.3</b> Automated evaluation not running:</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="assignment-1-building-your-capstone-dockerfile.html"><a href="assignment-1-building-your-capstone-dockerfile.html"><i class="fa fa-check"></i><b>3</b> Assignment 1: Building Your Capstone Dockerfile</a>
@@ -174,7 +201,7 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="3.1" data-path="assignment-1-building-your-capstone-dockerfile.html"><a href="assignment-1-building-your-capstone-dockerfile.html#phase-1-repository-setup-and-planning"><i class="fa fa-check"></i><b>3.1</b> Phase 1: Repository Setup and Planning</a>
 <ul>
 <li class="chapter" data-level="3.1.1" data-path="assignment-1-building-your-capstone-dockerfile.html"><a href="assignment-1-building-your-capstone-dockerfile.html#step-1-set-up-your-working-environment"><i class="fa fa-check"></i><b>3.1.1</b> Step 1: Set Up Your Working Environment</a></li>
-<li class="chapter" data-level="3.1.2" data-path="assignment-1-building-your-capstone-dockerfile.html"><a href="assignment-1-building-your-capstone-dockerfile.html#step-2-create-your-working-branch"><i class="fa fa-check"></i><b>3.1.2</b> Step 2: Create Your Working Branch</a></li>
+<li class="chapter" data-level="3.1.2" data-path="assignment-1-building-your-capstone-dockerfile.html"><a href="assignment-1-building-your-capstone-dockerfile.html#step-2-switch-to-your-working-branch-if-needed"><i class="fa fa-check"></i><b>3.1.2</b> Step 2: Switch to Your Working Branch (if needed)</a></li>
 <li class="chapter" data-level="3.1.3" data-path="assignment-1-building-your-capstone-dockerfile.html"><a href="assignment-1-building-your-capstone-dockerfile.html#step-3-analyze-your-capstone-project-needs"><i class="fa fa-check"></i><b>3.1.3</b> Step 3: Analyze Your Capstone Project Needs</a></li>
 </ul></li>
 <li class="chapter" data-level="3.2" data-path="assignment-1-building-your-capstone-dockerfile.html"><a href="assignment-1-building-your-capstone-dockerfile.html#phase-2-dockerfile-development"><i class="fa fa-check"></i><b>3.2</b> Phase 2: Dockerfile Development</a>
@@ -212,7 +239,7 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="4.1" data-path="assignment-2-building-your-capstone-github-action.html"><a href="assignment-2-building-your-capstone-github-action.html#phase-1-repository-setup-and-planning-1"><i class="fa fa-check"></i><b>4.1</b> Phase 1: Repository Setup and Planning</a>
 <ul>
 <li class="chapter" data-level="4.1.1" data-path="assignment-2-building-your-capstone-github-action.html"><a href="assignment-2-building-your-capstone-github-action.html#step-1-set-up-your-working-environment-1"><i class="fa fa-check"></i><b>4.1.1</b> Step 1: Set Up Your Working Environment</a></li>
-<li class="chapter" data-level="4.1.2" data-path="assignment-2-building-your-capstone-github-action.html"><a href="assignment-2-building-your-capstone-github-action.html#step-2-create-your-working-branch-1"><i class="fa fa-check"></i><b>4.1.2</b> Step 2: Create Your Working Branch</a></li>
+<li class="chapter" data-level="4.1.2" data-path="assignment-2-building-your-capstone-github-action.html"><a href="assignment-2-building-your-capstone-github-action.html#step-2-create-your-working-branch"><i class="fa fa-check"></i><b>4.1.2</b> Step 2: Create Your Working Branch</a></li>
 <li class="chapter" data-level="4.1.3" data-path="assignment-2-building-your-capstone-github-action.html"><a href="assignment-2-building-your-capstone-github-action.html#step-3-plan-your-github-action"><i class="fa fa-check"></i><b>4.1.3</b> Step 3: Plan Your GitHub Action</a></li>
 </ul></li>
 <li class="chapter" data-level="4.2" data-path="assignment-2-building-your-capstone-github-action.html"><a href="assignment-2-building-your-capstone-github-action.html#phase-2-github-action-development"><i class="fa fa-check"></i><b>4.2</b> Phase 2: GitHub Action Development</a>
@@ -351,8 +378,8 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <li>Review the existing template to understand what’s already provided</li>
 </ul>
 </div>
-<div id="step-2-create-your-working-branch-1" class="section level3 hasAnchor" number="4.1.2">
-<h3><span class="header-section-number">4.1.2</span> Step 2: Create Your Working Branch<a href="assignment-2-building-your-capstone-github-action.html#step-2-create-your-working-branch-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="step-2-create-your-working-branch" class="section level3 hasAnchor" number="4.1.2">
+<h3><span class="header-section-number">4.1.2</span> Step 2: Create Your Working Branch<a href="assignment-2-building-your-capstone-github-action.html#step-2-create-your-working-branch" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <ul>
 <li>Create a new branch for this assignment (e.g., <code>github-action-assignment</code> or <code>gha-build</code>)</li>
 <li>Switch to this branch before making any changes</li>
@@ -448,45 +475,45 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <h3><span class="header-section-number">4.3.3</span> Step 9: Common Implementation Patterns<a href="assignment-2-building-your-capstone-github-action.html#step-9-common-implementation-patterns" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <div id="for-code-qualitytesting" class="section level4 hasAnchor" number="4.3.3.1">
 <h4><span class="header-section-number">4.3.3.1</span> For Code Quality/Testing:<a href="assignment-2-building-your-capstone-github-action.html#for-code-qualitytesting" class="anchor-section" aria-label="Anchor link to header"></a></h4>
-<div class="sourceCode" id="cb3"><pre class="sourceCode yaml"><code class="sourceCode yaml"><span id="cb3-1"><a href="assignment-2-building-your-capstone-github-action.html#cb3-1" tabindex="-1"></a><span class="fu">name</span><span class="kw">:</span><span class="at"> Code Quality Check</span></span>
-<span id="cb3-2"><a href="assignment-2-building-your-capstone-github-action.html#cb3-2" tabindex="-1"></a><span class="fu">on</span><span class="kw">:</span><span class="at"> pull_request</span></span>
-<span id="cb3-3"><a href="assignment-2-building-your-capstone-github-action.html#cb3-3" tabindex="-1"></a><span class="fu">jobs</span><span class="kw">:</span></span>
-<span id="cb3-4"><a href="assignment-2-building-your-capstone-github-action.html#cb3-4" tabindex="-1"></a><span class="at">  </span><span class="fu">quality-check</span><span class="kw">:</span></span>
-<span id="cb3-5"><a href="assignment-2-building-your-capstone-github-action.html#cb3-5" tabindex="-1"></a><span class="at">    </span><span class="fu">runs-on</span><span class="kw">:</span><span class="at"> ubuntu-latest</span></span>
-<span id="cb3-6"><a href="assignment-2-building-your-capstone-github-action.html#cb3-6" tabindex="-1"></a><span class="at">    </span><span class="fu">steps</span><span class="kw">:</span></span>
-<span id="cb3-7"><a href="assignment-2-building-your-capstone-github-action.html#cb3-7" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">uses</span><span class="kw">:</span><span class="at"> actions/checkout@v4</span></span>
-<span id="cb3-8"><a href="assignment-2-building-your-capstone-github-action.html#cb3-8" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">name</span><span class="kw">:</span><span class="at"> Run quality checks</span></span>
-<span id="cb3-9"><a href="assignment-2-building-your-capstone-github-action.html#cb3-9" tabindex="-1"></a><span class="fu">        run</span><span class="kw">: </span><span class="ch">|</span></span>
-<span id="cb3-10"><a href="assignment-2-building-your-capstone-github-action.html#cb3-10" tabindex="-1"></a>          # Your quality check commands here</span>
-<span id="cb3-11"><a href="assignment-2-building-your-capstone-github-action.html#cb3-11" tabindex="-1"></a>          echo &quot;Running code quality checks...&quot;</span></code></pre></div>
-</div>
-<div id="for-data-analysis" class="section level4 hasAnchor" number="4.3.3.2">
-<h4><span class="header-section-number">4.3.3.2</span> For Data Analysis:<a href="assignment-2-building-your-capstone-github-action.html#for-data-analysis" class="anchor-section" aria-label="Anchor link to header"></a></h4>
-<div class="sourceCode" id="cb4"><pre class="sourceCode yaml"><code class="sourceCode yaml"><span id="cb4-1"><a href="assignment-2-building-your-capstone-github-action.html#cb4-1" tabindex="-1"></a><span class="fu">name</span><span class="kw">:</span><span class="at"> Automated Analysis</span></span>
-<span id="cb4-2"><a href="assignment-2-building-your-capstone-github-action.html#cb4-2" tabindex="-1"></a><span class="fu">on</span><span class="kw">:</span><span class="at"> workflow_dispatch</span></span>
-<span id="cb4-3"><a href="assignment-2-building-your-capstone-github-action.html#cb4-3" tabindex="-1"></a><span class="fu">jobs</span><span class="kw">:</span></span>
-<span id="cb4-4"><a href="assignment-2-building-your-capstone-github-action.html#cb4-4" tabindex="-1"></a><span class="at">  </span><span class="fu">analyze</span><span class="kw">:</span></span>
-<span id="cb4-5"><a href="assignment-2-building-your-capstone-github-action.html#cb4-5" tabindex="-1"></a><span class="at">    </span><span class="fu">runs-on</span><span class="kw">:</span><span class="at"> ubuntu-latest</span></span>
-<span id="cb4-6"><a href="assignment-2-building-your-capstone-github-action.html#cb4-6" tabindex="-1"></a><span class="at">    </span><span class="fu">container</span><span class="kw">:</span></span>
-<span id="cb4-7"><a href="assignment-2-building-your-capstone-github-action.html#cb4-7" tabindex="-1"></a><span class="at">      </span><span class="fu">image</span><span class="kw">:</span><span class="at"> jhudsl/ottr_python:main</span><span class="co">  # Example with R and Python</span></span>
-<span id="cb4-8"><a href="assignment-2-building-your-capstone-github-action.html#cb4-8" tabindex="-1"></a><span class="at">    </span><span class="fu">steps</span><span class="kw">:</span></span>
-<span id="cb4-9"><a href="assignment-2-building-your-capstone-github-action.html#cb4-9" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">uses</span><span class="kw">:</span><span class="at"> actions/checkout@v4</span></span>
-<span id="cb4-10"><a href="assignment-2-building-your-capstone-github-action.html#cb4-10" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">name</span><span class="kw">:</span><span class="at"> Run analysis</span></span>
-<span id="cb4-11"><a href="assignment-2-building-your-capstone-github-action.html#cb4-11" tabindex="-1"></a><span class="fu">        run</span><span class="kw">: </span><span class="ch">|</span></span>
-<span id="cb4-12"><a href="assignment-2-building-your-capstone-github-action.html#cb4-12" tabindex="-1"></a>          # Your analysis commands here</span></code></pre></div>
-</div>
-<div id="for-documentation" class="section level4 hasAnchor" number="4.3.3.3">
-<h4><span class="header-section-number">4.3.3.3</span> For Documentation:<a href="assignment-2-building-your-capstone-github-action.html#for-documentation" class="anchor-section" aria-label="Anchor link to header"></a></h4>
-<div class="sourceCode" id="cb5"><pre class="sourceCode yaml"><code class="sourceCode yaml"><span id="cb5-1"><a href="assignment-2-building-your-capstone-github-action.html#cb5-1" tabindex="-1"></a><span class="fu">name</span><span class="kw">:</span><span class="at"> Generate Documentation</span></span>
-<span id="cb5-2"><a href="assignment-2-building-your-capstone-github-action.html#cb5-2" tabindex="-1"></a><span class="fu">on</span><span class="kw">:</span><span class="at"> push</span></span>
+<div class="sourceCode" id="cb5"><pre class="sourceCode yaml"><code class="sourceCode yaml"><span id="cb5-1"><a href="assignment-2-building-your-capstone-github-action.html#cb5-1" tabindex="-1"></a><span class="fu">name</span><span class="kw">:</span><span class="at"> Code Quality Check</span></span>
+<span id="cb5-2"><a href="assignment-2-building-your-capstone-github-action.html#cb5-2" tabindex="-1"></a><span class="fu">on</span><span class="kw">:</span><span class="at"> pull_request</span></span>
 <span id="cb5-3"><a href="assignment-2-building-your-capstone-github-action.html#cb5-3" tabindex="-1"></a><span class="fu">jobs</span><span class="kw">:</span></span>
-<span id="cb5-4"><a href="assignment-2-building-your-capstone-github-action.html#cb5-4" tabindex="-1"></a><span class="at">  </span><span class="fu">docs</span><span class="kw">:</span></span>
+<span id="cb5-4"><a href="assignment-2-building-your-capstone-github-action.html#cb5-4" tabindex="-1"></a><span class="at">  </span><span class="fu">quality-check</span><span class="kw">:</span></span>
 <span id="cb5-5"><a href="assignment-2-building-your-capstone-github-action.html#cb5-5" tabindex="-1"></a><span class="at">    </span><span class="fu">runs-on</span><span class="kw">:</span><span class="at"> ubuntu-latest</span></span>
 <span id="cb5-6"><a href="assignment-2-building-your-capstone-github-action.html#cb5-6" tabindex="-1"></a><span class="at">    </span><span class="fu">steps</span><span class="kw">:</span></span>
 <span id="cb5-7"><a href="assignment-2-building-your-capstone-github-action.html#cb5-7" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">uses</span><span class="kw">:</span><span class="at"> actions/checkout@v4</span></span>
-<span id="cb5-8"><a href="assignment-2-building-your-capstone-github-action.html#cb5-8" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">name</span><span class="kw">:</span><span class="at"> Generate docs</span></span>
+<span id="cb5-8"><a href="assignment-2-building-your-capstone-github-action.html#cb5-8" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">name</span><span class="kw">:</span><span class="at"> Run quality checks</span></span>
 <span id="cb5-9"><a href="assignment-2-building-your-capstone-github-action.html#cb5-9" tabindex="-1"></a><span class="fu">        run</span><span class="kw">: </span><span class="ch">|</span></span>
-<span id="cb5-10"><a href="assignment-2-building-your-capstone-github-action.html#cb5-10" tabindex="-1"></a>          # Documentation generation commands</span></code></pre></div>
+<span id="cb5-10"><a href="assignment-2-building-your-capstone-github-action.html#cb5-10" tabindex="-1"></a>          # Your quality check commands here</span>
+<span id="cb5-11"><a href="assignment-2-building-your-capstone-github-action.html#cb5-11" tabindex="-1"></a>          echo &quot;Running code quality checks...&quot;</span></code></pre></div>
+</div>
+<div id="for-data-analysis" class="section level4 hasAnchor" number="4.3.3.2">
+<h4><span class="header-section-number">4.3.3.2</span> For Data Analysis:<a href="assignment-2-building-your-capstone-github-action.html#for-data-analysis" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<div class="sourceCode" id="cb6"><pre class="sourceCode yaml"><code class="sourceCode yaml"><span id="cb6-1"><a href="assignment-2-building-your-capstone-github-action.html#cb6-1" tabindex="-1"></a><span class="fu">name</span><span class="kw">:</span><span class="at"> Automated Analysis</span></span>
+<span id="cb6-2"><a href="assignment-2-building-your-capstone-github-action.html#cb6-2" tabindex="-1"></a><span class="fu">on</span><span class="kw">:</span><span class="at"> workflow_dispatch</span></span>
+<span id="cb6-3"><a href="assignment-2-building-your-capstone-github-action.html#cb6-3" tabindex="-1"></a><span class="fu">jobs</span><span class="kw">:</span></span>
+<span id="cb6-4"><a href="assignment-2-building-your-capstone-github-action.html#cb6-4" tabindex="-1"></a><span class="at">  </span><span class="fu">analyze</span><span class="kw">:</span></span>
+<span id="cb6-5"><a href="assignment-2-building-your-capstone-github-action.html#cb6-5" tabindex="-1"></a><span class="at">    </span><span class="fu">runs-on</span><span class="kw">:</span><span class="at"> ubuntu-latest</span></span>
+<span id="cb6-6"><a href="assignment-2-building-your-capstone-github-action.html#cb6-6" tabindex="-1"></a><span class="at">    </span><span class="fu">container</span><span class="kw">:</span></span>
+<span id="cb6-7"><a href="assignment-2-building-your-capstone-github-action.html#cb6-7" tabindex="-1"></a><span class="at">      </span><span class="fu">image</span><span class="kw">:</span><span class="at"> jhudsl/ottr_python:main</span><span class="co">  # Example with R and Python</span></span>
+<span id="cb6-8"><a href="assignment-2-building-your-capstone-github-action.html#cb6-8" tabindex="-1"></a><span class="at">    </span><span class="fu">steps</span><span class="kw">:</span></span>
+<span id="cb6-9"><a href="assignment-2-building-your-capstone-github-action.html#cb6-9" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">uses</span><span class="kw">:</span><span class="at"> actions/checkout@v4</span></span>
+<span id="cb6-10"><a href="assignment-2-building-your-capstone-github-action.html#cb6-10" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">name</span><span class="kw">:</span><span class="at"> Run analysis</span></span>
+<span id="cb6-11"><a href="assignment-2-building-your-capstone-github-action.html#cb6-11" tabindex="-1"></a><span class="fu">        run</span><span class="kw">: </span><span class="ch">|</span></span>
+<span id="cb6-12"><a href="assignment-2-building-your-capstone-github-action.html#cb6-12" tabindex="-1"></a>          # Your analysis commands here</span></code></pre></div>
+</div>
+<div id="for-documentation" class="section level4 hasAnchor" number="4.3.3.3">
+<h4><span class="header-section-number">4.3.3.3</span> For Documentation:<a href="assignment-2-building-your-capstone-github-action.html#for-documentation" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<div class="sourceCode" id="cb7"><pre class="sourceCode yaml"><code class="sourceCode yaml"><span id="cb7-1"><a href="assignment-2-building-your-capstone-github-action.html#cb7-1" tabindex="-1"></a><span class="fu">name</span><span class="kw">:</span><span class="at"> Generate Documentation</span></span>
+<span id="cb7-2"><a href="assignment-2-building-your-capstone-github-action.html#cb7-2" tabindex="-1"></a><span class="fu">on</span><span class="kw">:</span><span class="at"> push</span></span>
+<span id="cb7-3"><a href="assignment-2-building-your-capstone-github-action.html#cb7-3" tabindex="-1"></a><span class="fu">jobs</span><span class="kw">:</span></span>
+<span id="cb7-4"><a href="assignment-2-building-your-capstone-github-action.html#cb7-4" tabindex="-1"></a><span class="at">  </span><span class="fu">docs</span><span class="kw">:</span></span>
+<span id="cb7-5"><a href="assignment-2-building-your-capstone-github-action.html#cb7-5" tabindex="-1"></a><span class="at">    </span><span class="fu">runs-on</span><span class="kw">:</span><span class="at"> ubuntu-latest</span></span>
+<span id="cb7-6"><a href="assignment-2-building-your-capstone-github-action.html#cb7-6" tabindex="-1"></a><span class="at">    </span><span class="fu">steps</span><span class="kw">:</span></span>
+<span id="cb7-7"><a href="assignment-2-building-your-capstone-github-action.html#cb7-7" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">uses</span><span class="kw">:</span><span class="at"> actions/checkout@v4</span></span>
+<span id="cb7-8"><a href="assignment-2-building-your-capstone-github-action.html#cb7-8" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">name</span><span class="kw">:</span><span class="at"> Generate docs</span></span>
+<span id="cb7-9"><a href="assignment-2-building-your-capstone-github-action.html#cb7-9" tabindex="-1"></a><span class="fu">        run</span><span class="kw">: </span><span class="ch">|</span></span>
+<span id="cb7-10"><a href="assignment-2-building-your-capstone-github-action.html#cb7-10" tabindex="-1"></a>          # Documentation generation commands</span></code></pre></div>
 </div>
 </div>
 </div>

@@ -120,6 +120,28 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
   
   div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 </style>
+<style type="text/css">
+/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
 
 <link rel="stylesheet" href="assets/style_ITN.css" type="text/css" />
 </head>
@@ -134,7 +156,7 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
       <nav role="navigation">
 
 <ul class="summary">
-<a href="https://hutchdatascience.org/" target="_blank"><img src="assets/big-dasl-stacked.png" style="width: 80%; padding-left: 34px; padding-top: 8px;"</a>
+<a href="https://hutchdatascience.org/" target="_blank"><img src="assets/ITN_logo.png" style="width: 80%; padding-left: 34px; padding-top: 8px;"</a>
 
 <li class="divider"></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>About this Course</a></li>
@@ -143,7 +165,8 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="1.1" data-path="introduction.html"><a href="introduction.html#motivation"><i class="fa fa-check"></i><b>1.1</b> Motivation</a></li>
 <li class="chapter" data-level="1.2" data-path="introduction.html"><a href="introduction.html#target-audience"><i class="fa fa-check"></i><b>1.2</b> Target Audience</a></li>
 <li class="chapter" data-level="1.3" data-path="introduction.html"><a href="introduction.html#curriculum"><i class="fa fa-check"></i><b>1.3</b> Curriculum</a></li>
-<li class="chapter" data-level="1.4" data-path="introduction.html"><a href="introduction.html#how-to-use-the-course"><i class="fa fa-check"></i><b>1.4</b> How to use the course</a></li>
+<li class="chapter" data-level="1.4" data-path="introduction.html"><a href="introduction.html#objectives"><i class="fa fa-check"></i><b>1.4</b> Objectives</a></li>
+<li class="chapter" data-level="1.5" data-path="introduction.html"><a href="introduction.html#how-to-use-the-course"><i class="fa fa-check"></i><b>1.5</b> How to use the course</a></li>
 </ul></li>
 <li class="chapter" data-level="2" data-path="setting-up-for-this-course.html"><a href="setting-up-for-this-course.html"><i class="fa fa-check"></i><b>2</b> Setting up for this course</a>
 <ul>
@@ -160,13 +183,17 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 <li class="chapter" data-level="2.3" data-path="setting-up-for-this-course.html"><a href="setting-up-for-this-course.html#phase-3-branch-creation-and-workflow"><i class="fa fa-check"></i><b>2.3</b> Phase 3: Branch Creation and Workflow</a>
 <ul>
-<li class="chapter" data-level="2.3.1" data-path="setting-up-for-this-course.html"><a href="setting-up-for-this-course.html#step-7-create-your-first-assignment-branch"><i class="fa fa-check"></i><b>2.3.1</b> Step 7: Create Your First Assignment Branch</a></li>
+<li class="chapter" data-level="2.3.1" data-path="setting-up-for-this-course.html"><a href="setting-up-for-this-course.html#step-6-create-your-first-assignment-branch"><i class="fa fa-check"></i><b>2.3.1</b> Step 6: Create Your First Assignment Branch</a></li>
 </ul></li>
-<li class="chapter" data-level="2.4" data-path="setting-up-for-this-course.html"><a href="setting-up-for-this-course.html#reminders-of-best-practices-for-success"><i class="fa fa-check"></i><b>2.4</b> Reminders of Best Practices for Success</a>
+<li class="chapter" data-level="2.4" data-path="setting-up-for-this-course.html"><a href="setting-up-for-this-course.html#your-setup-is-complete.-what-are-the-next-steps"><i class="fa fa-check"></i><b>2.4</b> Your Setup is Complete…. What are the Next Steps?</a>
 <ul>
-<li class="chapter" data-level="2.4.1" data-path="setting-up-for-this-course.html"><a href="setting-up-for-this-course.html#repository-organization"><i class="fa fa-check"></i><b>2.4.1</b> Repository Organization</a></li>
-<li class="chapter" data-level="2.4.2" data-path="setting-up-for-this-course.html"><a href="setting-up-for-this-course.html#pull-request-hygiene"><i class="fa fa-check"></i><b>2.4.2</b> Pull Request Hygiene</a></li>
-<li class="chapter" data-level="2.4.3" data-path="setting-up-for-this-course.html"><a href="setting-up-for-this-course.html#troubleshooting-common-issues"><i class="fa fa-check"></i><b>2.4.3</b> Troubleshooting Common Issues</a></li>
+<li class="chapter" data-level="2.4.1" data-path="setting-up-for-this-course.html"><a href="setting-up-for-this-course.html#reminders-of-best-practices-for-success-while-working-with-github"><i class="fa fa-check"></i><b>2.4.1</b> Reminders of Best Practices for Success while Working with GitHub</a></li>
+</ul></li>
+<li class="chapter" data-level="2.5" data-path="setting-up-for-this-course.html"><a href="setting-up-for-this-course.html#troubleshooting-common-issues"><i class="fa fa-check"></i><b>2.5</b> Troubleshooting Common Issues</a>
+<ul>
+<li class="chapter" data-level="2.5.1" data-path="setting-up-for-this-course.html"><a href="setting-up-for-this-course.html#repository-not-found-when-cloning"><i class="fa fa-check"></i><b>2.5.1</b> “Repository not found” when cloning:</a></li>
+<li class="chapter" data-level="2.5.2" data-path="setting-up-for-this-course.html"><a href="setting-up-for-this-course.html#permission-denied-when-pushing"><i class="fa fa-check"></i><b>2.5.2</b> “Permission denied” when pushing:</a></li>
+<li class="chapter" data-level="2.5.3" data-path="setting-up-for-this-course.html"><a href="setting-up-for-this-course.html#automated-evaluation-not-running"><i class="fa fa-check"></i><b>2.5.3</b> Automated evaluation not running:</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="assignment-1-building-your-capstone-dockerfile.html"><a href="assignment-1-building-your-capstone-dockerfile.html"><i class="fa fa-check"></i><b>3</b> Assignment 1: Building Your Capstone Dockerfile</a>
@@ -174,7 +201,7 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="3.1" data-path="assignment-1-building-your-capstone-dockerfile.html"><a href="assignment-1-building-your-capstone-dockerfile.html#phase-1-repository-setup-and-planning"><i class="fa fa-check"></i><b>3.1</b> Phase 1: Repository Setup and Planning</a>
 <ul>
 <li class="chapter" data-level="3.1.1" data-path="assignment-1-building-your-capstone-dockerfile.html"><a href="assignment-1-building-your-capstone-dockerfile.html#step-1-set-up-your-working-environment"><i class="fa fa-check"></i><b>3.1.1</b> Step 1: Set Up Your Working Environment</a></li>
-<li class="chapter" data-level="3.1.2" data-path="assignment-1-building-your-capstone-dockerfile.html"><a href="assignment-1-building-your-capstone-dockerfile.html#step-2-create-your-working-branch"><i class="fa fa-check"></i><b>3.1.2</b> Step 2: Create Your Working Branch</a></li>
+<li class="chapter" data-level="3.1.2" data-path="assignment-1-building-your-capstone-dockerfile.html"><a href="assignment-1-building-your-capstone-dockerfile.html#step-2-switch-to-your-working-branch-if-needed"><i class="fa fa-check"></i><b>3.1.2</b> Step 2: Switch to Your Working Branch (if needed)</a></li>
 <li class="chapter" data-level="3.1.3" data-path="assignment-1-building-your-capstone-dockerfile.html"><a href="assignment-1-building-your-capstone-dockerfile.html#step-3-analyze-your-capstone-project-needs"><i class="fa fa-check"></i><b>3.1.3</b> Step 3: Analyze Your Capstone Project Needs</a></li>
 </ul></li>
 <li class="chapter" data-level="3.2" data-path="assignment-1-building-your-capstone-dockerfile.html"><a href="assignment-1-building-your-capstone-dockerfile.html#phase-2-dockerfile-development"><i class="fa fa-check"></i><b>3.2</b> Phase 2: Dockerfile Development</a>
@@ -212,7 +239,7 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="4.1" data-path="assignment-2-building-your-capstone-github-action.html"><a href="assignment-2-building-your-capstone-github-action.html#phase-1-repository-setup-and-planning-1"><i class="fa fa-check"></i><b>4.1</b> Phase 1: Repository Setup and Planning</a>
 <ul>
 <li class="chapter" data-level="4.1.1" data-path="assignment-2-building-your-capstone-github-action.html"><a href="assignment-2-building-your-capstone-github-action.html#step-1-set-up-your-working-environment-1"><i class="fa fa-check"></i><b>4.1.1</b> Step 1: Set Up Your Working Environment</a></li>
-<li class="chapter" data-level="4.1.2" data-path="assignment-2-building-your-capstone-github-action.html"><a href="assignment-2-building-your-capstone-github-action.html#step-2-create-your-working-branch-1"><i class="fa fa-check"></i><b>4.1.2</b> Step 2: Create Your Working Branch</a></li>
+<li class="chapter" data-level="4.1.2" data-path="assignment-2-building-your-capstone-github-action.html"><a href="assignment-2-building-your-capstone-github-action.html#step-2-create-your-working-branch"><i class="fa fa-check"></i><b>4.1.2</b> Step 2: Create Your Working Branch</a></li>
 <li class="chapter" data-level="4.1.3" data-path="assignment-2-building-your-capstone-github-action.html"><a href="assignment-2-building-your-capstone-github-action.html#step-3-plan-your-github-action"><i class="fa fa-check"></i><b>4.1.3</b> Step 3: Plan Your GitHub Action</a></li>
 </ul></li>
 <li class="chapter" data-level="4.2" data-path="assignment-2-building-your-capstone-github-action.html"><a href="assignment-2-building-your-capstone-github-action.html#phase-2-github-action-development"><i class="fa fa-check"></i><b>4.2</b> Phase 2: GitHub Action Development</a>
@@ -356,10 +383,10 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <li>Click “Use this template” → “Create a new repository”</li>
 <li>Fill out the repository creation form:
 <ul>
+<li>Include all branches: Leave unchecked (we only need the main branch)</li>
 <li>Repository name: Choose a meaningful name (e.g., <code>your-username-capstone-sandbox</code>)</li>
 <li>Description: Add a brief description of your capstone project</li>
 <li>Visibility: Set to Public (required for the automated evaluation system to work)</li>
-<li>Include all branches: Leave unchecked (we only need the main branch)</li>
 </ul></li>
 </ul>
 </div>
@@ -377,7 +404,7 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <h2><span class="header-section-number">2.2</span> Phase 2: Local Setup and Cloning<a href="setting-up-for-this-course.html#phase-2-local-setup-and-cloning" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <div id="step-4-prepare-your-local-environment" class="section level3 hasAnchor" number="2.2.1">
 <h3><span class="header-section-number">2.2.1</span> Step 4: Prepare Your Local Environment<a href="setting-up-for-this-course.html#step-4-prepare-your-local-environment" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>For this course you may use whatever git client (GitHub Desktop, Git Kraken, etc) you are most comfortable with, or no git client at all.
+<p>For this course you may use whatever git client (GitHub Desktop, GitKraken, etc) you are most comfortable with, or no git client at all.
 If you need any recap on how to file pull requests remember you can return to the other courses in this series for reference. Particularly the <a href="https://jhudatascience.org/Adv_Reproducibility_in_Cancer_Informatics/using-version-control-with-github.html">Advanced Reproducibility course</a></p>
 </div>
 <div id="step-5-clone-your-repository" class="section level3 hasAnchor" number="2.2.2">
@@ -390,7 +417,7 @@ If you need any recap on how to file pull requests remember you can return to th
 <li>On your repository page, click the green “Code” button</li>
 <li>Copy the HTTPS URL (should look like: <code>https://github.com/yourusername/your-repo-name.git</code>)</li>
 </ul></li>
-<li><p>Clone the repository:</p>
+<li><p>Clone the repository, using the HTTPS URL you’ve just copied:</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb1-1"><a href="setting-up-for-this-course.html#cb1-1" tabindex="-1"></a><span class="co"># Navigate to where you want to store the project</span></span>
 <span id="cb1-2"><a href="setting-up-for-this-course.html#cb1-2" tabindex="-1"></a><span class="bu">cd</span> ~/Desktop  <span class="co"># or your preferred location</span></span>
 <span id="cb1-3"><a href="setting-up-for-this-course.html#cb1-3" tabindex="-1"></a></span>
@@ -406,7 +433,7 @@ If you need any recap on how to file pull requests remember you can return to th
 <ol style="list-style-type: decimal">
 <li>Open GitHub Desktop</li>
 <li>Click “Clone a repository from the Internet”</li>
-<li>Select your repository from the list or enter the URL</li>
+<li>Select your repository from the list or paste the URL you copied</li>
 <li>Choose a local path where you want to store the repository</li>
 <li>Click “Clone”</li>
 </ol>
@@ -415,9 +442,9 @@ If you need any recap on how to file pull requests remember you can return to th
 </div>
 <div id="phase-3-branch-creation-and-workflow" class="section level2 hasAnchor" number="2.3">
 <h2><span class="header-section-number">2.3</span> Phase 3: Branch Creation and Workflow<a href="setting-up-for-this-course.html#phase-3-branch-creation-and-workflow" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<div id="step-7-create-your-first-assignment-branch" class="section level3 hasAnchor" number="2.3.1">
-<h3><span class="header-section-number">2.3.1</span> Step 7: Create Your First Assignment Branch<a href="setting-up-for-this-course.html#step-7-create-your-first-assignment-branch" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>You may name your working branch whatever you like for these assignments.</p>
+<div id="step-6-create-your-first-assignment-branch" class="section level3 hasAnchor" number="2.3.1">
+<h3><span class="header-section-number">2.3.1</span> Step 6: Create Your First Assignment Branch<a href="setting-up-for-this-course.html#step-6-create-your-first-assignment-branch" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>You may name your working branch whatever you like for these assignments. The examples/instructions use the name <code>assignment-1-dockerfile</code>.</p>
 <div id="command-line-method" class="section level4 hasAnchor" number="2.3.1.1">
 <h4><span class="header-section-number">2.3.1.1</span> Command Line Method:<a href="setting-up-for-this-course.html#command-line-method" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <div class="sourceCode" id="cb2"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb2-1"><a href="setting-up-for-this-course.html#cb2-1" tabindex="-1"></a><span class="co"># Create and switch to a new branch for Assignment 1</span></span>
@@ -438,56 +465,50 @@ If you need any recap on how to file pull requests remember you can return to th
 </div>
 </div>
 </div>
-<div id="reminders-of-best-practices-for-success" class="section level2 hasAnchor" number="2.4">
-<h2><span class="header-section-number">2.4</span> Reminders of Best Practices for Success<a href="setting-up-for-this-course.html#reminders-of-best-practices-for-success" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<div id="repository-organization" class="section level3 hasAnchor" number="2.4.1">
-<h3><span class="header-section-number">2.4.1</span> Repository Organization<a href="setting-up-for-this-course.html#repository-organization" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="your-setup-is-complete.-what-are-the-next-steps" class="section level2 hasAnchor" number="2.4">
+<h2><span class="header-section-number">2.4</span> Your Setup is Complete…. What are the Next Steps?<a href="setting-up-for-this-course.html#your-setup-is-complete.-what-are-the-next-steps" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>This setup process creates the foundation for all your capstone assignments. The first two assignments will follow a similar pattern:</p>
+<p>create branch → make changes → commit → push → open PR → receive evaluation → iterate if needed.</p>
+<p>The automated evaluation system depends on this workflow, so following these steps precisely is crucial for getting your validation codes!</p>
+<p>Note that the validation codes are really only needed if you are participating in this capstone as a part of the Coursera or Leanpub platforms (for certification). If you are not taking this course for certification, there is no structure in place to verify the validation code you receive.</p>
+<div id="reminders-of-best-practices-for-success-while-working-with-github" class="section level3 hasAnchor" number="2.4.1">
+<h3><span class="header-section-number">2.4.1</span> Reminders of Best Practices for Success while Working with GitHub<a href="setting-up-for-this-course.html#reminders-of-best-practices-for-success-while-working-with-github" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <ul>
-<li>One branch per assignment - keeps work organized</li>
-<li>Descriptive commit messages - helps track your progress</li>
-<li>Regular pushes - protects your work and enables evaluation</li>
+<li>Use one branch per assignment - keeps work organized</li>
+<li>Write descriptive commit messages - helps track your progress</li>
+<li>Regularly push your work - protects your work and enables evaluation</li>
+<li>Use clear titles and descriptions for pull requests - will help you and your collaborators know what the work in the branch is</li>
+<li>Don’t merge your pull request before you get the validation code - outside of this assignment, wait for approval from a team member or collaborator</li>
+<li>Monitor automated feedback - respond to or handle issues identified by evaluation promptly</li>
 </ul>
 </div>
-<div id="pull-request-hygiene" class="section level3 hasAnchor" number="2.4.2">
-<h3><span class="header-section-number">2.4.2</span> Pull Request Hygiene<a href="setting-up-for-this-course.html#pull-request-hygiene" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<ul>
-<li>Clear titles and descriptions - will help you and your collaborators know what the work in the branch is.</li>
-<li>Don’t merge your PR before you get the validation code</li>
-<li>Monitor automated feedback - respond to evaluation comments promptly</li>
-</ul>
 </div>
-<div id="troubleshooting-common-issues" class="section level3 hasAnchor" number="2.4.3">
-<h3><span class="header-section-number">2.4.3</span> Troubleshooting Common Issues<a href="setting-up-for-this-course.html#troubleshooting-common-issues" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<div id="repository-not-found-when-cloning" class="section level4 hasAnchor" number="2.4.3.1">
-<h4><span class="header-section-number">2.4.3.1</span> “Repository not found” when cloning:<a href="setting-up-for-this-course.html#repository-not-found-when-cloning" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<div id="troubleshooting-common-issues" class="section level2 hasAnchor" number="2.5">
+<h2><span class="header-section-number">2.5</span> Troubleshooting Common Issues<a href="setting-up-for-this-course.html#troubleshooting-common-issues" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="repository-not-found-when-cloning" class="section level3 hasAnchor" number="2.5.1">
+<h3><span class="header-section-number">2.5.1</span> “Repository not found” when cloning:<a href="setting-up-for-this-course.html#repository-not-found-when-cloning" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <ul>
 <li>Check that the repository is public</li>
-<li>Verify the URL is correct</li>
+<li>Verify the URL you’ve copy/pasted is correct</li>
 <li>Ensure you have access to the repository</li>
 </ul>
 </div>
-<div id="permission-denied-when-pushing" class="section level4 hasAnchor" number="2.4.3.2">
-<h4><span class="header-section-number">2.4.3.2</span> “Permission denied” when pushing:<a href="setting-up-for-this-course.html#permission-denied-when-pushing" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<div id="permission-denied-when-pushing" class="section level3 hasAnchor" number="2.5.2">
+<h3><span class="header-section-number">2.5.2</span> “Permission denied” when pushing:<a href="setting-up-for-this-course.html#permission-denied-when-pushing" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <ul>
 <li>Check that you’re pushing to your own repository (not the template)</li>
 <li>Verify your Git credentials are set up correctly</li>
 <li>Try using a personal access token instead of password</li>
 </ul>
 </div>
-<div id="automated-evaluation-not-running" class="section level4 hasAnchor" number="2.4.3.3">
-<h4><span class="header-section-number">2.4.3.3</span> Automated evaluation not running:<a href="setting-up-for-this-course.html#automated-evaluation-not-running" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<div id="automated-evaluation-not-running" class="section level3 hasAnchor" number="2.5.3">
+<h3><span class="header-section-number">2.5.3</span> Automated evaluation not running:<a href="setting-up-for-this-course.html#automated-evaluation-not-running" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <ul>
-<li>Ensure your PR is against the main branch</li>
+<li>Ensure your pull request is against the main branch</li>
 <li>Check that required files are in the correct locations</li>
 <li>Verify the repository is public</li>
 </ul>
-<p>This setup process creates the foundation for all your capstone assignments.
-The first two assignment will follow a similar pattern:
-create branch → make changes → commit → push → open PR → receive evaluation → iterate if needed.
-The automated evaluation system depends on this workflow, so following these steps precisely is crucial for getting your validation codes!</p>
-<p>Note that the validation codes are really only needed for if you are doing this capstone as a part of the Coursera or Leanpub platforms (for certification). If you are not taking this course for certification you may ignore the validation codes.</p>
 
-</div>
 </div>
 </div>
 </div>

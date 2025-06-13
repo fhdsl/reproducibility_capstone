@@ -21,10 +21,10 @@ These credits are based on our [course contributors table guidelines](https://ww
 |Template Publishing Engineers|[Candace Savonen], [Carrie Wright], [Ava Hoffman]|
 |Publishing Maintenance Engineer|[Candace Savonen]|
 |Technical Publishing Stylists|[Carrie Wright], [Ava Hoffman], [Candace Savonen]|
-|Package Developers ([ottrpal]) [Candace Savonen], [Ava Hoffman], [Howard Baek], [Kate Isaac], [Carrie Wright], [John Muschelli]|
+|Package Developers ([ottrpal])|[Candace Savonen], [Ava Hoffman], [Howard Baek], [Kate Isaac], [Carrie Wright], [John Muschelli]|
 |**Art and Design**||
 |Figure Artist(s)| [Carrie Wright] [Carrie Wright] |
-|Videographer(s)| [Candace Savonen |
+|Videographer(s)| [Candace Savonen] |
 |**Funding**||
 |Funder(s)| Institution/individual who funded course including grant number|
 |Funding Staff| Staff members who help with funding|
@@ -43,7 +43,7 @@ These credits are based on our [course contributors table guidelines](https://ww
 ##  collate  en_US.UTF-8
 ##  ctype    en_US.UTF-8
 ##  tz       Etc/UTC
-##  date     2025-06-08
+##  date     2025-06-13
 ##  pandoc   3.1.1 @ /usr/local/bin/ (via rmarkdown)
 ## 
 ## ─ Packages ───────────────────────────────────────────────────────────────────
