@@ -1,3 +1,4 @@
+⚠️
 AnVIL
 Audiographer
 Audiography
@@ -6,6 +7,7 @@ BIPOC
 Bloomberg
 Bookdown
 chapt
+checkmark
 Coursera
 creativecommons
 css
@@ -26,6 +28,7 @@ Generis
 GH
 Github
 GitHub
+GitKraken
 https
 ies
 iframe
@@ -38,6 +41,7 @@ LastName
 Leanpub
 Licensor
 LICENSOR
+LLM
 Markua
 mentorship
 MERCHANTABILITY
@@ -47,9 +51,12 @@ NHGRI
 OTTR
 ottrpal
 ottrproject
+PATs
 Pandoc
 png
 pre
+preprint
+repo
 reproducibility
 rmarkdown
 RMarkdown
@@ -63,7 +70,7 @@ UE5
 underserved
 Videographer
 Videography
-WIPO	
+WIPO
 www
 Assignees
 dockerfile
@@ -71,6 +78,7 @@ evaluator's
 PRs
 Resubmission
 scm
+submenu
 YAML
 bioinformaticians
 bioinformatics
