@@ -120,6 +120,28 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
   
   div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 </style>
+<style type="text/css">
+/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
 
 <link rel="stylesheet" href="assets/style_ITN.css" type="text/css" />
 </head>
@@ -134,7 +156,7 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
       <nav role="navigation">
 
 <ul class="summary">
-<a href="https://hutchdatascience.org/" target="_blank"><img src="assets/big-dasl-stacked.png" style="width: 80%; padding-left: 34px; padding-top: 8px;"</a>
+<a href="https://hutchdatascience.org/" target="_blank"><img src="assets/ITN_logo.png" style="width: 80%; padding-left: 34px; padding-top: 8px;"</a>
 
 <li class="divider"></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>About this Course</a></li>
@@ -143,7 +165,8 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="1.1" data-path="introduction.html"><a href="introduction.html#motivation"><i class="fa fa-check"></i><b>1.1</b> Motivation</a></li>
 <li class="chapter" data-level="1.2" data-path="introduction.html"><a href="introduction.html#target-audience"><i class="fa fa-check"></i><b>1.2</b> Target Audience</a></li>
 <li class="chapter" data-level="1.3" data-path="introduction.html"><a href="introduction.html#curriculum"><i class="fa fa-check"></i><b>1.3</b> Curriculum</a></li>
-<li class="chapter" data-level="1.4" data-path="introduction.html"><a href="introduction.html#how-to-use-the-course"><i class="fa fa-check"></i><b>1.4</b> How to use the course</a></li>
+<li class="chapter" data-level="1.4" data-path="introduction.html"><a href="introduction.html#objectives"><i class="fa fa-check"></i><b>1.4</b> Objectives</a></li>
+<li class="chapter" data-level="1.5" data-path="introduction.html"><a href="introduction.html#how-to-use-the-course"><i class="fa fa-check"></i><b>1.5</b> How to use the course</a></li>
 </ul></li>
 <li class="chapter" data-level="2" data-path="setting-up-for-this-course.html"><a href="setting-up-for-this-course.html"><i class="fa fa-check"></i><b>2</b> Setting up for this course</a>
 <ul>
@@ -160,13 +183,17 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 <li class="chapter" data-level="2.3" data-path="setting-up-for-this-course.html"><a href="setting-up-for-this-course.html#phase-3-branch-creation-and-workflow"><i class="fa fa-check"></i><b>2.3</b> Phase 3: Branch Creation and Workflow</a>
 <ul>
-<li class="chapter" data-level="2.3.1" data-path="setting-up-for-this-course.html"><a href="setting-up-for-this-course.html#step-7-create-your-first-assignment-branch"><i class="fa fa-check"></i><b>2.3.1</b> Step 7: Create Your First Assignment Branch</a></li>
+<li class="chapter" data-level="2.3.1" data-path="setting-up-for-this-course.html"><a href="setting-up-for-this-course.html#step-6-create-your-first-assignment-branch"><i class="fa fa-check"></i><b>2.3.1</b> Step 6: Create Your First Assignment Branch</a></li>
 </ul></li>
-<li class="chapter" data-level="2.4" data-path="setting-up-for-this-course.html"><a href="setting-up-for-this-course.html#reminders-of-best-practices-for-success"><i class="fa fa-check"></i><b>2.4</b> Reminders of Best Practices for Success</a>
+<li class="chapter" data-level="2.4" data-path="setting-up-for-this-course.html"><a href="setting-up-for-this-course.html#your-setup-is-complete.-what-are-the-next-steps"><i class="fa fa-check"></i><b>2.4</b> Your Setup is Complete…. What are the Next Steps?</a>
 <ul>
-<li class="chapter" data-level="2.4.1" data-path="setting-up-for-this-course.html"><a href="setting-up-for-this-course.html#repository-organization"><i class="fa fa-check"></i><b>2.4.1</b> Repository Organization</a></li>
-<li class="chapter" data-level="2.4.2" data-path="setting-up-for-this-course.html"><a href="setting-up-for-this-course.html#pull-request-hygiene"><i class="fa fa-check"></i><b>2.4.2</b> Pull Request Hygiene</a></li>
-<li class="chapter" data-level="2.4.3" data-path="setting-up-for-this-course.html"><a href="setting-up-for-this-course.html#troubleshooting-common-issues"><i class="fa fa-check"></i><b>2.4.3</b> Troubleshooting Common Issues</a></li>
+<li class="chapter" data-level="2.4.1" data-path="setting-up-for-this-course.html"><a href="setting-up-for-this-course.html#reminders-of-best-practices-for-success-while-working-with-github"><i class="fa fa-check"></i><b>2.4.1</b> Reminders of Best Practices for Success while Working with GitHub</a></li>
+</ul></li>
+<li class="chapter" data-level="2.5" data-path="setting-up-for-this-course.html"><a href="setting-up-for-this-course.html#troubleshooting-common-issues"><i class="fa fa-check"></i><b>2.5</b> Troubleshooting Common Issues</a>
+<ul>
+<li class="chapter" data-level="2.5.1" data-path="setting-up-for-this-course.html"><a href="setting-up-for-this-course.html#repository-not-found-when-cloning"><i class="fa fa-check"></i><b>2.5.1</b> “Repository not found” when cloning:</a></li>
+<li class="chapter" data-level="2.5.2" data-path="setting-up-for-this-course.html"><a href="setting-up-for-this-course.html#permission-denied-when-pushing"><i class="fa fa-check"></i><b>2.5.2</b> “Permission denied” when pushing:</a></li>
+<li class="chapter" data-level="2.5.3" data-path="setting-up-for-this-course.html"><a href="setting-up-for-this-course.html#automated-evaluation-not-running"><i class="fa fa-check"></i><b>2.5.3</b> Automated evaluation not running:</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="assignment-1-building-your-capstone-dockerfile.html"><a href="assignment-1-building-your-capstone-dockerfile.html"><i class="fa fa-check"></i><b>3</b> Assignment 1: Building Your Capstone Dockerfile</a>
@@ -174,32 +201,31 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="3.1" data-path="assignment-1-building-your-capstone-dockerfile.html"><a href="assignment-1-building-your-capstone-dockerfile.html#phase-1-repository-setup-and-planning"><i class="fa fa-check"></i><b>3.1</b> Phase 1: Repository Setup and Planning</a>
 <ul>
 <li class="chapter" data-level="3.1.1" data-path="assignment-1-building-your-capstone-dockerfile.html"><a href="assignment-1-building-your-capstone-dockerfile.html#step-1-set-up-your-working-environment"><i class="fa fa-check"></i><b>3.1.1</b> Step 1: Set Up Your Working Environment</a></li>
-<li class="chapter" data-level="3.1.2" data-path="assignment-1-building-your-capstone-dockerfile.html"><a href="assignment-1-building-your-capstone-dockerfile.html#step-2-create-your-working-branch"><i class="fa fa-check"></i><b>3.1.2</b> Step 2: Create Your Working Branch</a></li>
+<li class="chapter" data-level="3.1.2" data-path="assignment-1-building-your-capstone-dockerfile.html"><a href="assignment-1-building-your-capstone-dockerfile.html#step-2-switch-to-your-working-branch-if-needed"><i class="fa fa-check"></i><b>3.1.2</b> Step 2: Switch to Your Working Branch (if needed)</a></li>
 <li class="chapter" data-level="3.1.3" data-path="assignment-1-building-your-capstone-dockerfile.html"><a href="assignment-1-building-your-capstone-dockerfile.html#step-3-analyze-your-capstone-project-needs"><i class="fa fa-check"></i><b>3.1.3</b> Step 3: Analyze Your Capstone Project Needs</a></li>
 </ul></li>
 <li class="chapter" data-level="3.2" data-path="assignment-1-building-your-capstone-dockerfile.html"><a href="assignment-1-building-your-capstone-dockerfile.html#phase-2-dockerfile-development"><i class="fa fa-check"></i><b>3.2</b> Phase 2: Dockerfile Development</a>
 <ul>
 <li class="chapter" data-level="3.2.1" data-path="assignment-1-building-your-capstone-dockerfile.html"><a href="assignment-1-building-your-capstone-dockerfile.html#step-4-examine-the-base-setup"><i class="fa fa-check"></i><b>3.2.1</b> Step 4: Examine the Base Setup</a></li>
 <li class="chapter" data-level="3.2.2" data-path="assignment-1-building-your-capstone-dockerfile.html"><a href="assignment-1-building-your-capstone-dockerfile.html#step-5-add-packages-incrementally"><i class="fa fa-check"></i><b>3.2.2</b> Step 5: Add Packages Incrementally</a></li>
-<li class="chapter" data-level="3.2.3" data-path="assignment-1-building-your-capstone-dockerfile.html"><a href="assignment-1-building-your-capstone-dockerfile.html#step-6-build-locally-if-working-on-your-computer"><i class="fa fa-check"></i><b>3.2.3</b> Step 6: Build Locally (If Working on Your Computer)</a></li>
+<li class="chapter" data-level="3.2.3" data-path="assignment-1-building-your-capstone-dockerfile.html"><a href="assignment-1-building-your-capstone-dockerfile.html#step-6-build-locally"><i class="fa fa-check"></i><b>3.2.3</b> Step 6: Build Locally</a></li>
 </ul></li>
 <li class="chapter" data-level="3.3" data-path="assignment-1-building-your-capstone-dockerfile.html"><a href="assignment-1-building-your-capstone-dockerfile.html#phase-3-testing-and-iteration"><i class="fa fa-check"></i><b>3.3</b> Phase 3: Testing and Iteration</a>
 <ul>
 <li class="chapter" data-level="3.3.1" data-path="assignment-1-building-your-capstone-dockerfile.html"><a href="assignment-1-building-your-capstone-dockerfile.html#step-7-open-your-pull-request"><i class="fa fa-check"></i><b>3.3.1</b> Step 7: Open Your Pull Request</a></li>
-<li class="chapter" data-level="3.3.2" data-path="assignment-1-building-your-capstone-dockerfile.html"><a href="assignment-1-building-your-capstone-dockerfile.html#step-8-monitor-the-automated-testing"><i class="fa fa-check"></i><b>3.3.2</b> Step 8: Monitor the Automated Testing</a></li>
-<li class="chapter" data-level="3.3.3" data-path="assignment-1-building-your-capstone-dockerfile.html"><a href="assignment-1-building-your-capstone-dockerfile.html#step-9-interpret-the-results"><i class="fa fa-check"></i><b>3.3.3</b> Step 9: Interpret the Results</a></li>
+<li class="chapter" data-level="3.3.2" data-path="assignment-1-building-your-capstone-dockerfile.html"><a href="assignment-1-building-your-capstone-dockerfile.html#step-8-monitor-the-automated-testing-interpret-the-results"><i class="fa fa-check"></i><b>3.3.2</b> Step 8: Monitor the Automated Testing &amp; Interpret the Results</a></li>
 </ul></li>
 <li class="chapter" data-level="3.4" data-path="assignment-1-building-your-capstone-dockerfile.html"><a href="assignment-1-building-your-capstone-dockerfile.html#phase-4-troubleshooting-and-refinement"><i class="fa fa-check"></i><b>3.4</b> Phase 4: Troubleshooting and Refinement</a>
 <ul>
-<li class="chapter" data-level="3.4.1" data-path="assignment-1-building-your-capstone-dockerfile.html"><a href="assignment-1-building-your-capstone-dockerfile.html#step-10-debug-build-failures"><i class="fa fa-check"></i><b>3.4.1</b> Step 10: Debug Build Failures</a></li>
-<li class="chapter" data-level="3.4.2" data-path="assignment-1-building-your-capstone-dockerfile.html"><a href="assignment-1-building-your-capstone-dockerfile.html#step-11-iterate-until-success"><i class="fa fa-check"></i><b>3.4.2</b> Step 11: Iterate Until Success</a></li>
+<li class="chapter" data-level="3.4.1" data-path="assignment-1-building-your-capstone-dockerfile.html"><a href="assignment-1-building-your-capstone-dockerfile.html#step-9-debug-build-failures"><i class="fa fa-check"></i><b>3.4.1</b> Step 9: Debug Build Failures</a></li>
+<li class="chapter" data-level="3.4.2" data-path="assignment-1-building-your-capstone-dockerfile.html"><a href="assignment-1-building-your-capstone-dockerfile.html#step-10-iterate-until-success"><i class="fa fa-check"></i><b>3.4.2</b> Step 10: Iterate Until Success</a></li>
 </ul></li>
 <li class="chapter" data-level="3.5" data-path="assignment-1-building-your-capstone-dockerfile.html"><a href="assignment-1-building-your-capstone-dockerfile.html#phase-5-completion"><i class="fa fa-check"></i><b>3.5</b> Phase 5: Completion</a>
 <ul>
-<li class="chapter" data-level="3.5.1" data-path="assignment-1-building-your-capstone-dockerfile.html"><a href="assignment-1-building-your-capstone-dockerfile.html#step-13-collect-your-validation-code"><i class="fa fa-check"></i><b>3.5.1</b> Step 13: Collect Your Validation Code</a></li>
-<li class="chapter" data-level="3.5.2" data-path="assignment-1-building-your-capstone-dockerfile.html"><a href="assignment-1-building-your-capstone-dockerfile.html#step-14-submit-your-quiz"><i class="fa fa-check"></i><b>3.5.2</b> Step 14: Submit Your Quiz</a></li>
+<li class="chapter" data-level="3.5.1" data-path="assignment-1-building-your-capstone-dockerfile.html"><a href="assignment-1-building-your-capstone-dockerfile.html#step-11-collect-your-validation-code"><i class="fa fa-check"></i><b>3.5.1</b> Step 11: Collect Your Validation Code</a></li>
+<li class="chapter" data-level="3.5.2" data-path="assignment-1-building-your-capstone-dockerfile.html"><a href="assignment-1-building-your-capstone-dockerfile.html#step-12-submit-your-quiz"><i class="fa fa-check"></i><b>3.5.2</b> Step 12: Submit Your Quiz</a></li>
 </ul></li>
-<li class="chapter" data-level="3.6" data-path="assignment-1-building-your-capstone-dockerfile.html"><a href="assignment-1-building-your-capstone-dockerfile.html#pro-tips-for-success"><i class="fa fa-check"></i><b>3.6</b> Pro Tips for Success</a>
+<li class="chapter" data-level="3.6" data-path="assignment-1-building-your-capstone-dockerfile.html"><a href="assignment-1-building-your-capstone-dockerfile.html#suggestions-for-troubleshooting-and-best-practices"><i class="fa fa-check"></i><b>3.6</b> Suggestions for Troubleshooting and Best Practices</a>
 <ul>
 <li class="chapter" data-level="3.6.1" data-path="assignment-1-building-your-capstone-dockerfile.html"><a href="assignment-1-building-your-capstone-dockerfile.html#start-simple"><i class="fa fa-check"></i><b>3.6.1</b> Start Simple</a></li>
 <li class="chapter" data-level="3.6.2" data-path="assignment-1-building-your-capstone-dockerfile.html"><a href="assignment-1-building-your-capstone-dockerfile.html#leverage-the-automated-testing"><i class="fa fa-check"></i><b>3.6.2</b> Leverage the Automated Testing</a></li>
@@ -212,14 +238,14 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="4.1" data-path="assignment-2-building-your-capstone-github-action.html"><a href="assignment-2-building-your-capstone-github-action.html#phase-1-repository-setup-and-planning-1"><i class="fa fa-check"></i><b>4.1</b> Phase 1: Repository Setup and Planning</a>
 <ul>
 <li class="chapter" data-level="4.1.1" data-path="assignment-2-building-your-capstone-github-action.html"><a href="assignment-2-building-your-capstone-github-action.html#step-1-set-up-your-working-environment-1"><i class="fa fa-check"></i><b>4.1.1</b> Step 1: Set Up Your Working Environment</a></li>
-<li class="chapter" data-level="4.1.2" data-path="assignment-2-building-your-capstone-github-action.html"><a href="assignment-2-building-your-capstone-github-action.html#step-2-create-your-working-branch-1"><i class="fa fa-check"></i><b>4.1.2</b> Step 2: Create Your Working Branch</a></li>
-<li class="chapter" data-level="4.1.3" data-path="assignment-2-building-your-capstone-github-action.html"><a href="assignment-2-building-your-capstone-github-action.html#step-3-plan-your-github-action"><i class="fa fa-check"></i><b>4.1.3</b> Step 3: Plan Your GitHub Action</a></li>
+<li class="chapter" data-level="4.1.2" data-path="assignment-2-building-your-capstone-github-action.html"><a href="assignment-2-building-your-capstone-github-action.html#step-2-create-your-working-branch"><i class="fa fa-check"></i><b>4.1.2</b> Step 2: Create Your Working Branch</a></li>
+<li class="chapter" data-level="4.1.3" data-path="assignment-2-building-your-capstone-github-action.html"><a href="assignment-2-building-your-capstone-github-action.html#step-3-move-file-to-correct-location"><i class="fa fa-check"></i><b>4.1.3</b> Step 3: Move File to Correct Location</a></li>
+<li class="chapter" data-level="4.1.4" data-path="assignment-2-building-your-capstone-github-action.html"><a href="assignment-2-building-your-capstone-github-action.html#step-4-plan-your-github-action"><i class="fa fa-check"></i><b>4.1.4</b> Step 4: Plan Your GitHub Action</a></li>
 </ul></li>
 <li class="chapter" data-level="4.2" data-path="assignment-2-building-your-capstone-github-action.html"><a href="assignment-2-building-your-capstone-github-action.html#phase-2-github-action-development"><i class="fa fa-check"></i><b>4.2</b> Phase 2: GitHub Action Development</a>
 <ul>
-<li class="chapter" data-level="4.2.1" data-path="assignment-2-building-your-capstone-github-action.html"><a href="assignment-2-building-your-capstone-github-action.html#step-4-understand-the-template-structure"><i class="fa fa-check"></i><b>4.2.1</b> Step 4: Understand the Template Structure</a></li>
-<li class="chapter" data-level="4.2.2" data-path="assignment-2-building-your-capstone-github-action.html"><a href="assignment-2-building-your-capstone-github-action.html#step-5-move-file-to-correct-location"><i class="fa fa-check"></i><b>4.2.2</b> Step 5: Move File to Correct Location</a></li>
-<li class="chapter" data-level="4.2.3" data-path="assignment-2-building-your-capstone-github-action.html"><a href="assignment-2-building-your-capstone-github-action.html#step-6-define-your-actions-purpose"><i class="fa fa-check"></i><b>4.2.3</b> Step 6: Define Your Action’s Purpose</a></li>
+<li class="chapter" data-level="4.2.1" data-path="assignment-2-building-your-capstone-github-action.html"><a href="assignment-2-building-your-capstone-github-action.html#step-5-understand-the-template-structure"><i class="fa fa-check"></i><b>4.2.1</b> Step 5: Understand the Template Structure</a></li>
+<li class="chapter" data-level="4.2.2" data-path="assignment-2-building-your-capstone-github-action.html"><a href="assignment-2-building-your-capstone-github-action.html#step-6-define-your-actions-purpose"><i class="fa fa-check"></i><b>4.2.2</b> Step 6: Define Your Action’s Purpose</a></li>
 </ul></li>
 <li class="chapter" data-level="4.3" data-path="assignment-2-building-your-capstone-github-action.html"><a href="assignment-2-building-your-capstone-github-action.html#phase-3-implementation-strategies"><i class="fa fa-check"></i><b>4.3</b> Phase 3: Implementation Strategies</a>
 <ul>
@@ -230,19 +256,19 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="4.4" data-path="assignment-2-building-your-capstone-github-action.html"><a href="assignment-2-building-your-capstone-github-action.html#phase-4-testing-and-iteration"><i class="fa fa-check"></i><b>4.4</b> Phase 4: Testing and Iteration</a>
 <ul>
 <li class="chapter" data-level="4.4.1" data-path="assignment-2-building-your-capstone-github-action.html"><a href="assignment-2-building-your-capstone-github-action.html#step-10-open-your-pull-request"><i class="fa fa-check"></i><b>4.4.1</b> Step 10: Open Your Pull Request</a></li>
-<li class="chapter" data-level="4.4.2" data-path="assignment-2-building-your-capstone-github-action.html"><a href="assignment-2-building-your-capstone-github-action.html#step-11-monitor-automated-evaluation"><i class="fa fa-check"></i><b>4.4.2</b> Step 11: Monitor Automated Evaluation</a></li>
-<li class="chapter" data-level="4.4.3" data-path="assignment-2-building-your-capstone-github-action.html"><a href="assignment-2-building-your-capstone-github-action.html#step-12-interpret-evaluation-results"><i class="fa fa-check"></i><b>4.4.3</b> Step 12: Interpret Evaluation Results</a></li>
+<li class="chapter" data-level="4.4.2" data-path="assignment-2-building-your-capstone-github-action.html"><a href="assignment-2-building-your-capstone-github-action.html#step-11-monitor-automated-evaluation-interpret-evaluation-results"><i class="fa fa-check"></i><b>4.4.2</b> Step 11: Monitor Automated Evaluation &amp; Interpret Evaluation Results</a></li>
 </ul></li>
 <li class="chapter" data-level="4.5" data-path="assignment-2-building-your-capstone-github-action.html"><a href="assignment-2-building-your-capstone-github-action.html#phase-5-troubleshooting-and-refinement"><i class="fa fa-check"></i><b>4.5</b> Phase 5: Troubleshooting and Refinement</a>
 <ul>
-<li class="chapter" data-level="4.5.1" data-path="assignment-2-building-your-capstone-github-action.html"><a href="assignment-2-building-your-capstone-github-action.html#step-13-debug-common-issues"><i class="fa fa-check"></i><b>4.5.1</b> Step 13: Debug Common Issues</a></li>
-<li class="chapter" data-level="4.5.2" data-path="assignment-2-building-your-capstone-github-action.html"><a href="assignment-2-building-your-capstone-github-action.html#step-15-iterate-until-success"><i class="fa fa-check"></i><b>4.5.2</b> Step 15: Iterate Until Success</a></li>
+<li class="chapter" data-level="4.5.1" data-path="assignment-2-building-your-capstone-github-action.html"><a href="assignment-2-building-your-capstone-github-action.html#step-12-debug-common-issues"><i class="fa fa-check"></i><b>4.5.1</b> Step 12: Debug Common Issues</a></li>
+<li class="chapter" data-level="4.5.2" data-path="assignment-2-building-your-capstone-github-action.html"><a href="assignment-2-building-your-capstone-github-action.html#step-13-apply-troubleshooting-strategies"><i class="fa fa-check"></i><b>4.5.2</b> Step 13: Apply Troubleshooting Strategies</a></li>
+<li class="chapter" data-level="4.5.3" data-path="assignment-2-building-your-capstone-github-action.html"><a href="assignment-2-building-your-capstone-github-action.html#step-14-iterate-until-success"><i class="fa fa-check"></i><b>4.5.3</b> Step 14: Iterate Until Success</a></li>
 </ul></li>
 <li class="chapter" data-level="4.6" data-path="assignment-2-building-your-capstone-github-action.html"><a href="assignment-2-building-your-capstone-github-action.html#phase-6-completion"><i class="fa fa-check"></i><b>4.6</b> Phase 6: Completion</a>
 <ul>
-<li class="chapter" data-level="4.6.1" data-path="assignment-2-building-your-capstone-github-action.html"><a href="assignment-2-building-your-capstone-github-action.html#step-16-collect-your-validation-code"><i class="fa fa-check"></i><b>4.6.1</b> Step 16: Collect Your Validation Code</a></li>
+<li class="chapter" data-level="4.6.1" data-path="assignment-2-building-your-capstone-github-action.html"><a href="assignment-2-building-your-capstone-github-action.html#step-15-collect-your-validation-code"><i class="fa fa-check"></i><b>4.6.1</b> Step 15: Collect Your Validation Code</a></li>
 </ul></li>
-<li class="chapter" data-level="4.7" data-path="assignment-2-building-your-capstone-github-action.html"><a href="assignment-2-building-your-capstone-github-action.html#pro-tips-for-success-1"><i class="fa fa-check"></i><b>4.7</b> Pro Tips for Success</a>
+<li class="chapter" data-level="4.7" data-path="assignment-2-building-your-capstone-github-action.html"><a href="assignment-2-building-your-capstone-github-action.html#suggestions-for-troubleshooting-and-best-practices-1"><i class="fa fa-check"></i><b>4.7</b> Suggestions for Troubleshooting and Best Practices</a>
 <ul>
 <li class="chapter" data-level="4.7.1" data-path="assignment-2-building-your-capstone-github-action.html"><a href="assignment-2-building-your-capstone-github-action.html#choose-appropriate-scope"><i class="fa fa-check"></i><b>4.7.1</b> Choose Appropriate Scope</a></li>
 <li class="chapter" data-level="4.7.2" data-path="assignment-2-building-your-capstone-github-action.html"><a href="assignment-2-building-your-capstone-github-action.html#leverage-course-materials"><i class="fa fa-check"></i><b>4.7.2</b> Leverage Course Materials</a></li>
@@ -344,22 +370,30 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <h2><span class="header-section-number">3.1</span> Phase 1: Repository Setup and Planning<a href="assignment-1-building-your-capstone-dockerfile.html#phase-1-repository-setup-and-planning" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <div id="step-1-set-up-your-working-environment" class="section level3 hasAnchor" number="3.1.1">
 <h3><span class="header-section-number">3.1.1</span> Step 1: Set Up Your Working Environment<a href="assignment-1-building-your-capstone-dockerfile.html#step-1-set-up-your-working-environment" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>Navigate to your capstone sandbox repository. Locate the <code>docker/Dockerfile</code> - this is where you’ll be working
-Important: Don’t change the name or location of this file.</p>
+<p>Navigate to your capstone sandbox repository. Locate the <code>docker/Dockerfile</code> - this is where you’ll be working</p>
+<p><strong>Important: Don’t change the name or location of this file.</strong></p>
 </div>
-<div id="step-2-create-your-working-branch" class="section level3 hasAnchor" number="3.1.2">
-<h3><span class="header-section-number">3.1.2</span> Step 2: Create Your Working Branch<a href="assignment-1-building-your-capstone-dockerfile.html#step-2-create-your-working-branch" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<ul>
-<li>Create a new branch for this assignment (e.g., <code>dockerfile-assignment</code> or <code>docker-build</code>)</li>
-<li>Switch to this branch before making any changes</li>
-<li>This keeps your work organized and allows the automated testing to work properly</li>
-</ul>
+<div id="step-2-switch-to-your-working-branch-if-needed" class="section level3 hasAnchor" number="3.1.2">
+<h3><span class="header-section-number">3.1.2</span> Step 2: Switch to Your Working Branch (if needed)<a href="assignment-1-building-your-capstone-dockerfile.html#step-2-switch-to-your-working-branch-if-needed" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Verify that you’re on the branch you created during the set up instructions. The example used the name <code>assignment-1-dockerfile</code>.</p>
+<div id="option-1-command-line-method" class="section level4 hasAnchor" number="3.1.2.1">
+<h4><span class="header-section-number">3.1.2.1</span> Option 1: Command Line Method<a href="assignment-1-building-your-capstone-dockerfile.html#option-1-command-line-method" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<div class="sourceCode" id="cb4"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb4-1"><a href="assignment-1-building-your-capstone-dockerfile.html#cb4-1" tabindex="-1"></a><span class="fu">git</span> status</span>
+<span id="cb4-2"><a href="assignment-1-building-your-capstone-dockerfile.html#cb4-2" tabindex="-1"></a></span>
+<span id="cb4-3"><a href="assignment-1-building-your-capstone-dockerfile.html#cb4-3" tabindex="-1"></a><span class="co"># The first line of the output of this command will report what branch you are on...</span></span>
+<span id="cb4-4"><a href="assignment-1-building-your-capstone-dockerfile.html#cb4-4" tabindex="-1"></a><span class="co"># On branch assignment-1-dockerfile</span></span></code></pre></div>
+<p>If you are not on the branch you expect to be on, you can “checkout” or “switch” your branch.</p>
+</div>
+<div id="option-2-github-desktop-method" class="section level4 hasAnchor" number="3.1.2.2">
+<h4><span class="header-section-number">3.1.2.2</span> Option 2: GitHub Desktop Method<a href="assignment-1-building-your-capstone-dockerfile.html#option-2-github-desktop-method" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Check the “Current Branch” Dropdown on the top left of the screen. Use the menu to select the branch if you are not on the branch you expect to be on.</p>
+</div>
 </div>
 <div id="step-3-analyze-your-capstone-project-needs" class="section level3 hasAnchor" number="3.1.3">
 <h3><span class="header-section-number">3.1.3</span> Step 3: Analyze Your Capstone Project Needs<a href="assignment-1-building-your-capstone-dockerfile.html#step-3-analyze-your-capstone-project-needs" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>In general before you start building a custom docker image, you may already have a use for it determined.</p>
-<p><em>Here’s situations you might find yourself in where you definitely need a docker image</em>:
-- You are building a Github action and needed a specialized group of packages.
+<p>In general, you may already have a reason for building a custom docker image, or a specific set of tools you wish to package together. The following questions and guidelines are helpful for real-world development of a custom docker image.</p>
+<p><em>Here are some situations you might find yourself in where a docker image is helpful</em>:
+- You are building a Github action and need a specialized group of packages.
 - You are building an analysis that you need a collaborator to run.
 - You are building software you want to be reliable in its deployment.</p>
 <p><em>Questions to ask yourself</em>:
@@ -367,6 +401,7 @@ Important: Don’t change the name or location of this file.</p>
 - What packages/libraries your analysis scripts require
 - What types of security concerns does this project have?
 - Are there publicly available docker images that could cover your needs already?</p>
+<p>For this capstone project specifically, you will create a custom docker image with very little guidance as to what packages it will include. Think about a couple of packages that are helpful in your day to day work, and build a docker image with that in mind.</p>
 </div>
 </div>
 <div id="phase-2-dockerfile-development" class="section level2 hasAnchor" number="3.2">
@@ -374,15 +409,20 @@ Important: Don’t change the name or location of this file.</p>
 <div id="step-4-examine-the-base-setup" class="section level3 hasAnchor" number="3.2.1">
 <h3><span class="header-section-number">3.2.1</span> Step 4: Examine the Base Setup<a href="assignment-1-building-your-capstone-dockerfile.html#step-4-examine-the-base-setup" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <ul>
-<li>Open <code>docker/Dockerfile</code></li>
-<li>Look on dockerhub for what base image best suits your needs – what’s the smallest image you can get away with that is from a verified source?</li>
-<li>Understand what’s already included in the base image already.</li>
+<li>Open <code>ASSIGNMENT_1/docker/Dockerfile</code></li>
+<li>Look on <a href="https://hub.docker.com/">Docker Hub</a> for what base image best suits your needs – what’s the smallest image you can get away with that is from a verified source?</li>
+<li>Understand what’s already included in the base image already. If you’re not sure what’s already included, consider <a href="https://docs.docker.com/desktop/use-desktop/images/#inspect-an-image">inspecting the image with Docker Desktop</a>
+<ul>
+<li>You don’t need to add a package that’s already there.</li>
+<li>Will it work with R or Python packages or both?</li>
+</ul></li>
+<li>Once you’ve chosen a base image, add it to your Dockerfile.</li>
 </ul>
 </div>
 <div id="step-5-add-packages-incrementally" class="section level3 hasAnchor" number="3.2.2">
 <h3><span class="header-section-number">3.2.2</span> Step 5: Add Packages Incrementally<a href="assignment-1-building-your-capstone-dockerfile.html#step-5-add-packages-incrementally" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <ul>
-<li>Start by adding just one or two essential packages to your Dockerfile</li>
+<li>Start by adding just one or two additional packages to your Dockerfile</li>
 <li>Use the templates from the course:
 <ul>
 <li>For R packages: <code>RUN Rscript -e "install.packages('packagename')"</code></li>
@@ -391,11 +431,14 @@ Important: Don’t change the name or location of this file.</p>
 <li>Add comments explaining what each package does</li>
 </ul>
 </div>
-<div id="step-6-build-locally-if-working-on-your-computer" class="section level3 hasAnchor" number="3.2.3">
-<h3><span class="header-section-number">3.2.3</span> Step 6: Build Locally (If Working on Your Computer)<a href="assignment-1-building-your-capstone-dockerfile.html#step-6-build-locally-if-working-on-your-computer" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>If developing locally, test your Dockerfile with:
-<code>cd docker   docker build . -t my-capstone-image</code>
-Fix any build errors before pushing to GitHub. This saves time and GitHub Actions usage</p>
+<div id="step-6-build-locally" class="section level3 hasAnchor" number="3.2.3">
+<h3><span class="header-section-number">3.2.3</span> Step 6: Build Locally<a href="assignment-1-building-your-capstone-dockerfile.html#step-6-build-locally" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>If developing locally (e.g., working through Command Line or GitHub Desktop, rather than on github.com directly), test your Dockerfile with:</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb5-1"><a href="assignment-1-building-your-capstone-dockerfile.html#cb5-1" tabindex="-1"></a><span class="bu">cd</span> ASSIGNMENT_1/docker</span>
+<span id="cb5-2"><a href="assignment-1-building-your-capstone-dockerfile.html#cb5-2" tabindex="-1"></a><span class="ex">docker</span> build . <span class="at">-t</span> my-capstone-image</span></code></pre></div>
+<p>Iterate fixing any build errors and re-building before pushing to GitHub. This saves time and GitHub Actions usage.</p>
+<p><img src="03-build-an-image_files/figure-html/1ExTZsKDHKM0fIi0_tB80qd8cHvqjEDyNJp-OsnvZ19o_g361b9572af4_0_0.png" alt="This table contains common Docker issues you might encounter while building your docker image locally" width="100%" /></p>
+<p>If you’re not developing locally, opening a pull request with changes to your Dockerfile on GitHub should trigger an evaluation action as explained in the next phase.</p>
 </div>
 </div>
 <div id="phase-3-testing-and-iteration" class="section level2 hasAnchor" number="3.3">
@@ -408,55 +451,56 @@ Fix any build errors before pushing to GitHub. This saves time and GitHub Action
 <li>Open a pull request from your branch to the main branch</li>
 <li>Changes to the <code>ASSIGNMENT_1/docker/Dockerfile</code> triggers the <code>Docker Assignment Eval</code> test. Can you guess why?</li>
 </ul>
+<p><img src="03-build-an-image_files/figure-html/1ExTZsKDHKM0fIi0_tB80qd8cHvqjEDyNJp-OsnvZ19o_g361b9572af4_0_196.png" alt="Ruby wants to know if her analysis is reproducibly so she sets up an automation tool to re-run her analysis whenever she pushes changes to her analysis. This robot has a computer for a body and says ‘I will re-run Ruby’s analysis consistently and instantly upon whatever trigger she sets up.’" width="100%" /></p>
 </div>
-<div id="step-8-monitor-the-automated-testing" class="section level3 hasAnchor" number="3.3.2">
-<h3><span class="header-section-number">3.3.2</span> Step 8: Monitor the Automated Testing<a href="assignment-1-building-your-capstone-dockerfile.html#step-8-monitor-the-automated-testing" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="step-8-monitor-the-automated-testing-interpret-the-results" class="section level3 hasAnchor" number="3.3.2">
+<h3><span class="header-section-number">3.3.2</span> Step 8: Monitor the Automated Testing &amp; Interpret the Results<a href="assignment-1-building-your-capstone-dockerfile.html#step-8-monitor-the-automated-testing-interpret-the-results" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <ul>
-<li>Watch for the <code>Docker Assignment Eval</code> check to start running</li>
+<li>On github.com, within your pull request, watch for the <code>Docker Assignment Eval</code> check to start running</li>
 <li>This GitHub Action will attempt to build your Dockerfile</li>
-<li>Wait for it to complete. It will comment on your PR whether it successfully built or not.</li>
-</ul>
-</div>
-<div id="step-9-interpret-the-results" class="section level3 hasAnchor" number="3.3.3">
-<h3><span class="header-section-number">3.3.3</span> Step 9: Interpret the Results<a href="assignment-1-building-your-capstone-dockerfile.html#step-9-interpret-the-results" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<li>Wait for it to complete. It will comment on your PR whether it successfully built or not.
 <ul>
 <li>Success: You’ll get a validation code in the comment</li>
 <li>Failure: You’ll get error messages explaining what went wrong. Read the error messages carefully - they contain clues for fixing issues</li>
+</ul></li>
+<li>If the test’s comment provides a validation code, skip to Phase 5.</li>
+<li>If the test’s comment contains error messages, visit Phase 4: Troubleshooting and Refinement of these instructions.</li>
 </ul>
 </div>
 </div>
 <div id="phase-4-troubleshooting-and-refinement" class="section level2 hasAnchor" number="3.4">
 <h2><span class="header-section-number">3.4</span> Phase 4: Troubleshooting and Refinement<a href="assignment-1-building-your-capstone-dockerfile.html#phase-4-troubleshooting-and-refinement" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<div id="step-10-debug-build-failures" class="section level3 hasAnchor" number="3.4.1">
-<h3><span class="header-section-number">3.4.1</span> Step 10: Debug Build Failures<a href="assignment-1-building-your-capstone-dockerfile.html#step-10-debug-build-failures" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="step-9-debug-build-failures" class="section level3 hasAnchor" number="3.4.1">
+<h3><span class="header-section-number">3.4.1</span> Step 9: Debug Build Failures<a href="assignment-1-building-your-capstone-dockerfile.html#step-9-debug-build-failures" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Common issues to check:
 - Typos in package names
 - Missing dependencies (install system packages before language packages). Google or an LLM trained in coding can be helpful for determining this.
 - Incorrect syntax in RUN commands
 - Base image doesn’t support your installation method</p>
 </div>
-<div id="step-11-iterate-until-success" class="section level3 hasAnchor" number="3.4.2">
-<h3><span class="header-section-number">3.4.2</span> Step 11: Iterate Until Success<a href="assignment-1-building-your-capstone-dockerfile.html#step-11-iterate-until-success" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="step-10-iterate-until-success" class="section level3 hasAnchor" number="3.4.2">
+<h3><span class="header-section-number">3.4.2</span> Step 10: Iterate Until Success<a href="assignment-1-building-your-capstone-dockerfile.html#step-10-iterate-until-success" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <ul>
 <li>Make changes to your Dockerfile on your branch</li>
 <li>Commit and push changes</li>
 <li>Each push will trigger a new test run</li>
 <li>Keep refining until you get a successful build!</li>
 </ul>
+<p><img src="03-build-an-image_files/figure-html/1ExTZsKDHKM0fIi0_tB80qd8cHvqjEDyNJp-OsnvZ19o_g368818bb4f3_0_417.png" alt="You may have to troubleshoot iteratively until your dockerfile builds successfully. Git commit and push edits to your dockerfile and check your existing pull request to receive evaluation from automated assignment checks. Interpret the results. If you were not successful, troubleshoot and iterate this process as needed, checking your pre-existing pull request for new evaluation results after making additional changes. Or if you were successful in your assignment, submit the verification code to your coursera quiz (or move on to the next section if you are not using coursera or some certification method to take this course)" width="100%" /></p>
 </div>
 </div>
 <div id="phase-5-completion" class="section level2 hasAnchor" number="3.5">
 <h2><span class="header-section-number">3.5</span> Phase 5: Completion<a href="assignment-1-building-your-capstone-dockerfile.html#phase-5-completion" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<div id="step-13-collect-your-validation-code" class="section level3 hasAnchor" number="3.5.1">
-<h3><span class="header-section-number">3.5.1</span> Step 13: Collect Your Validation Code<a href="assignment-1-building-your-capstone-dockerfile.html#step-13-collect-your-validation-code" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="step-11-collect-your-validation-code" class="section level3 hasAnchor" number="3.5.1">
+<h3><span class="header-section-number">3.5.1</span> Step 11: Collect Your Validation Code<a href="assignment-1-building-your-capstone-dockerfile.html#step-11-collect-your-validation-code" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <ul>
 <li>Once your build succeeds, copy the validation code from the PR comment</li>
 <li>Important: Make sure it’s a real validation code, not an error message</li>
 <li>Keep this code safe - you’ll need it for your quiz</li>
 </ul>
 </div>
-<div id="step-14-submit-your-quiz" class="section level3 hasAnchor" number="3.5.2">
-<h3><span class="header-section-number">3.5.2</span> Step 14: Submit Your Quiz<a href="assignment-1-building-your-capstone-dockerfile.html#step-14-submit-your-quiz" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="step-12-submit-your-quiz" class="section level3 hasAnchor" number="3.5.2">
+<h3><span class="header-section-number">3.5.2</span> Step 12: Submit Your Quiz<a href="assignment-1-building-your-capstone-dockerfile.html#step-12-submit-your-quiz" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <ul>
 <li>Go to your Coursera Capstone Quiz</li>
 <li>Paste the validation code when prompted</li>
@@ -464,8 +508,8 @@ Fix any build errors before pushing to GitHub. This saves time and GitHub Action
 </ul>
 </div>
 </div>
-<div id="pro-tips-for-success" class="section level2 hasAnchor" number="3.6">
-<h2><span class="header-section-number">3.6</span> Pro Tips for Success<a href="assignment-1-building-your-capstone-dockerfile.html#pro-tips-for-success" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="suggestions-for-troubleshooting-and-best-practices" class="section level2 hasAnchor" number="3.6">
+<h2><span class="header-section-number">3.6</span> Suggestions for Troubleshooting and Best Practices<a href="assignment-1-building-your-capstone-dockerfile.html#suggestions-for-troubleshooting-and-best-practices" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <div id="start-simple" class="section level3 hasAnchor" number="3.6.1">
 <h3><span class="header-section-number">3.6.1</span> Start Simple<a href="assignment-1-building-your-capstone-dockerfile.html#start-simple" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <ul>
@@ -486,18 +530,17 @@ Fix any build errors before pushing to GitHub. This saves time and GitHub Action
 <div id="read-error-messages-carefully" class="section level3 hasAnchor" number="3.6.3">
 <h3><span class="header-section-number">3.6.3</span> Read Error Messages Carefully<a href="assignment-1-building-your-capstone-dockerfile.html#read-error-messages-carefully" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <ul>
-<li>Error messages often contain the exact solution</li>
+<li>Error messages may contain the exact solution you need to fix your problem</li>
 <li>Look for phrases like “package not found” or “missing dependency”</li>
 <li>Google specific error messages if they’re unclear</li>
-<li>Copy and paste the error code and include any relevant context to a code trained LLM for additional help.</li>
+<li>Copy and paste the error code and include any relevant context to a code trained LLM (e.g., <a href="https://www.phind.com/">Phind</a>) for additional help.</li>
 </ul>
 </div>
 <div id="document-your-process" class="section level3 hasAnchor" number="3.6.4">
 <h3><span class="header-section-number">3.6.4</span> Document Your Process<a href="assignment-1-building-your-capstone-dockerfile.html#document-your-process" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <ul>
 <li>Add comments to your Dockerfile explaining your choices</li>
-<li>This helps you remember your reasoning if you need to modify it later</li>
-<li>Good documentation makes debugging easier</li>
+<li>Comments &amp; documentation help you remember your reasoning if you need to modify it later and may make debugging easier</li>
 </ul>
 <p>Remember: This assignment is designed to give you hands-on experience with the container building process. The automated testing system provides immediate feedback, making it easier to learn through iteration rather than getting everything perfect on the first try.</p>
 
