@@ -49,8 +49,7 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1ExTZsKDHKM0fIi0_
 
 ## Objectives
 
-```{r learning_objectives, out.width = "100%", fig.alt = "This course will demonstrate how to:
-Recap the best practices of reproducibility we have covered in this specialization. Create an original docker image. Create an original GitHub Action. Have your original docker image and github action work together", echo = FALSE}
+```{r learning_objectives, out.width = "100%", fig.alt = "This course will demonstrate how to: Recap the best practices of reproducibility we have covered in this specialization. Create an original docker image. Create an original GitHub Action. Have your original docker image and github action work together", echo = FALSE}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1ExTZsKDHKM0fIi0_tB80qd8cHvqjEDyNJp-OsnvZ19o/edit?slide=id.g30a4c584926_0_0#slide=id.g30a4c584926_0_0")
 ```
 
@@ -58,9 +57,15 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1ExTZsKDHKM0fIi0_
 
 The capstone uses a practical, project-based assessment model where students work with a provided computational sandbox environment to complete real-world tasks. Rather than traditional exams, students demonstrate mastery by successfully implementing containerized workflows and automated pipelines that pass automated evaluation criteria.
 
+```{r out.width = 100%, fig.alt = "This capstone course has 3 assignments that are provided in Github repository sandbox"}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1NAGks7LPKS70neQObN5SLHnV-DAlMs3hSYhi53HcHPw/edit?slide=id.g366e6347c7b_0_0#slide=id.g366e6347c7b_0_0")
+```
+
 **Assignment 1: Custom Container Development** - Students create Docker containers to support specific cancer analysis requirements, demonstrating understanding of containerization principles and bioinformatics software management.
 
 **Assignment 2: Automated Workflow Implementation** - Students create GitHub Actions that automatically execute and validate cancer data analysis pipelines, showing proficiency in continuous integration concepts and workflow automation.
+
+**Assignment 3: Working with GitHub Secrets** -- Students create a personal access token, store the token as a GitHub secret in a repository and access that secret in a GitHub Actions workflow, displaying application of best practices in security when handling sensitive information.
 
 Each assignment utilizes automated evaluation systems that provide immediate feedback and validation codes upon successful completion, simulating real-world development environments where code must pass automated testing before deployment.
 

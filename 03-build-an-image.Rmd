@@ -66,36 +66,41 @@ For this capstone project specifically, you will create a custom docker image wi
   - For Python packages: `RUN pip3 install packagename`
 - Add comments explaining what each package does
 
-### Step 6: Build Locally (If Working on Your Computer)
-If developing locally, test your Dockerfile with:
+### Step 6: Build Locally
 
-```
+If developing locally (e.g., working through Command Line or GitHub Desktop, rather than on github.com directly), test your Dockerfile with:
+
+```bash
 cd ASSIGNMENT_1/docker
 docker build . -t my-capstone-image
 ```
 
-Fix any build errors before pushing to GitHub. This saves time and GitHub Actions usage
+Iterate fixing any build errors and re-building before pushing to GitHub. This saves time and GitHub Actions usage.
+
+If you're not developing locally, opening a pull request with changes to your Dockerfile on GitHub should trigger an evaluation action as explained in the next phase.
 
 ## Phase 3: Testing and Iteration
 
 ### Step 7: Open Your Pull Request
+
 - Commit your Dockerfile changes to your branch
 - Push the branch to GitHub
 - Open a pull request from your branch to the main branch
 - Changes to the `ASSIGNMENT_1/docker/Dockerfile` triggers the `Docker Assignment Eval` test. Can you guess why?
 
-### Step 8: Monitor the Automated Testing
-- Watch for the `Docker Assignment Eval` check to start running
+### Step 8: Monitor the Automated Testing & Interpret the Results
+
+- On github.com, within your pull request, watch for the `Docker Assignment Eval` check to start running
 - This GitHub Action will attempt to build your Dockerfile
 - Wait for it to complete. It will comment on your PR whether it successfully built or not.
-
-### Step 9: Interpret the Results
-- Success: You'll get a validation code in the comment
-- Failure: You'll get error messages explaining what went wrong. Read the error messages carefully - they contain clues for fixing issues
+  - Success: You'll get a validation code in the comment
+  - Failure: You'll get error messages explaining what went wrong. Read the error messages carefully - they contain clues for fixing issues
+- If the test's comment provides a validation code, skip to Phase 5.
+- If the test's comment contains error messages, visit Phase 4: Troubleshooting and Refinement of these instructions.
 
 ## Phase 4: Troubleshooting and Refinement
 
-### Step 10: Debug Build Failures
+### Step 9: Debug Build Failures
 
 Common issues to check:
   - Typos in package names
@@ -103,20 +108,24 @@ Common issues to check:
   - Incorrect syntax in RUN commands
   - Base image doesn't support your installation method
 
-### Step 11: Iterate Until Success
+### Step 10: Iterate Until Success
+
 - Make changes to your Dockerfile on your branch
 - Commit and push changes
 - Each push will trigger a new test run
 - Keep refining until you get a successful build!
 
+[Add a figure here]
+
 ## Phase 5: Completion
 
-### Step 13: Collect Your Validation Code
+### Step 11: Collect Your Validation Code
+
 - Once your build succeeds, copy the validation code from the PR comment
 - Important: Make sure it's a real validation code, not an error message
 - Keep this code safe - you'll need it for your quiz
 
-### Step 14: Submit Your Quiz
+### Step 12: Submit Your Quiz
 - Go to your Coursera Capstone Quiz
 - Paste the validation code when prompted
 - Submit the quiz to get credit for your work
