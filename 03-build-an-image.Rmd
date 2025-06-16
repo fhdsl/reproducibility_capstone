@@ -115,7 +115,7 @@ Common issues to check:
 - Each push will trigger a new test run
 - Keep refining until you get a successful build!
 
-```{r out.width="100%", fig.alt = "You may have to troubleshoot iteratively until your dockerfile builds successfully. Git commit and push edits to your dockerfile and check your existing pull request to receive evaluation from automated assignment checks. Interpret the results. If you were not successful, troubleshoot and iterate this process as needed, checking your pre-existing pull request for new evaluation results after making additional changes. Or if you were successful in your assignment, submit the verification code to your coursera quiz (or move on to the next section if you are not using coursera or some certification method to take this course)"}
+```{r out.width="100%", echo = FALSE, fig.alt = "You may have to troubleshoot iteratively until your dockerfile builds successfully. Git commit and push edits to your dockerfile and check your existing pull request to receive evaluation from automated assignment checks. Interpret the results. If you were not successful, troubleshoot and iterate this process as needed, checking your pre-existing pull request for new evaluation results after making additional changes. Or if you were successful in your assignment, submit the verification code to your coursera quiz (or move on to the next section if you are not using coursera or some certification method to take this course)"}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1ExTZsKDHKM0fIi0_tB80qd8cHvqjEDyNJp-OsnvZ19o/edit?slide=id.g368818bb4f3_0_417#slide=id.g368818bb4f3_0_417")
 ```
 
