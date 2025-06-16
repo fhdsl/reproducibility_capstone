@@ -146,7 +146,7 @@ jobs:
         fetch-depth: 0
 
     - name: Run render
-      uses: ottrproject/ottr-preview@cansavvy/no-docx
+      uses: ottrproject/ottr-preview@kweav-suppress-docx
       with:
         toggle_website: ${{needs.yaml-check.outputs.toggle_website}}
         docker_image: ${{needs.yaml-check.outputs.rendering_docker_image}}
