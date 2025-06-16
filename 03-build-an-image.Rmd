@@ -115,7 +115,9 @@ Common issues to check:
 - Each push will trigger a new test run
 - Keep refining until you get a successful build!
 
-[Add a figure here]
+```{r out.width="100%", fig.alt = "You may have to troubleshoot iteratively until your dockerfile builds successfully. Git commit and push edits to your dockerfile and check your existing pull request to receive evaluation from automated assignment checks. Interpret the results. If you were not successful, troubleshoot and iterate this process as needed, checking your pre-existing pull request for new evaluation results after making additional changes. Or if you were successful in your assignment, submit the verification code to your coursera quiz (or move on to the next section if you are not using coursera or some certification method to take this course)"}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1ExTZsKDHKM0fIi0_tB80qd8cHvqjEDyNJp-OsnvZ19o/edit?slide=id.g368818bb4f3_0_417#slide=id.g368818bb4f3_0_417")
+```
 
 ## Phase 5: Completion
 
@@ -126,32 +128,36 @@ Common issues to check:
 - Keep this code safe - you'll need it for your quiz
 
 ### Step 12: Submit Your Quiz
+
 - Go to your Coursera Capstone Quiz
 - Paste the validation code when prompted
 - Submit the quiz to get credit for your work
 
-## Pro Tips for Success
+## Suggestions for Troubleshooting and Best Practices
 
 ### Start Simple
+
 - Begin with just the most essential packages for your analysis
 - You can always add more in subsequent iterations
 - A working simple image is better than a broken complex one
 - Reference tips from the [Containers for Scientists course](https://hutchdatascience.org/Containers_for_Scientists/) as needed.
 
 ### Leverage the Automated Testing
+
 - The GitHub Action is your friend - it provides immediate feedback
 - Don't be afraid to make multiple attempts
 - Each failure teaches you something about container building
 
 ### Read Error Messages Carefully
-- Error messages often contain the exact solution
+
+- Error messages may contain the exact solution you need to fix your problem
 - Look for phrases like "package not found" or "missing dependency"
 - Google specific error messages if they're unclear
-- Copy and paste the error code and include any relevant context to a code trained LLM for additional help.
+- Copy and paste the error code and include any relevant context to a code trained LLM (e.g., [Phind](https://www.phind.com/)) for additional help.
 
 ### Document Your Process
+
 - Add comments to your Dockerfile explaining your choices
-- This helps you remember your reasoning if you need to modify it later
-- Good documentation makes debugging easier
+- Comments & documentation help you remember your reasoning if you need to modify it later and may make debugging easier
 
 Remember: This assignment is designed to give you hands-on experience with the container building process. The automated testing system provides immediate feedback, making it easier to learn through iteration rather than getting everything perfect on the first try.
