@@ -191,7 +191,7 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1ExTZsKDHKM0fIi0_
 
 ## Phase 6: Completion
 
-### Step 16: Collect Your Validation Code
+### Step 15: Collect Your Validation Code
 
 Once your GitHub Action runs successfully, copy the validation code from the PR comment. Keep this code safe for your quiz submission. Note that if you are not taking this course through Coursera or Leanpub for certification then you can ignore this step
 
