@@ -34,7 +34,7 @@ _Questions to ask yourself_:
 
 ### Step 4: Examine the Base Setup
 - Open `docker/Dockerfile`
-- Look on dockerhub for what base image best suits your needs -- what's the smallest image you can get away with that is from a verified source? 
+- Look on Dockerhub for what base image best suits your needs -- what's the smallest image you can get away with that is from a verified source? 
 - Understand what's already included in the base image already.
 
 ### Step 5: Add Packages Incrementally
