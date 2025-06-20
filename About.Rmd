@@ -1,0 +1,49 @@
+
+# About the Authors {-}
+
+These credits are based on our [course contributors table guidelines](https://www.ottrproject.org/more_features.html#giving-credits-to-contributors).
+
+&nbsp;
+&nbsp;
+
+|Credits|Names|
+|-------|-----|
+|**Pedagogy**||
+|Lead Content Instructor(s)|[Candace Savonen]|
+|Lecturer(s)|[Candace Savonen]|
+|Content Contributor(s) | [Kate Isaac], [Carrie Wright] |
+|Content Editor(s)/Reviewer(s) | [Carrie Wright] |
+|**Production**||
+|Content Publisher(s)| [Carrie Wright] |
+|Content Publishing Reviewer(s)| [Carrie Wright]|
+|**Technical**||
+|Course Publishing Engineer(s)| Helped with the code for the technical aspects related to the specific course generation|
+|Template Publishing Engineers|[Candace Savonen], [Carrie Wright], [Ava Hoffman]|
+|Publishing Maintenance Engineer|[Candace Savonen]|
+|Technical Publishing Stylists|[Carrie Wright], [Ava Hoffman], [Candace Savonen]|
+|Package Developers ([ottrpal]) [Candace Savonen], [Ava Hoffman], [Howard Baek], [Kate Isaac], [Carrie Wright], [John Muschelli]|
+|**Art and Design**||
+|Figure Artist(s)| [Carrie Wright] [Carrie Wright] |
+|Videographer(s)| [Candace Savonen |
+|**Funding**||
+|Funder(s)| Institution/individual who funded course including grant number|
+|Funding Staff| Staff members who help with funding|
+
+&nbsp;
+
+```{r, echo = FALSE}
+devtools::session_info()
+```
+
+<!-- Author information -->
+
+[John Muschelli]: https://johnmuschelli.com/
+[Candace Savonen]: https://www.cansavvy.com/
+[Carrie Wright]: https://carriewright11.github.io/
+[Ava Hoffman]: https://www.avahoffman.com/
+[Howard Baek]: https://www.linkedin.com/in/howard-baik/
+[Kate Isaac]: https://kweav.github.io/
+
+<!-- Links -->
+
+[ottrpal]: https://github.com/jhudsl/ottrpal

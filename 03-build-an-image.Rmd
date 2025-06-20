@@ -1,0 +1,124 @@
+# Assignment 1: Building Your Capstone Dockerfile
+
+
+```{r, out.width = "100%", fig.alt = "This course will demonstrate how to:Recap Docker image building techniques Create an original Docker image ", echo = FALSE}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1ExTZsKDHKM0fIi0_tB80qd8cHvqjEDyNJp-OsnvZ19o/edit?slide=id.g361b9572af4_0_181#slide=id.g361b9572af4_0_181")
+```
+
+## Phase 1: Repository Setup and Planning
+
+### Step 1: Set Up Your Working Environment
+Navigate to your capstone sandbox repository. Locate the `docker/Dockerfile` - this is where you'll be working
+Important: Don't change the name or location of this file. 
+
+### Step 2: Create Your Working Branch
+- Create a new branch for this assignment (e.g., `dockerfile-assignment` or `docker-build`)
+- Switch to this branch before making any changes
+- This keeps your work organized and allows the automated testing to work properly
+
+### Step 3: Analyze Your Capstone Project Needs
+In general before you start building a custom docker image, you may already have a use for it determined. 
+
+_Here's situations you might find yourself in where you definitely need a docker image_: 
+- You are building a Github action and needed a specialized group of packages. 
+- You are building an analysis that you need a collaborator to run.
+- You are building software you want to be reliable in its deployment.
+
+_Questions to ask yourself_: 
+- What programming languages you're using (R, Python, etc.)
+- What packages/libraries your analysis scripts require
+- What types of security concerns does this project have?
+- Are there publicly available docker images that could cover your needs already?
+
+## Phase 2: Dockerfile Development
+
+### Step 4: Examine the Base Setup
+- Open `docker/Dockerfile`
+- Look on dockerhub for what base image best suits your needs -- what's the smallest image you can get away with that is from a verified source? 
+- Understand what's already included in the base image already.
+
+### Step 5: Add Packages Incrementally
+- Start by adding just one or two essential packages to your Dockerfile
+- Use the templates from the course:
+  - For R packages: `RUN Rscript -e "install.packages('packagename')"`
+  - For Python packages: `RUN pip3 install packagename`
+- Add comments explaining what each package does
+
+### Step 6: Build Locally (If Working on Your Computer)
+If developing locally, test your Dockerfile with:
+  ```
+  cd docker
+  docker build . -t my-capstone-image
+  ```
+Fix any build errors before pushing to GitHub. This saves time and GitHub Actions usage
+
+## Phase 3: Testing and Iteration
+
+### Step 7: Open Your Pull Request
+- Commit your Dockerfile changes to your branch
+- Push the branch to GitHub
+- Open a pull request from your branch to the main branch
+- Changes to the `ASSIGNMENT_1/docker/Dockerfile` triggers the `Docker Assignment Eval` test. Can you guess why?
+
+### Step 8: Monitor the Automated Testing
+- Watch for the `Docker Assignment Eval` check to start running
+- This GitHub Action will attempt to build your Dockerfile
+- Wait for it to complete. It will comment on your PR whether it successfully built or not. 
+
+### Step 9: Interpret the Results
+- Success: You'll get a validation code in the comment
+- Failure: You'll get error messages explaining what went wrong. Read the error messages carefully - they contain clues for fixing issues
+
+## Phase 4: Troubleshooting and Refinement
+
+### Step 10: Debug Build Failures
+
+Common issues to check:
+  - Typos in package names
+  - Missing dependencies (install system packages before language packages). Google or an LLM trained in coding can be helpful for determining this. 
+  - Incorrect syntax in RUN commands
+  - Base image doesn't support your installation method
+
+### Step 11: Iterate Until Success
+- Make changes to your Dockerfile on your branch
+- Commit and push changes
+- Each push will trigger a new test run
+- Keep refining until you get a successful build!
+
+## Phase 5: Completion
+
+### Step 13: Collect Your Validation Code
+- Once your build succeeds, copy the validation code from the PR comment
+- Important: Make sure it's a real validation code, not an error message
+- Keep this code safe - you'll need it for your quiz
+
+### Step 14: Submit Your Quiz
+- Go to your Coursera Capstone Quiz
+- Paste the validation code when prompted
+- Submit the quiz to get credit for your work
+
+## Pro Tips for Success
+
+### Start Simple
+- Begin with just the most essential packages for your analysis
+- You can always add more in subsequent iterations
+- A working simple image is better than a broken complex one
+- Reference tips from the [Containers for Scientists course](https://hutchdatascience.org/Containers_for_Scientists/) as needed. 
+
+### Leverage the Automated Testing
+- The GitHub Action is your friend - it provides immediate feedback
+- Don't be afraid to make multiple attempts
+- Each failure teaches you something about container building
+
+### Read Error Messages Carefully
+- Error messages often contain the exact solution
+- Look for phrases like "package not found" or "missing dependency"
+- Google specific error messages if they're unclear
+- Copy and paste the error code and include any relevant context to a code trained LLM for additional help. 
+
+### Document Your Process
+- Add comments to your Dockerfile explaining your choices
+- This helps you remember your reasoning if you need to modify it later
+- Good documentation makes debugging easier
+
+Remember: This assignment is designed to give you hands-on experience with the container building process. The automated testing system provides immediate feedback, making it easier to learn through iteration rather than getting everything perfect on the first try.
