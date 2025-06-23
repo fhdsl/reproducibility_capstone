@@ -34,17 +34,16 @@ Important: Do NOT fork the repository - you must use the template option
 
 ## Phase 2: Local Setup and Cloning
 
-### Step 4: Prepare Your Local Environment
 For this course you may use whatever git client (GitHub Desktop, GitKraken, etc) you are most comfortable with, or no git client at all.
 If you need any recap on how to file pull requests remember you can return to the other courses in this series for reference. Particularly the [Advanced Reproducibility course](https://jhudatascience.org/Adv_Reproducibility_in_Cancer_Informatics/using-version-control-with-github.html)
 
-### Step 5: Clone Your Repository
+### Step 4: Clone Your Repository {.tabset}
 
 #### Option A: Using Command Line
 
 1. Copy the repository URL:
-   - On your repository page, click the green "Code" button
-   - Copy the HTTPS URL (should look like: `https://github.com/yourusername/your-repo-name.git`)
+   • <input type="checkbox"> On your repository page, click the <div class = "github_button"> Code </div> green button <br/>
+   • <input type="checkbox"> Copy the HTTPS URL (should look like: `https://github.com/yourusername/your-repo-name.git`) <br/>
 
 2. Clone the repository, using the HTTPS URL you've just copied:
    ```bash
