@@ -65,9 +65,11 @@ If you need any recap on how to file pull requests remember you can return to th
 4. Choose a local path where you want to store the repository
 5. Click "Clone"
 
+### {-} <!-- Close tabset -->
+
 ## Phase 3: Branch Creation and Workflow
 
-### Step 6: Create Your First Assignment Branch
+### Step 5: Create Your First Assignment Branch {.tabset}
 
 You may name your working branch whatever you like for these assignments. The examples/instructions use the name `assignment-1-dockerfile`.
 
@@ -87,6 +89,8 @@ git branch
 2. Click "New branch"
 3. Name your branch: `assignment-1-dockerfile`
 4. Click "Create branch"
+
+### {-} <!-- Close tabset -->
 
 ## Your Setup is Complete.... What are the Next Steps?
 
