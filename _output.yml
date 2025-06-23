@@ -1,5 +1,5 @@
 bookdown::gitbook:
-  css: [assets/OTTR_style.css, assets/style_ITN.css]
+  css: [assets/style_ITN.css, assets/OTTR_style.css]
   includes:
     before_body: assets/big-image-itcr.html
     after_body: assets/footer.html

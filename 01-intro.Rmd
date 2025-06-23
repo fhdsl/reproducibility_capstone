@@ -57,7 +57,7 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1ExTZsKDHKM0fIi0_
 
 The capstone uses a practical, project-based assessment model where students work with a provided computational sandbox environment to complete real-world tasks. Rather than traditional exams, students demonstrate mastery by successfully implementing containerized workflows and automated pipelines that pass automated evaluation criteria.
 
-```{r out.width = "100%", fig.alt = "This capstone course has 3 assignments that are provided in Github repository sandbox"}
+```{r out.width = "100%", echo=FALSE, fig.alt = "This capstone course has 3 assignments that are provided in Github repository sandbox"}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1ExTZsKDHKM0fIi0_tB80qd8cHvqjEDyNJp-OsnvZ19o/edit?slide=id.g368818bb4f3_0_162#slide=id.g368818bb4f3_0_162")
 ```
 

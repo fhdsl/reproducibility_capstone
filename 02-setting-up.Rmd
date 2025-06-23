@@ -41,7 +41,7 @@ If you need any recap on how to file pull requests remember you can return to th
 
 #### Option A: Using Command Line
 
-1. Copy the repository URL:
+1. Copy the repository URL:<br/>
    • <input type="checkbox"> On your repository page, click the <div class = "github_button"> Code </div> green button <br/>
    • <input type="checkbox"> Copy the HTTPS URL (should look like: `https://github.com/yourusername/your-repo-name.git`) <br/>
 
