@@ -8,26 +8,29 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1ExTZsKDHKM0fIi0_
 
 ### Step 1: Access the Course Template
 
-- Navigate to the [course sandbox template repository](https://github.com/fhdsl/capstone-sandbox)
-- Look for the green "Use this template" button at the top of the repository page
-- Important: Do NOT fork the repository - you must use the template option
+<input type="checkbox"> Navigate to the [course sandbox template repository](https://github.com/fhdsl/capstone-sandbox)<br/>
+<input type="checkbox"> Look for the <div class = "github_button"> <a href="https://github.com/new?template_name=capstone-sandbox&template_owner=fhdsl"> Use this template</a></div> green button at the top of the repository page<br/>
+
+::: {.notice}
+Important: Do NOT fork the repository - you must use the template option
+:::
 
 ### Step 2: Configure Your New Repository
 
-- Click "Use this template" → "Create a new repository"
-- Fill out the repository creation form:
-  - Include all branches: Leave unchecked (we only need the main branch)
-  - Repository name: Choose a meaningful name (e.g., `your-username-capstone-sandbox`)
-  - Description: Add a brief description of your capstone project
-  - Visibility: Set to Public (required for the automated evaluation system to work)
+<input type="checkbox"> Click <div class = "github_button"> <a href="https://github.com/new?template_name=capstone-sandbox&template_owner=fhdsl"> Use this template</a></div> and select the "Create a new repository" option (if needed).<br/>
+<input type="checkbox"> Fill out the repository creation form:<br/>
+  • <input type="checkbox"> Include all branches: Leave **unchecked** (we only need the main branch)<br/>
+  • <input type="checkbox"> Repository name: Choose a meaningful name (e.g., `your-username-capstone-sandbox`)<br/>
+  • <input type="checkbox"> Description: Add a brief description of your capstone project<br/>
+  • <input type="checkbox"> Visibility: Set to **Public** (required for the automated evaluation system to work)<br/>
 
 
 ### Step 3: Create Your Repository
 
-- Click "Create repository"
-- Wait for GitHub to finish creating your repository
-- You'll be redirected to your new repository page
-- Verify: The repository should show your username as the owner and contain all the template files
+<input type="checkbox"> Click <div class = "github_button"> Create repository </div><br/>
+<input type="checkbox"> Wait for GitHub to finish creating your repository and verify completion <br/>
+  • You'll be redirected to your new repository page<br/>
+  • <input type="checkbox"> Verify: The repository should show your username as the owner and contain all the template files<br/>
 
 ## Phase 2: Local Setup and Cloning
 
