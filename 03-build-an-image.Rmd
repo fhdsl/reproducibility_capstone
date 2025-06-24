@@ -68,7 +68,7 @@ For this capstone project specifically, you will create a custom docker image wi
 
 ### Step 6: Build Locally
 
-If developing locally (e.g., working through Command Line or GitHub Desktop, rather than on github.com directly), test your Dockerfile with:
+If developing locally (e.g., working through Command Line or GitHub Desktop, rather than on [github.com](https://github.com/) directly), test your Dockerfile with:
 
 ```bash
 cd ASSIGNMENT_1/docker
