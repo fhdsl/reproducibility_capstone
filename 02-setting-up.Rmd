@@ -19,10 +19,10 @@ Important: Do NOT fork the repository - you must use the template option
 
 <input type="checkbox"> Click <div class = "github_button"> <a href="https://github.com/new?template_name=capstone-sandbox&template_owner=fhdsl" class = "github_button_link"> Use this template</a></div> and select the "Create a new repository" option (if needed).<br/>
 <input type="checkbox"> Fill out the repository creation form:<br/>
-    <input type="checkbox"> Include all branches: Leave **unchecked** (we only need the main branch)<br/>
-    <input type="checkbox"> Repository name: Choose a meaningful name (e.g., `your-username-capstone-sandbox`)<br/>
-    <input type="checkbox"> Description: Add a brief description of your capstone project<br/>
-    <input type="checkbox"> Visibility: Set to **Public** (required for the automated evaluation system to work)<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox"> Include all branches: Leave **unchecked** (we only need the main branch)<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox"> Repository name: Choose a meaningful name (e.g., `your-username-capstone-sandbox`)<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox"> Description: Add a brief description of your capstone project<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox"> Visibility: Set to **Public** (required for the automated evaluation system to work)<br/>
 
 
 ### Step 3: Create Your Repository
@@ -30,7 +30,7 @@ Important: Do NOT fork the repository - you must use the template option
 <input type="checkbox"> Click <div class = "github_button"> Create repository </div><br/>
 <input type="checkbox"> Wait for GitHub to finish creating your repository and verify completion <br/>
   - Note: You'll be redirected to your new repository page<br/>
-  <input type="checkbox"> Verify: The repository should show your username as the owner and contain all the template files<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox"> Verify: The repository should show your username as the owner and contain all the template files<br/>
 
 ## Phase 2: Local Setup and Cloning
 
@@ -47,7 +47,7 @@ If you need any recap on how to file pull requests remember you can return to th
 <input type="checkbox"> Choose a local path where you want to store the repository <br/>
 <input type="checkbox"> Click "Clone" <br/>
 
-####  {.click_to_expand_block}
+<div class="click_to_expand_block">
 
 <details><summary>**Option B: Using a command-line interface**</summary>
 
@@ -70,7 +70,7 @@ Alternatively, you can use a command-line interface (e.g., Command Prompt, Power
    ```
 </details>
 
-####
+</div>
 
 ## Phase 3: Branch Creation and Workflow
 
@@ -85,7 +85,7 @@ You may name your working branch whatever you like for these assignments. The ex
 <input type="checkbox"> Name your branch: `assignment-1-dockerfile` <br/>
 <input type="checkbox"> Click "Create branch" <br/>
 
-####  {.click_to_expand_block}
+<div class="click_to_expand_block">
 
 <details><summary>**Option B: Using a command-line interface**</summary>
 
@@ -99,7 +99,7 @@ git branch
 ```
 </details>
 
-####
+</div>
 
 ## Your Setup is Complete.... What are the Next Steps?
 
