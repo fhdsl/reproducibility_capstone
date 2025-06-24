@@ -27,6 +27,7 @@ GDSCN
 Generis
 GH
 Github
+github
 GitHub
 GitKraken
 GitLFS
@@ -47,6 +48,7 @@ Markua
 mentorship
 MERCHANTABILITY
 Muschelli
+nbsp
 NCI
 NHGRI
 OTTR
