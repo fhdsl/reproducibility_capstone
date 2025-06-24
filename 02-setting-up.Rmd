@@ -35,7 +35,7 @@ Important: Do NOT fork the repository - you must use the template option
 ## Phase 2: Local Setup and Cloning
 
 For this course you may use whatever git client (GitHub Desktop, GitKraken, etc) you are most comfortable with, or no git client at all.
-If you need any recap on how to file pull requests remember you can return to the other courses in this series for reference. Particularly the [Advanced Reproducibility course](https://jhudatascience.org/Adv_Reproducibility_in_Cancer_Informatics/using-version-control-with-github.html)
+If you need any recap on how to file pull requests remember you can return to the other courses in this series for reference. Particularly the [Advanced Reproducibility course](https://jhudatascience.org/Adv_Reproducibility_in_Cancer_Informatics/no_toc/using-version-control-with-github.html#start-a-github-repository)
 
 ### Step 4: Clone Your Repository
 
