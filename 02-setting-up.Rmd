@@ -51,7 +51,7 @@ If you need any recap on how to file pull requests remember you can return to th
 
 <details><summary>**Option B: Using a command-line interface**</summary>
 
-Alternatively, you can use a command-line interface (e.g., Command Prompt, PowerShell, the Command Line) rather than GitHub Desktop. If you need to install Git, GitHub provides a [guide for various platforms](https://github.com/git-guides/install-git). Instructions within these sections command-line interface sections will be using "bash".
+Alternatively, you can use a command-line interface (e.g., Command Prompt, PowerShell, the Command Line) rather than GitHub Desktop. If you need to install Git, GitHub provides a [guide for various platforms](https://github.com/git-guides/install-git). Instructions within these command-line interface sections will be using "bash".
 
 1. Copy the repository URL:<br/>
     <input type="checkbox"> On your repository page, click the <div class = "github_button"> Code </div> green button <br/>
@@ -119,7 +119,7 @@ Note that the validation codes are really only needed if you are participating i
 ### Reminders of Best Practices for Success while Working with GitHub
 
 - Use one branch per assignment - keeps work organized
-- Write descriptive commit messages - helps track your progress
+- Write [descriptive commit messages](https://git-scm.com/docs/git-commit#Documentation/git-commit.txt--mmsg) - helps track your progress
 - Regularly push your work - protects your work and enables evaluation
 - Use clear titles and descriptions for pull requests - will help you and your collaborators know what the work in the branch is
 - Don't merge your pull request before you get the validation code - outside of this assignment, wait for approval from a team member or collaborator
