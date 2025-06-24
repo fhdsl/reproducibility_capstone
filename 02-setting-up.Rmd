@@ -9,7 +9,7 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1ExTZsKDHKM0fIi0_
 ### Step 1: Access the Course Template
 
 <input type="checkbox"> Navigate to the [course sandbox template repository](https://github.com/fhdsl/capstone-sandbox)<br/>
-<input type="checkbox"> Look for the <div class = "github_button"> <a href="https://github.com/new?template_name=capstone-sandbox&template_owner=fhdsl"> Use this template</a></div> green button at the top of the repository page<br/>
+<input type="checkbox"> Look for the <div class = "github_button"> <a  href="https://github.com/new?template_name=capstone-sandbox&template_owner=fhdsl" class = "github_button_link"> Use this template</a></div> green button at the top of the repository page<br/>
 
 ::: {.notice}
 Important: Do NOT fork the repository - you must use the template option
@@ -17,7 +17,7 @@ Important: Do NOT fork the repository - you must use the template option
 
 ### Step 2: Configure Your New Repository
 
-<input type="checkbox"> Click <div class = "github_button"> <a href="https://github.com/new?template_name=capstone-sandbox&template_owner=fhdsl"> Use this template</a></div> and select the "Create a new repository" option (if needed).<br/>
+<input type="checkbox"> Click <div class = "github_button"> <a href="https://github.com/new?template_name=capstone-sandbox&template_owner=fhdsl" class = "github_button_link"> Use this template</a></div> and select the "Create a new repository" option (if needed).<br/>
 <input type="checkbox"> Fill out the repository creation form:<br/>
   • <input type="checkbox"> Include all branches: Leave **unchecked** (we only need the main branch)<br/>
   • <input type="checkbox"> Repository name: Choose a meaningful name (e.g., `your-username-capstone-sandbox`)<br/>
