@@ -19,18 +19,18 @@ Important: Do NOT fork the repository - you must use the template option
 
 <input type="checkbox"> Click <div class = "github_button"> <a href="https://github.com/new?template_name=capstone-sandbox&template_owner=fhdsl" class = "github_button_link"> Use this template</a></div> and select the "Create a new repository" option (if needed).<br/>
 <input type="checkbox"> Fill out the repository creation form:<br/>
-  • <input type="checkbox"> Include all branches: Leave **unchecked** (we only need the main branch)<br/>
-  • <input type="checkbox"> Repository name: Choose a meaningful name (e.g., `your-username-capstone-sandbox`)<br/>
-  • <input type="checkbox"> Description: Add a brief description of your capstone project<br/>
-  • <input type="checkbox"> Visibility: Set to **Public** (required for the automated evaluation system to work)<br/>
+    <input type="checkbox"> Include all branches: Leave **unchecked** (we only need the main branch)<br/>
+    <input type="checkbox"> Repository name: Choose a meaningful name (e.g., `your-username-capstone-sandbox`)<br/>
+    <input type="checkbox"> Description: Add a brief description of your capstone project<br/>
+    <input type="checkbox"> Visibility: Set to **Public** (required for the automated evaluation system to work)<br/>
 
 
 ### Step 3: Create Your Repository
 
 <input type="checkbox"> Click <div class = "github_button"> Create repository </div><br/>
 <input type="checkbox"> Wait for GitHub to finish creating your repository and verify completion <br/>
-  • You'll be redirected to your new repository page<br/>
-  • <input type="checkbox"> Verify: The repository should show your username as the owner and contain all the template files<br/>
+  - Note: You'll be redirected to your new repository page<br/>
+  <input type="checkbox"> Verify: The repository should show your username as the owner and contain all the template files<br/>
 
 ## Phase 2: Local Setup and Cloning
 
@@ -52,8 +52,8 @@ If you need any recap on how to file pull requests remember you can return to th
 Alternatively, you can use a command-line interface (e.g., Command Prompt, PowerShell, the Command Line) rather than GitHub Desktop. If you need to install Git, GitHub provides a [guide for various platforms](https://github.com/git-guides/install-git). Instructions within these sections command-line interface sections will be using "bash".
 
 1. Copy the repository URL:<br/>
-   • <input type="checkbox"> On your repository page, click the <div class = "github_button"> Code </div> green button <br/>
-   • <input type="checkbox"> Copy the HTTPS URL (should look like: `https://github.com/yourusername/your-repo-name.git`) <br/>
+    <input type="checkbox"> On your repository page, click the <div class = "github_button"> Code </div> green button <br/>
+    <input type="checkbox"> Copy the HTTPS URL (should look like: `https://github.com/yourusername/your-repo-name.git`) <br/>
 
 2. Clone the repository, using the HTTPS URL you've just copied:
    ```bash
@@ -66,7 +66,7 @@ Alternatively, you can use a command-line interface (e.g., Command Prompt, Power
    # Navigate into the repository
    cd your-repo-name
    ```
-<details>
+</details>
 
 ## Phase 3: Branch Creation and Workflow
 
@@ -111,12 +111,12 @@ Note that the validation codes are really only needed if you are participating i
 
 ### Reminders of Best Practices for Success while Working with GitHub
 
-• Use one branch per assignment - keeps work organized
-• Write descriptive commit messages - helps track your progress
-• Regularly push your work - protects your work and enables evaluation
-• Use clear titles and descriptions for pull requests - will help you and your collaborators know what the work in the branch is
-• Don't merge your pull request before you get the validation code - outside of this assignment, wait for approval from a team member or collaborator
-• Monitor automated feedback - respond to or handle issues identified by evaluation promptly
+- Use one branch per assignment - keeps work organized
+- Write descriptive commit messages - helps track your progress
+- Regularly push your work - protects your work and enables evaluation
+- Use clear titles and descriptions for pull requests - will help you and your collaborators know what the work in the branch is
+- Don't merge your pull request before you get the validation code - outside of this assignment, wait for approval from a team member or collaborator
+- Monitor automated feedback - respond to or handle issues identified by evaluation promptly
 
 ## Troubleshooting Common Issues
 
