@@ -19,7 +19,7 @@ Important: Don't change the name or location of this file.
 ### Step 2: Switch to Your Working Branch (if needed)
 
 <input type="checkbox"> Verify that you're on the branch you created during the set up instructions.<br/>
-&nbsp;&nbsp;&nbsp;&nbsp• The example used the name `assignment-1-dockerfile`.
+&nbsp;&nbsp;&nbsp;&nbsp • The example used the name `assignment-1-dockerfile`.
 
 **Option A: Using GitHub Desktop**
 
@@ -67,16 +67,16 @@ For this capstone project specifically, you will create a custom docker image wi
 <input type="checkbox"> Open `ASSIGNMENT_1/docker/Dockerfile`<br/>
 <input type="checkbox"> Look on [Docker Hub](https://hub.docker.com/) for what base image best suits your needs -- what's the smallest image you can get away with that is from a verified source?<br/>
 <input type="checkbox"> Understand what's already included in the base image already. If you're not sure what's already included, consider [inspecting the image with Docker Desktop](https://docs.docker.com/desktop/use-desktop/images/#inspect-an-image)<br/>
-  &nbsp;&nbsp;&nbsp;&nbsp• Note: You don't need to add a package that's already there.<br/>
-  &nbsp;&nbsp;&nbsp;&nbsp• Will it work with R or Python packages or both?<br/>
+  &nbsp;&nbsp;&nbsp;&nbsp • Note: You don't need to add a package that's already there.<br/>
+  &nbsp;&nbsp;&nbsp;&nbsp • Will it work with R or Python packages or both?<br/>
 <input type="checkbox"> Once you've chosen a base image, [add it to your Dockerfile](https://hutchdatascience.org/Containers_for_Scientists/no_toc/05-modifying-containers.html#activity-instructions).<br/>
 
 ### Step 5: Add Packages Incrementally
 
 <input type="checkbox"> Start by adding just one or two additional packages to your Dockerfile<br/>
 <input type="checkbox"> Use the [templates from the course](https://hutchdatascience.org/Containers_for_Scientists/no_toc/05-modifying-containers.html#templates-for-adding-packages):<br/>
-  &nbsp;&nbsp;&nbsp;&nbsp• For R packages: `RUN Rscript -e "install.packages('packagename')"`<br/>
-  &nbsp;&nbsp;&nbsp;&nbsp• For Python packages: `RUN pip3 install packagename`<br/>
+  &nbsp;&nbsp;&nbsp;&nbsp • For R packages: `RUN Rscript -e "install.packages('packagename')"`<br/>
+  &nbsp;&nbsp;&nbsp;&nbsp • For Python packages: `RUN pip3 install packagename`<br/>
 <input type="checkbox"> Add comments explaining what each package does<br/>
 
 ### Step 6: Build Locally
@@ -125,8 +125,8 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1ExTZsKDHKM0fIi0_
 
 <input type="checkbox"> On [github.com](github.com), within your pull request, watch for the `Docker Assignment Eval` check to start running. This GitHub Action will attempt to build your Dockerfile.<br/>
 <input type="checkbox"> Wait for it to complete. It will comment on your PR whether it successfully built or not.<br/>
-  &nbsp;&nbsp;&nbsp;&nbsp• Success: You'll get a validation code in the comment<br/>
-  &nbsp;&nbsp;&nbsp;&nbsp• Failure: You'll get error messages explaining what went wrong. Read the error messages carefully - they contain clues for fixing issues<br/>
+  &nbsp;&nbsp;&nbsp;&nbsp • Success: You'll get a validation code in the comment<br/>
+  &nbsp;&nbsp;&nbsp;&nbsp • Failure: You'll get error messages explaining what went wrong. Read the error messages carefully - they contain clues for fixing issues<br/>
 <input type="checkbox"> Interpret the results and proceed accordingly:<br/>
   &nbsp;&nbsp;&nbsp;&nbsp <input type="checkbox"> If the test's comment provides a validation code, skip to Phase 5.<br/>
   &nbsp;&nbsp;&nbsp;&nbsp <input type="checkbox"> If the test's comment contains error messages, visit Phase 4: Troubleshooting and Refinement of these instructions.<br/>

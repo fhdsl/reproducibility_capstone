@@ -29,7 +29,7 @@ Important: Do NOT fork the repository - you must use the template option
 
 <input type="checkbox"> Click <div class = "github_button"> Create repository </div><br/>
 <input type="checkbox"> Wait for GitHub to finish creating your repository and verify completion <br/>
-&nbsp;&nbsp;&nbsp;&nbsp• Note: You'll be redirected to your new repository page<br/>
+&nbsp;&nbsp;&nbsp;&nbsp • Note: You'll be redirected to your new repository page<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox"> Verify: The repository should show your username as the owner and contain all the template files<br/>
 
 ## Phase 2: Local Setup and Cloning
