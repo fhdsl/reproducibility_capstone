@@ -29,6 +29,7 @@ GH
 Github
 GitHub
 GitKraken
+GitLFS
 https
 ies
 iframe
@@ -53,7 +54,10 @@ ottrpal
 ottrproject
 PATs
 Pandoc
+Phind
+PII
 png
+PowerShell
 pre
 preprint
 repo
