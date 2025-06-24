@@ -47,6 +47,8 @@ If you need any recap on how to file pull requests remember you can return to th
 <input type="checkbox"> Choose a local path where you want to store the repository <br/>
 <input type="checkbox"> Click "Clone" <br/>
 
+####  {.click_to_expand_block}
+
 <details><summary>**Option B: Using a command-line interface**</summary>
 
 Alternatively, you can use a command-line interface (e.g., Command Prompt, PowerShell, the Command Line) rather than GitHub Desktop. If you need to install Git, GitHub provides a [guide for various platforms](https://github.com/git-guides/install-git). Instructions within these sections command-line interface sections will be using "bash".
@@ -68,6 +70,8 @@ Alternatively, you can use a command-line interface (e.g., Command Prompt, Power
    ```
 </details>
 
+####
+
 ## Phase 3: Branch Creation and Workflow
 
 ### Step 5: Create Your First Assignment Branch
@@ -81,6 +85,7 @@ You may name your working branch whatever you like for these assignments. The ex
 <input type="checkbox"> Name your branch: `assignment-1-dockerfile` <br/>
 <input type="checkbox"> Click "Create branch" <br/>
 
+####  {.click_to_expand_block}
 
 <details><summary>**Option B: Using a command-line interface**</summary>
 
@@ -93,6 +98,8 @@ git branch
 # The asterisk (*) should be next to "assignment-1-dockerfile"
 ```
 </details>
+
+####
 
 ## Your Setup is Complete.... What are the Next Steps?
 
