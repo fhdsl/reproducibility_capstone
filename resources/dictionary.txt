@@ -2,6 +2,7 @@
 AnVIL
 Audiographer
 Audiography
+authenticator
 automagic
 BIPOC
 Bloomberg
