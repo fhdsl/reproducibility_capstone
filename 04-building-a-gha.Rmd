@@ -13,7 +13,7 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1ExTZsKDHKM0fIi0_
 <input type="checkbox"> Locate the `ASSIGNMENT_3.yml` file within the `ASSIGNMENT_3` directory - this is your starting template <br/>
 <input type="checkbox"> Review the existing template to understand what's already provided <br/>
 
-::: {.notice}
+::: {.warning}
 **Important:** Do not change the filename from `ASSIGNMENT_3.yml`. Leave the name exactly as it is. You will be moving the file's location, but do not change its name.
 :::
 
@@ -31,7 +31,7 @@ GitHub Actions must be in the `.github/workflows/` directory for Github to recog
 
 <input type="checkbox"> Move `ASSIGNMENT_3.yml` to `.github/workflows/ASSIGNMENT_3.yml` <br/>
 
-::: {.notice}
+::: {.warning}
 **Critical:** The file must be in this exact location for GitHub to recognize it as a workflow file (and for this assignment to automatically evaluate your GitHub Action).
 :::
 
@@ -49,7 +49,11 @@ While learning, it can be really helpful to pick an action that produces somethi
   &nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox"> Validate data files or configurations<br/>
 
 ::: {.warning}
-You **never** want to put sensitive [PHI](https://hutchdatascience.org/Ethical_Data_Handling_for_Cancer_Research/no_toc/data-privacy.html#phi-protected-health-information) or [PII](https://hutchdatascience.org/Ethical_Data_Handling_for_Cancer_Research/no_toc/data-privacy.html#pii-personal-identifiable-information) on GitHub, even in a private repository. And you will want to limit the size of any data files you are putting on GitHub unless you have large file storage (GitLFS) capabilities. So if you want to run a report, create a visualization, or validate a data file, then perhaps make a small toy dataset.
+You **never** want to put sensitive [PHI](https://hutchdatascience.org/Ethical_Data_Handling_for_Cancer_Research/no_toc/data-privacy.html#phi-protected-health-information) or [PII](https://hutchdatascience.org/Ethical_Data_Handling_for_Cancer_Research/no_toc/data-privacy.html#pii-personal-identifiable-information) on GitHub, even in a private repository.
+:::
+
+::: {.notice}
+You will want to limit the size of any data files you are putting on GitHub unless you have large file storage (GitLFS) capabilities. So if you want to run a report, create a visualization, or validate a data file, then perhaps make a small toy dataset.
 :::
 
 ## Phase 2: GitHub Action Development
@@ -140,7 +144,7 @@ jobs:
 </div>
 
 <input type="checkbox"> Fill out the `ASSIGNMENT_3.yml`, including the key components, and the steps of the action (the task you chose), under `run: |`.<br/>
-<input type="checkbox"> Add any needed files (e.g., scripts or toy data) to your copy of the sandbox repository so that your GitHub Action can access them.<br/>
+<input type="checkbox"> Still while on your branch, add any needed files (e.g., scripts or toy data) to your copy of the sandbox repository so that your GitHub Action can access them.<br/>
 
 ## Phase 3: Testing and Iteration
 
@@ -205,7 +209,7 @@ Note that if you are not taking this course through Coursera or Leanpub for cert
 
 ### Step 12: Submit Your Quiz
 
-<input type="checkbox"> Go to your Coursera Capstone Quiz<br/>
+<input type="checkbox"> Go to your Coursera Graded Assignment ("Building a GitHub Action")<br/>
 <input type="checkbox"> Paste the validation code when prompted<br/>
 <input type="checkbox"> Submit the quiz to get credit for your work<br/>
 
