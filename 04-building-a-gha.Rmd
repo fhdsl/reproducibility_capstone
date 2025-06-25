@@ -9,88 +9,80 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1ExTZsKDHKM0fIi0_
 
 ### Step 1: Set Up Your Working Environment
 
-- Navigate to your capstone sandbox repository
-- Locate the `ASSIGNMENT_2.yml` file within the `ASSIGNMENT_2` directory - this is your starting template
-- Important: Keep the filename exactly as `ASSIGNMENT_2.yml` throughout the assignment
-- Review the existing template to understand what's already provided
+<input type="checkbox"> Navigate to your capstone sandbox repository <br/>
+<input type="checkbox"> Locate the `ASSIGNMENT_2.yml` file within the `ASSIGNMENT_2` directory - this is your starting template <br/>
+<input type="checkbox"> Review the existing template to understand what's already provided <br/>
+
+::: {.notice}
+**Important:** Do not change the filename from `ASSIGNMENT_2.yml` throughout the assignment. You will be moving the file's location, but do not change it's name.
+:::
 
 ### Step 2: Create Your Working Branch
 
-- Create a new branch for this assignment (e.g., `github-action-assignment` or `gha-build`)
-- Switch to this branch before making any changes
-- This isolates your work and enables the automated evaluation system
+In order to isolate your work and enable the automated evaluation system this sandbox uses, you will create a new working branch.
+
+<input type="checkbox"> Create a new branch for this assignment (e.g., `github-action-assignment` or `gha-build`)<br/>
+<input type="checkbox"> Switch to this branch before making any changes<br/>
+
 
 ### Step 3: Move File to Correct Location
 
-- GitHub Actions must be in the `.github/workflows/` directory
-- Move `ASSIGNMENT_2.yml` to `.github/workflows/ASSIGNMENT_2.yml`
-- Critical: The file must be in this exact location for GitHub to recognize it as a workflow file (and for this assignment to automatically evaluate your GitHub Action).
+GitHub Actions must be in the `.github/workflows/` directory for Github to recognize them as a GitHub Action
+
+<input type="checkbox"> Move `ASSIGNMENT_2.yml` to `.github/workflows/ASSIGNMENT_2.yml` <br/>
+
+::: {.notice}
+**Critical:** The file must be in this exact location for GitHub to recognize it as a workflow file (and for this assignment to automatically evaluate your GitHub Action).
+:::
 
 ### Step 4: Plan Your GitHub Action
 
-- Decide what useful task your GitHub Action will perform
+While learning, it can be really helpful to pick an action that produces something that you can visually inspect (e.g., a report or plot) because if it is generated and looks how you expect, you can confirm that your GitHub Action is successful and doesn't have a silent failure occurring in the background.
+
+<input type="checkbox"> Decide what useful task your GitHub Action will perform <br/>
 - Ideas for useful actions:
-  - Run automated tests on your capstone code
-  - Generate reports or documentation
-  - Check code quality or formatting
-  - Create data visualizations
-  - Send notifications when certain conditions are met
-  - Validate data files or configurations
+  &nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox"> Run automated tests on your capstone code<br/>
+  &nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox"> Generate reports or documentation<br/>
+  &nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox"> Check code quality or formatting<br/>
+  &nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox"> Create data visualizations<br/>
+  &nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox"> Send notifications when certain conditions are met<br/>
+  &nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox"> Validate data files or configurations<br/>
 
 ::: {.warning}
-You never want to put sensitive PHI or PII on GitHub, even in a private repository. And you will want to limit the size of any data files you are putting on GitHub unless you have large file storage (GitLFS) capabilities. So if you want to run a report, create a visualization, or validate a data file, then perhaps make a small toy dataset.
+You **never** want to put sensitive [PHI](https://hutchdatascience.org/Ethical_Data_Handling_for_Cancer_Research/no_toc/data-privacy.html#phi-protected-health-information) or [PII](https://hutchdatascience.org/Ethical_Data_Handling_for_Cancer_Research/no_toc/data-privacy.html#pii-personal-identifiable-information) on GitHub, even in a private repository. And you will want to limit the size of any data files you are putting on GitHub unless you have large file storage (GitLFS) capabilities. So if you want to run a report, create a visualization, or validate a data file, then perhaps make a small toy dataset.
 :::
-
-While learning, it can be really helpful to pick an action that produces something that you can visually inspect (e.g., a report or plot) because if it is generated and looks how you expect, you can confirm that your GitHub Action is successful and doesn't have a silent failure.
 
 ## Phase 2: GitHub Action Development
 
 ### Step 5: Understand the Template Structure
 
-- Open `ASSIGNMENT_2.yml` and examine the existing structure
-- Identify the key components:
-  - `name:` - What your action is called
-  - `on:` - When it should trigger
-  - `jobs:` - What it should do
-  - `job-name:` - an identifier of the job specifically
-  - `runs-on:` - What environment to use
+<input type="checkbox"> Open `ASSIGNMENT_2.yml` and examine the existing structure <br/>
+<input type="checkbox"> Identify the key components: <br/>
+  &nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox"> `name:` - What your action is called <br/>
+  &nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox"> `on:` - When it should trigger <br/>
+  &nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox"> `jobs:` - What it should do <br/>
+  &nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox"> `job-name:` - an identifier of the job specifically <br/>
+  &nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox"> `runs-on:` - What environment to use <br/>
 
 ### Step 6: Define Your Action's Purpose
 
-- Choose a meaningful trigger (`on:`):
-  - `pull_request:` - Runs when PRs are opened/updated (good for testing)
-  - `push:` - Runs when code is pushed to specific branches
-  - `workflow_dispatch:` - Allows manual triggering (useful for development)
-  - `schedule:` - Runs on a time schedule (e.g., once a week)
+ <input type="checkbox"> Choose a meaningful trigger (`on:`):<br/>
+  &nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox"> `pull_request:` - Runs when PRs are opened/updated (good for testing)<br/>
+  &nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox"> `push:` - Runs when code is pushed to specific branches<br/>
+  &nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox"> `workflow_dispatch:` - Allows manual triggering (useful for development)<br/>
+  &nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox"> `schedule:` - Runs on a time schedule (e.g., once a week)<br/>
 
-- Design your job steps:
-  - Start with `actions/checkout@v4` to get your repository files
-  - Add steps that accomplish your chosen task
-  - Include error handling and status checks
-  - It's important to name steps so that you can access and check outputs of those steps.
+ <input type="checkbox"> Design your job steps:<br/>
+  &nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox"> Start with `actions/checkout@v4` to get your repository files<br/>
+  &nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox"> Add steps that accomplish your chosen task<br/>
+  &nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox"> Include error handling and status checks<br/>
+  &nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox"> It's important to name steps so that you can access and check outputs of those steps.<br/>
 
-## Phase 3: Implementation Strategies
+<input type="checkbox"> Consider and possibly emulate one of these common design strategies for various tasks. Notice how they fill out the key components and outline where the task steps will be filled in:<br/>
 
-### Step 7: Start Simple and Build Up
+<div class="click_to_expand_block">
+<details><summary> For Code Quality/Testing:</summary>
 
-- Begin with a basic action that you know will work
-- Test early and often to catch issues quickly
-- Add complexity gradually, testing each addition
-
-### Step 8: Use Course Knowledge
-- Apply containers knowledge:
-  - Choose appropriate `runs-on:` environment
-  - Consider using Docker containers if you need specific software
-  - Reference container images from Docker Hub if needed
-
-- Apply automation principles:
-  - Ensure your action fails appropriately when something goes wrong
-  - Include meaningful output and logging
-  - Use environment variables and secrets when needed
-
-### Step 9: Common Implementation Patterns
-
-#### For Code Quality/Testing:
 ```yaml
 name: Code Quality Check
 on: pull_request
@@ -105,7 +97,12 @@ jobs:
           echo "Running code quality checks..."
 ```
 
-#### For Data Analysis:
+</details>
+</div>
+
+<div class="click_to_expand_block">
+<details><summary> For Data Analysis:</summary>
+
 ```yaml
 name: Automated Analysis
 on: workflow_dispatch
@@ -121,7 +118,11 @@ jobs:
           # Your analysis commands here
 ```
 
-#### For Documentation:
+</details>
+</div>
+
+<div class="click_to_expand_block">
+<details><summary> For Documentation:</summary>
 ```yaml
 name: Generate Documentation
 on: push
@@ -135,55 +136,59 @@ jobs:
           # Documentation generation commands
 ```
 
-## Phase 4: Testing and Iteration
+</details>
+</div>
 
-### Step 10: Open Your Pull Request
+<input type="checkbox"> Fill out the `ASSIGNMENT_2.yml`, including the key components, and the steps of the action (the task you chose), under `run: |`.
 
-- Commit your changes to your branch
-- Push the branch to GitHub
-- Open a pull request from your branch to main
-- Key: This triggers the `GHA Assignment Eval` test
+## Phase 3: Testing and Iteration
 
-### Step 11: Monitor Automated Evaluation & Interpret Evaluation Results
+### Step 7: Open Your Pull Request
 
-- Watch for the `GHA Assignment Eval` check to start running
-- This evaluator will test whether your GitHub Action runs successfully. The evaluator checks for common issues and provides guidance.
-- Wait for it to complete and comment on your PR
-  - Success: You'll receive a validation code in the PR comment
-  - Failure: You'll get specific error messages and troubleshooting tips
+Key: This step triggers the `GHA Assignment Eval` test
 
-## Phase 5: Troubleshooting and Refinement
+<input type="checkbox"> Commit your changes to your branch. <br/>
+<input type="checkbox"> Push the branch to GitHub. <br/>
+<input type="checkbox"> Open a pull request from your branch to main. <br/>
 
-### Step 12: Debug Common Issues
+### Step 8: Monitor Automated Evaluation & Interpret Evaluation Results
 
-- YAML syntax errors: Check indentation, colons, and spacing
-- File location errors: Ensure file is in `.github/workflows/`
-- Permission errors: May need to add GitHub secrets or tokens (see Assignment 3 for more information if necessary)
-- Missing dependencies: Check if your chosen environment has required software
-- Silent failures: Verify your action actually does what you expect
+<input type="checkbox"> Watch for the `GHA Assignment Eval` check to start running
+<input type="checkbox"> This evaluator will test whether your GitHub Action runs successfully. The evaluator checks for common issues and provides guidance.
+<input type="checkbox"> Wait for it to complete and comment on your PR
+  &nbsp;&nbsp;&nbsp;&nbsp; • Success: You'll receive a validation code in the PR comment <br/>
+  &nbsp;&nbsp;&nbsp;&nbsp; • Failure: You'll get specific error messages and troubleshooting tips <br/>
+<input type="checkbox"> Interpret the results and proceed accordingly:<br/>
+  &nbsp;&nbsp;&nbsp;&nbsp; <input type="checkbox"> If the test's comment provides a validation code, skip to Phase 5.<br/>
+  &nbsp;&nbsp;&nbsp;&nbsp; <input type="checkbox"> If the test's comment contains error messages, visit Phase 4: Troubleshooting and Refinement of these instructions.<br/>
+
+## Phase 4: Troubleshooting and Refinement
+
+### Step 9: Debug Common Issues
+
+Common issues to check: <br/>
+<input type="checkbox"> YAML syntax errors: Check indentation, colons, and spacing<br/>
+<input type="checkbox"> File location errors: Ensure file is in `.github/workflows/`<br/>
+<input type="checkbox"> Permission errors: May need to add GitHub secrets or tokens (see Assignment 3 for more information if necessary)<br/>
+<input type="checkbox"> Missing dependencies: Check if your chosen environment has required software<br/>
+<input type="checkbox"> Silent failures: Verify your action actually does what you expect<br/>
 
 
 ```{r, out.width = "100%", fig.alt = "Troubleshooting tips for GitHub Actions. Tip Details General Debugging. Look out for silent errors. Actions may fail without obvious error messages. Look at the logs closely! Detailed examination of workflow logs is essential. Use workflow_dispatch/pull_request triggers for development. These triggers help test workflows during development. Print out things to test your assumptions. Add debug output to verify your workflow logic. Marketplace Actions. Read the docs carefully! Thoroughly review documentation before implementation. Try updating to later versions to fix problems.Newer versions often contain bug fixes. Avoid poorly documented or poorly maintained actions. Choose well-supported actions for reliability. Startup Issues. Check for missing essential specifications. Ensure all required parameters and configurations are present.Look for syntax issues. Verify YAML syntax and GitHub Actions syntax.Check for spacing issues.YAML is sensitive to indentation and spacing", echo = FALSE}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1ExTZsKDHKM0fIi0_tB80qd8cHvqjEDyNJp-OsnvZ19o/edit?slide=id.g361b9572af4_0_382#slide=id.g361b9572af4_0_382")
 ```
 
-### Step 13: Apply Troubleshooting Strategies
-
-- Read error messages carefully: They often contain the exact solution
-- Check the logs: Go to Actions tab and examine detailed output
-- Test incrementally: Make small changes and test each one
-- Use marketplace actions: Leverage existing actions when possible
-- Print debugging info: Use `echo` commands to verify assumptions
+You'll find specific error messages in the actions logs. Check them out!
 
 ```{r out.width="100%", echo = FALSE, fig.alt = "The actions logs are useful when debugging. Look at the Details if an action is not successful for more information why"}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1ExTZsKDHKM0fIi0_tB80qd8cHvqjEDyNJp-OsnvZ19o/edit?slide=id.g361b9572af4_0_803#slide=id.g361b9572af4_0_803")
 ```
 
-### Step 14: Iterate Until Success
+### Step 10: Iterate Until Success
 
-- Make changes to your `ASSIGNMENT_2.yml` file on your branch
-- Commit and push changes to trigger new evaluation runs
-- Keep refining based on feedback until you get a successful build
+<input type="checkbox"> Make changes to your `ASSIGNMENT_2.yml` file on your branch<br/>
+<input type="checkbox"> Commit and push changes to trigger new evaluation runs<br/>
+<input type="checkbox"> Keep refining based on feedback until you get an action that runs successfully<br/>
 
 ```{r out.width="100%", echo=FALSE, fig.alt = "You may have to troubleshoot iteratively until your github action runs successfully. Git commit and push edits to your yml file and check your existing pull request to receive evaluation from automated assignment checks. Interpret the results. If you were not successful, troubleshoot and iterate this process as needed, checking your pre-existing pull request for new evaluation results after making additional changes. Or if you were successful in your assignment, submit the verification code to your coursera quiz (or move on to the next section if you are not using coursera or some certification method to take this course)"}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1ExTZsKDHKM0fIi0_tB80qd8cHvqjEDyNJp-OsnvZ19o/edit?slide=id.g36815e8f502_0_0#slide=id.g36815e8f502_0_0")
@@ -191,39 +196,55 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1ExTZsKDHKM0fIi0_
 
 ## Phase 6: Completion
 
-### Step 15: Collect Your Validation Code
+### Step 11: Collect Your Validation Code
 
-Once your GitHub Action runs successfully, copy the validation code from the PR comment. Keep this code safe for your quiz submission. Note that if you are not taking this course through Coursera or Leanpub for certification then you can ignore this step
+Note that if you are not taking this course through Coursera or Leanpub for certification then you can ignore this step
+
+<input type="checkbox"> Once your GitHub Action runs successfully, copy the validation code from the PR comment. Keep this code safe for your quiz submission.<br/>
+
+### Step 12: Submit Your Quiz
+
+<input type="checkbox"> Go to your Coursera Capstone Quiz<br/>
+<input type="checkbox"> Paste the validation code when prompted<br/>
+<input type="checkbox"> Submit the quiz to get credit for your work<br/>
 
 ## Suggestions for Troubleshooting and Best Practices
 
-### Choose Appropriate Scope
+Remember: This assignment builds on both the containers knowledge (for choosing appropriate environments) and the GitHub Actions automation concepts. The goal is to demonstrate your understanding of continuous integration principles by creating something that automatically improves or validates your capstone project.
 
-- Your action should be useful but not overly complex
-- Focus on demonstrating GitHub Actions concepts rather than building production software
-- A working simple action is better than a broken complex one - iterate, knowing if you need more features you can add these incrementally. Start a new pull request for each new feature.
+### Start Simple and Build Up
 
-### Leverage Course Materials
+- Begin with a basic action that you know will work
+- Your action should be useful but not overly complex. Focus on demonstrating GitHub Actions concepts rather than building production software.
+- Test early and often to catch issues quickly
+- Add complexity gradually, testing each addition
+- Use marketplace actions: Leverage existing actions when possible
 
-- Use troubleshooting strategies from the GitHub Actions course
+### Use Course Knowledge
+
+- Reference information from the [GitHub Automation for Scientists course](https://hutchdatascience.org/GitHub_Automation_for_Scientists/) as needed.
 - Reference YAML examples from course exercises
-- Apply container knowledge if your action needs specific software environments
+- Apply containers knowledge:
+  - Choose appropriate `runs-on:` environment
+  - Consider using Docker containers if you need specific software
+  - Reference container images from Docker Hub if needed
+- Apply automation principles:
+  - Ensure your action fails appropriately when something goes wrong
+  - Include meaningful output and logging
+  - Use environment variables and secrets when needed
 
-### Use the Evaluation System Effectively
+### Leverage the Automated Testing
 
 - The automated evaluator provides immediate feedback
 - Don't be afraid to make multiple attempts - each iteration teaches you something
 - Read the evaluator's comments carefully for specific guidance
 
-### Common Useful Actions for Capstone Projects
+### Read Error Messages Carefully
 
-- Data validation: Check that uploaded data meets expected formats
-- Report generation: Automatically create summary reports from data
-- Code style checking: Ensure consistent formatting and style
-- Dependency checking: Verify all required packages are available
-- Backup creation: Automatically backup important files
-- Notification system: Send alerts when certain conditions are met
-
-Remember: This assignment builds on both the containers knowledge (for choosing appropriate environments) and the GitHub Actions automation concepts. The goal is to demonstrate your understanding of continuous integration principles by creating something that automatically improves or validates your capstone project.
+- Error messages (in the actions logs) often contain the exact solution
+- Check the logs: Go to Actions tab and examine detailed output
+- Print debugging info: Use `echo` commands to verify assumptions
+- Google specific error messages if they're unclear
+- Copy and paste the error code and include any relevant context to a [code trained LLM](https://doi-org.fhcrc.idm.oclc.org/10.1038/d41586-023-03023-4) (e.g., [Phind](https://www.phind.com/)) for additional help.
 
 The automated evaluation system is designed to help you learn through iteration, so embrace the feedback loop and keep refining your action until it works reliably!
