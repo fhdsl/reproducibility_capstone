@@ -14,7 +14,7 @@ These credits are based on our [course contributors table guidelines](https://ww
 |Content Contributor(s) | [Kate Isaac], [Carrie Wright] |
 |Content Editor(s)/Reviewer(s) | [Carrie Wright], [Kate Isaac] |
 |**Production**||
-|Content Publisher(s)| [Carrie Wright] |
+|Content Publisher(s)| [Carrie Wright], [Kate Isaac], [Candace Savonen]|
 |Content Publishing Reviewer(s)| [Carrie Wright]|
 |**Technical**||
 |Course Publishing Engineer(s)| Helped with the code for the technical aspects related to the specific course generation|
@@ -46,4 +46,4 @@ devtools::session_info()
 
 <!-- Links -->
 
-[ottrpal]: https://github.com/jhudsl/ottrpal
+[ottrpal]: https://github.com/ottrproject/ottrpal
