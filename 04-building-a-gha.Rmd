@@ -14,7 +14,7 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1ExTZsKDHKM0fIi0_
 <input type="checkbox"> Review the existing template to understand what's already provided <br/>
 
 ::: {.notice}
-**Important:** Do not change the filename from `ASSIGNMENT_2.yml` throughout the assignment. You will be moving the file's location, but do not change it's name.
+**Important:** Do not change the filename from `ASSIGNMENT_2.yml`. Leave the name exactly as it is. You will be moving the file's location, but do not change its name.
 :::
 
 ### Step 2: Create Your Working Branch
@@ -40,7 +40,7 @@ GitHub Actions must be in the `.github/workflows/` directory for Github to recog
 While learning, it can be really helpful to pick an action that produces something that you can visually inspect (e.g., a report or plot) because if it is generated and looks how you expect, you can confirm that your GitHub Action is successful and doesn't have a silent failure occurring in the background.
 
 <input type="checkbox"> Decide what useful task your GitHub Action will perform <br/>
-- Ideas for useful actions:
+- Ideas for useful actions:<br/>
   &nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox"> Run automated tests on your capstone code<br/>
   &nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox"> Generate reports or documentation<br/>
   &nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox"> Check code quality or formatting<br/>
@@ -153,9 +153,9 @@ Key: This step triggers the `GHA Assignment Eval` test
 
 ### Step 8: Monitor Automated Evaluation & Interpret Evaluation Results
 
-<input type="checkbox"> Watch for the `GHA Assignment Eval` check to start running
-<input type="checkbox"> This evaluator will test whether your GitHub Action runs successfully. The evaluator checks for common issues and provides guidance.
-<input type="checkbox"> Wait for it to complete and comment on your PR
+<input type="checkbox"> Watch for the `GHA Assignment Eval` check to start running <br/>
+<input type="checkbox"> This evaluator will test whether your GitHub Action runs successfully. The evaluator checks for common issues and provides guidance. <br/>
+<input type="checkbox"> Wait for it to complete and comment on your PR<br/>
   &nbsp;&nbsp;&nbsp;&nbsp; • Success: You'll receive a validation code in the PR comment <br/>
   &nbsp;&nbsp;&nbsp;&nbsp; • Failure: You'll get specific error messages and troubleshooting tips <br/>
 <input type="checkbox"> Interpret the results and proceed accordingly:<br/>
@@ -196,9 +196,9 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1ExTZsKDHKM0fIi0_
 
 ## Phase 6: Completion
 
-### Step 11: Collect Your Validation Code
+Note that if you are not taking this course through Coursera or Leanpub for certification then you can ignore this phase
 
-Note that if you are not taking this course through Coursera or Leanpub for certification then you can ignore this step
+### Step 11: Collect Your Validation Code
 
 <input type="checkbox"> Once your GitHub Action runs successfully, copy the validation code from the PR comment. Keep this code safe for your quiz submission.<br/>
 
