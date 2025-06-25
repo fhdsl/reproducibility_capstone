@@ -48,15 +48,15 @@ If you are not on the branch you expect to be on, you can ["checkout"](https://g
 In general, you may already have a reason for building a custom docker image, or a specific set of tools you wish to package together. The following questions and guidelines are helpful for real-world development of a custom docker image.  
 
 _Here are some situations you might find yourself in where a docker image is helpful_:<br/>
-- You are building a Github action and need a specialized group of packages.<br/>
-- You are building an analysis that you need a collaborator to run.<br/>
-- You are building software you want to be reliable in its deployment.<br/>
+• You are building a Github action and need a specialized group of packages.<br/>
+• You are building an analysis that you need a collaborator to run.<br/>
+• You are building software you want to be reliable in its deployment.<br/>
 
 _Questions to ask yourself_:<br/>
-- What programming languages you're using (R, Python, etc.)<br/>
-- What packages/libraries your analysis scripts require<br/>
-- What types of security concerns does this project have?<br/>
-- Are there publicly available docker images that could cover your needs already?<br/>
+• What programming languages you're using (R, Python, etc.)<br/>
+• What packages/libraries your analysis scripts require<br/>
+• What types of security concerns does this project have?<br/>
+• Are there publicly available docker images that could cover your needs already?<br/>
 
 For this capstone project specifically, you will create a custom docker image with very little guidance as to what packages it will include. Think about a couple of packages that are helpful in your day to day work, and build a docker image with that in mind.
 
