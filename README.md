@@ -9,9 +9,11 @@ If you would like to contribute to this course material, take a look at the [OTT
 
 This course will teach learners to:  
 
-- Recap the best practices of reproducibility we have covered in this specialization 
-- Create an original docker image 
-- Create an original GitHub Action 
+- Review the best practices of reproducibility we have covered in this specialization
+- Create an original docker image
+- Generate a personal access token
+- Securely store GitHub Secrets
+- Create an original GitHub Action
 - Have your original docker image and github action work together
 
 ## Encountering problems?

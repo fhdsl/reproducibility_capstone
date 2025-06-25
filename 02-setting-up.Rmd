@@ -103,7 +103,7 @@ git branch
 
 ## Your Setup is Complete.... What are the Next Steps?
 
-This setup process creates the foundation for all your capstone assignments. The first two assignments will follow a similar pattern:
+This setup process creates the foundation for the first and third capstone assignments. The first and third assignments will follow a similar pattern:
 
 Create a branch → Make changes → Commit changes → Push to GitHub → Open a PR → Receive evaluation (→ iterate if needed).
 
