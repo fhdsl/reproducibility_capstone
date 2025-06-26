@@ -1,4 +1,4 @@
-# Assignment 3: Building Your Capstone GitHub Action
+# Building a GitHub Action
 
 
 ```{r, out.width = "100%", fig.alt = "This course will demonstrate how to: Recap GitHub Action building techniques Create an original GitHub Action", echo = FALSE}
@@ -10,11 +10,11 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1ExTZsKDHKM0fIi0_
 ### Step 1: Set Up Your Working Environment
 
 <input type="checkbox"> Navigate to your capstone sandbox repository <br/>
-<input type="checkbox"> Locate the `ASSIGNMENT_3.yml` file within the `ASSIGNMENT_3` directory - this is your starting template <br/>
+<input type="checkbox"> Locate the `GitHub_Action_Assignment.yml` file within the `GitHub_Action_Assignment` directory - this is your starting template <br/>
 <input type="checkbox"> Review the existing template to understand what's already provided <br/>
 
 ::: {.warning}
-**Important:** Do not change the filename from `ASSIGNMENT_3.yml`. Leave the name exactly as it is. You will be moving the file's location, but do not change its name.
+**Important:** Do not change the filename from `GitHub_Action_Assignment.yml`. Leave the name exactly as it is. You will be moving the file's location, but do not change its name.
 :::
 
 ### Step 2: Create Your Working Branch
@@ -29,7 +29,7 @@ In order to isolate your work and enable the automated evaluation system this sa
 
 GitHub Actions must be in the `.github/workflows/` directory for Github to recognize them as a GitHub Action
 
-<input type="checkbox"> Move `ASSIGNMENT_3.yml` to `.github/workflows/ASSIGNMENT_3.yml` <br/>
+<input type="checkbox"> Move `GitHub_Action_Assignment.yml` to `.github/workflows/GitHub_Action_Assignment.yml` <br/>
 
 ::: {.warning}
 **Critical:** The file must be in this exact location for GitHub to recognize it as a workflow file (and for this assignment to automatically evaluate your GitHub Action).
@@ -60,7 +60,7 @@ You will want to limit the size of any data files you are putting on GitHub unle
 
 ### Step 5: Understand the Template Structure
 
-<input type="checkbox"> Open `ASSIGNMENT_3.yml` and examine the existing structure <br/>
+<input type="checkbox"> Open `GitHub_Action_Assignment.yml` and examine the existing structure <br/>
 <input type="checkbox"> Identify the key components: <br/>
   &nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox"> `name:` - What your action is called <br/>
   &nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox"> `on:` - When it should trigger <br/>
@@ -143,8 +143,8 @@ jobs:
 </details>
 </div>
 
-<input type="checkbox"> Fill out the `ASSIGNMENT_3.yml`, including the key components, and the steps of the action (the task you chose), under `run: |`.<br/>
-<input type="checkbox"> Still while on your branch, add any needed files (e.g., scripts or toy data) to your copy of the sandbox repository so that your GitHub Action can access them.<br/>
+<input type="checkbox"> Fill out the `GitHub_Action_Assignment.yml`, including the key components, and the steps of the action (the task you chose), under `run: |`.<br/>
+<input type="checkbox"> While on your branch, add any needed files (e.g., scripts or toy data) to your copy of the sandbox repository so that your GitHub Action can access them.<br/>
 
 ## Phase 3: Testing and Iteration
 
@@ -174,7 +174,7 @@ Key: This step triggers the `GHA Assignment Eval` test
 Common issues to check: <br/>
 <input type="checkbox"> YAML syntax errors: Check indentation, colons, and spacing<br/>
 <input type="checkbox"> File location errors: Ensure file is in `.github/workflows/`<br/>
-<input type="checkbox"> Permission errors: May need to add GitHub secrets or tokens (see Assignment 2 for more information if necessary)<br/>
+<input type="checkbox"> Permission errors: May need to add GitHub secrets or tokens (see the GitHub Secrets Assignment for more information if necessary)<br/>
 <input type="checkbox"> Missing dependencies: Check if your chosen environment has required software<br/>
 <input type="checkbox"> Silent failures: Verify your action actually does what you expect<br/>
 
@@ -191,7 +191,7 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1ExTZsKDHKM0fIi0_
 
 ### Step 10: Iterate Until Success
 
-<input type="checkbox"> Make changes to your `ASSIGNMENT_3.yml` file on your branch<br/>
+<input type="checkbox"> Make changes to your `GitHub_Action_Assignment.yml` file on your branch<br/>
 <input type="checkbox"> Commit and push changes to trigger new evaluation runs<br/>
 <input type="checkbox"> Keep refining based on feedback until you get an action that runs successfully<br/>
 

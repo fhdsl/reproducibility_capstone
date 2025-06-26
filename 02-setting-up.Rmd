@@ -74,15 +74,15 @@ Alternatively, you can use a command-line interface (e.g., Command Prompt, Power
 
 ## Phase 3: Branch Creation and Workflow
 
-### Step 5: Create Your First Assignment Branch
+### Step 5: Create Your Branch for the Docker Assignment
 
-You may name your working branch whatever you like for these assignments. The examples/instructions use the name `assignment-1-dockerfile`.
+You may name your working branch whatever you like for each assignment. The examples/instructions use the name `docker-assignment` for the first example.
 
 **Option A: Using GitHub Desktop**
 
 <input type="checkbox"> Click on the "Current branch" dropdown (shows "main") <br/>
 <input type="checkbox"> Click "New branch" <br/>
-<input type="checkbox"> Name your branch: `assignment-1-dockerfile` <br/>
+<input type="checkbox"> Name your branch: `docker-assignment` <br/>
 <input type="checkbox"> Click "Create branch" <br/>
 
 <div class="click_to_expand_block">
@@ -90,20 +90,24 @@ You may name your working branch whatever you like for these assignments. The ex
 <details><summary>**Option B: Using a command-line interface**</summary>
 
 ```bash
-# Create and switch to a new branch for Assignment 1
-git checkout -b assignment-1-dockerfile
+# Create and switch to a new branch for the docker assignment
+git checkout -b docker-assignment
 
 # Verify you're on the new branch
 git branch
-# The asterisk (*) should be next to "assignment-1-dockerfile"
+# The asterisk (*) should be next to "docker-assignment"
 ```
 </details>
 
 </div>
 
+```
+ADD info here about coursera quiz for workflow file URL
+```
+
 ## Your Setup is Complete.... What are the Next Steps?
 
-This setup process creates the foundation for the first and third capstone assignments. The first and third assignments will follow a similar pattern:
+This setup process creates the foundation for the Docker and GitHub Action capstone assignments, which will follow a similar pattern:
 
 Create a branch → Make changes → Commit changes → Push to GitHub → Open a PR → Receive evaluation (→ iterate if needed).
 

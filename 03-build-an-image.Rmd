@@ -1,5 +1,4 @@
-# Assignment 1: Building Your Capstone Dockerfile
-
+# Building a Docker Image
 
 ```{r, out.width = "100%", fig.alt = "This course will demonstrate how to:Recap Docker image building techniques Create an original Docker image ", echo = FALSE}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1ExTZsKDHKM0fIi0_tB80qd8cHvqjEDyNJp-OsnvZ19o/edit?slide=id.g361b9572af4_0_181#slide=id.g361b9572af4_0_181")
@@ -10,7 +9,7 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1ExTZsKDHKM0fIi0_
 ### Step 1: Set Up Your Working Environment
 
 <input type="checkbox"> Navigate to your capstone sandbox repository.<br/>
-<input type="checkbox"> Locate the `ASSIGNMENT_1/docker/Dockerfile` - you will be making changes to this file.<br/>
+<input type="checkbox"> Locate the `Docker_Assignment/docker/Dockerfile` - you will be making changes within this file.<br/>
 
 ::: {.notice}
 Important: Don't change the name or location of this file.
@@ -19,7 +18,7 @@ Important: Don't change the name or location of this file.
 ### Step 2: Switch to Your Working Branch (if needed)
 
 <input type="checkbox"> Verify that you're on the branch you created during the set up instructions.<br/>
-&nbsp;&nbsp;&nbsp;&nbsp; • The example used the name `assignment-1-dockerfile`.
+&nbsp;&nbsp;&nbsp;&nbsp; • The example used the name `docker-assignment`.
 
 **Option A: Using GitHub Desktop**
 
@@ -34,7 +33,7 @@ Important: Don't change the name or location of this file.
 git status
 
 # The first line of the output of this command will report what branch you are on...
-# On branch assignment-1-dockerfile
+# On branch docker-assignment
 ```
 
 If you are not on the branch you expect to be on, you can ["checkout"](https://git-scm.com/docs/git-checkout) or ["switch"](https://git-scm.com/docs/git-switch) your branch.
@@ -64,7 +63,7 @@ For this capstone project specifically, you will create a custom docker image wi
 
 ### Step 4: Examine the Base Setup
 
-<input type="checkbox"> Open `ASSIGNMENT_1/docker/Dockerfile`<br/>
+<input type="checkbox"> Open `Docker_Assignment/docker/Dockerfile`<br/>
 <input type="checkbox"> Look on [Docker Hub](https://hub.docker.com/) for what base image best suits your needs -- what's the smallest image you can get away with that is from a verified source?<br/>
 <input type="checkbox"> Understand what's already included in the base image already. If you're not sure what's already included, consider [inspecting the image with Docker Desktop](https://docs.docker.com/desktop/use-desktop/images/#inspect-an-image)<br/>
   &nbsp;&nbsp;&nbsp;&nbsp; • Note: You don't need to add a package that's already there.<br/>
@@ -84,7 +83,7 @@ For this capstone project specifically, you will create a custom docker image wi
 <input type="checkbox"> If developing locally (e.g., working through Command Line or GitHub Desktop, rather than on [github.com](https://github.com/) directly), [test your Dockerfile](https://hutchdatascience.org/Containers_for_Scientists/no_toc/05-modifying-containers.html#step-3-build-the-image-from-the-dockerfile) with:<br/>
 
 ```bash
-cd ASSIGNMENT_1/docker
+cd Docker_Assignment/docker
 docker build . -t my-capstone-image
 ```
 
@@ -108,11 +107,11 @@ If you're not developing locally, opening a pull request with changes to your Do
 
 
 ::: {.notice}
-Changes to the `ASSIGNMENT_1/docker/Dockerfile` triggers the `Docker Assignment Eval` test. Can you guess why?
+Changes to the `Docker_Assignment/docker/Dockerfile` triggers the `Docker Assignment Eval` test. Can you guess why?
 
 <details><summary> Automatic Evaluation after changes to the Dockerfile </summary>
 
-The capstone sandbox is using a GitHub Action with a [trigger that is defined by changes to the Dockerfile within a pull request wanting to merge to main](https://github.com/fhdsl/capstone-sandbox/blob/e163f82c304720c3c14d10e0b0f392fc2284bc8d/.github/workflows/docker_assignment_eval.yml#L3-L7) to evaluate the Dockerfile.
+The capstone sandbox is using a GitHub Action with a [trigger that is defined by changes to the Dockerfile within a pull request wanting to merge to main](https://github.com/fhdsl/capstone-sandbox/blob/5eb0a09fba7de605bacc8f7b98d1ed9693b9ef1d/.github/workflows/docker_assignment_eval.yml#L3-L7) to evaluate the Dockerfile.
 
 ```{r out.width = "100%", echo = FALSE, fig.alt = "Ruby wants to know if her analysis is reproducibly so she sets up an automation tool to re-run her analysis whenever she pushes changes to her analysis. This robot has a computer for a body and says ‘I will re-run Ruby’s analysis consistently and instantly upon whatever trigger she sets up.’"}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1ExTZsKDHKM0fIi0_tB80qd8cHvqjEDyNJp-OsnvZ19o/edit?slide=id.g361b9572af4_0_196#slide=id.g361b9572af4_0_196")
