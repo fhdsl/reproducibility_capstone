@@ -49,7 +49,7 @@ jobs:
 
       - name: Run render
         id: render
-        uses: ottrproject/ottr-preview@ah-boolean
+        uses: ottrproject/ottr-preview@main
         with:
           toggle_website: ${{needs.yaml-check.outputs.toggle_website}}
           preview: false
