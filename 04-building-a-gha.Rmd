@@ -1,7 +1,7 @@
 # Building a GitHub Action
 
 
-```{r, out.width = "100%", fig.alt = "This course will demonstrate how to: Recap GitHub Action building techniques Create an original GitHub Action", echo = FALSE}
+```{r, out.width = "100%", fig.alt = "Learning Objectives: Recognize the uses of GitHub Actions and plan for project needs, Build and implement a GitHub Action, Test and monitor a Github Action", echo = FALSE}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1ExTZsKDHKM0fIi0_tB80qd8cHvqjEDyNJp-OsnvZ19o/edit?slide=id.g361b9572af4_0_186#slide=id.g361b9572af4_0_186")
 ```
 
