@@ -12,19 +12,19 @@ These credits are based on our [course contributors table guidelines](https://ww
 |Lead Content Instructor(s)|[Candace Savonen]|
 |Lecturer(s)|[Candace Savonen]|
 |Content Contributor(s) | [Kate Isaac], [Carrie Wright] |
-|Content Editor(s)/Reviewer(s) | [Carrie Wright] |
+|Content Editor(s)/Reviewer(s) | [Carrie Wright], [Kate Isaac] |
 |**Production**||
-|Content Publisher(s)| [Carrie Wright] |
+|Content Publisher(s)| [Carrie Wright], [Kate Isaac], [Candace Savonen]|
 |Content Publishing Reviewer(s)| [Carrie Wright]|
 |**Technical**||
 |Course Publishing Engineer(s)| Helped with the code for the technical aspects related to the specific course generation|
 |Template Publishing Engineers|[Candace Savonen], [Carrie Wright], [Ava Hoffman]|
 |Publishing Maintenance Engineer|[Candace Savonen]|
 |Technical Publishing Stylists|[Carrie Wright], [Ava Hoffman], [Candace Savonen]|
-|Package Developers ([ottrpal]) [Candace Savonen], [Ava Hoffman], [Howard Baek], [Kate Isaac], [Carrie Wright], [John Muschelli]|
+|Package Developers ([ottrpal])|[Candace Savonen], [Ava Hoffman], [Howard Baek], [Kate Isaac], [Carrie Wright], [John Muschelli]|
 |**Art and Design**||
-|Figure Artist(s)| [Carrie Wright] [Carrie Wright] |
-|Videographer(s)| [Candace Savonen |
+|Figure Artist(s)| [Carrie Wright], [Kate Isaac] |
+|Videographer(s)| [Candace Savonen] |
 |**Funding**||
 |Funder(s)| Institution/individual who funded course including grant number|
 |Funding Staff| Staff members who help with funding|
@@ -110,4 +110,4 @@ These credits are based on our [course contributors table guidelines](https://ww
 
 <!-- Links -->
 
-[ottrpal]: https://github.com/jhudsl/ottrpal
+[ottrpal]: https://github.com/ottrproject/ottrpal

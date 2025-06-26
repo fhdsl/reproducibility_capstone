@@ -1,6 +1,5 @@
 ---
-title: "Informatics Technology for Cancer Research (ITCR): Reproducibility Capstone
-"
+title: "Making Reproducible Science -- a Capstone Project Course"
 date: "June, 2025"
 site: bookdown::bookdown_site
 documentclass: book

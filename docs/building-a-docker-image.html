@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 3 Building a Docker Image | Making Reproducible Science – a Capstone Project Course</title>
+  <meta name="description" content="Description about Course/Book." />
+  <meta name="generator" content="bookdown 0.41 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 3 Building a Docker Image | Making Reproducible Science – a Capstone Project Course" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:description" content="Description about Course/Book." />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 3 Building a Docker Image | Making Reproducible Science – a Capstone Project Course" />
+  
+  <meta name="twitter:description" content="Description about Course/Book." />
+  
+
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  <link rel="shortcut icon" href="assets/ITN_favicon.ico" type="image/x-icon" />
+<link rel="prev" href="setting-up-for-this-course.html"/>
+<link rel="next" href="making-a-github-secret.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  background-color: #f8f8f8; }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ef2929; } /* Alert */
+code span.an { color: #8f5902; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #204a87; } /* Attribute */
+code span.bn { color: #0000cf; } /* BaseN */
+code span.cf { color: #204a87; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4e9a06; } /* Char */
+code span.cn { color: #8f5902; } /* Constant */
+code span.co { color: #8f5902; font-style: italic; } /* Comment */
+code span.cv { color: #8f5902; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #8f5902; font-weight: bold; font-style: italic; } /* Documentation */
+code span.dt { color: #204a87; } /* DataType */
+code span.dv { color: #0000cf; } /* DecVal */
+code span.er { color: #a40000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #0000cf; } /* Float */
+code span.fu { color: #204a87; font-weight: bold; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #8f5902; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #204a87; font-weight: bold; } /* Keyword */
+code span.op { color: #ce5c00; font-weight: bold; } /* Operator */
+code span.ot { color: #8f5902; } /* Other */
+code span.pp { color: #8f5902; font-style: italic; } /* Preprocessor */
+code span.sc { color: #ce5c00; font-weight: bold; } /* SpecialChar */
+code span.ss { color: #4e9a06; } /* SpecialString */
+code span.st { color: #4e9a06; } /* String */
+code span.va { color: #000000; } /* Variable */
+code span.vs { color: #4e9a06; } /* VerbatimString */
+code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+<style type="text/css">
+/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
+<link rel="stylesheet" href="assets/style_ITN.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<a href="https://hutchdatascience.org/" target="_blank"><img src="assets/ITN_logo.png" style="width: 80%; padding-left: 34px; padding-top: 8px;"</a>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>About this Course</a></li>
+<li class="chapter" data-level="1" data-path="introduction.html"><a href="introduction.html"><i class="fa fa-check"></i><b>1</b> Introduction</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="introduction.html"><a href="introduction.html#motivation"><i class="fa fa-check"></i><b>1.1</b> Motivation</a></li>
+<li class="chapter" data-level="1.2" data-path="introduction.html"><a href="introduction.html#target-audience"><i class="fa fa-check"></i><b>1.2</b> Target Audience</a></li>
+<li class="chapter" data-level="1.3" data-path="introduction.html"><a href="introduction.html#curriculum"><i class="fa fa-check"></i><b>1.3</b> Curriculum</a></li>
+<li class="chapter" data-level="1.4" data-path="introduction.html"><a href="introduction.html#objectives"><i class="fa fa-check"></i><b>1.4</b> Objectives</a></li>
+<li class="chapter" data-level="1.5" data-path="introduction.html"><a href="introduction.html#how-to-use-the-course"><i class="fa fa-check"></i><b>1.5</b> How to use the course</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="setting-up-for-this-course.html"><a href="setting-up-for-this-course.html"><i class="fa fa-check"></i><b>2</b> Setting up for this course</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="setting-up-for-this-course.html"><a href="setting-up-for-this-course.html#phase-1-creating-your-repository-from-template"><i class="fa fa-check"></i><b>2.1</b> Phase 1: Creating Your Repository from Template</a></li>
+<li class="chapter" data-level="2.2" data-path="setting-up-for-this-course.html"><a href="setting-up-for-this-course.html#phase-2-local-setup-and-cloning"><i class="fa fa-check"></i><b>2.2</b> Phase 2: Local Setup and Cloning</a></li>
+<li class="chapter" data-level="2.3" data-path="setting-up-for-this-course.html"><a href="setting-up-for-this-course.html#phase-3-branch-creation-and-workflow"><i class="fa fa-check"></i><b>2.3</b> Phase 3: Branch Creation and Workflow</a></li>
+<li class="chapter" data-level="2.4" data-path="setting-up-for-this-course.html"><a href="setting-up-for-this-course.html#phase-4-completion"><i class="fa fa-check"></i><b>2.4</b> Phase 4: Completion</a></li>
+<li class="chapter" data-level="2.5" data-path="setting-up-for-this-course.html"><a href="setting-up-for-this-course.html#your-setup-is-complete.-what-are-the-next-steps"><i class="fa fa-check"></i><b>2.5</b> Your Setup is Complete…. What are the Next Steps?</a></li>
+<li class="chapter" data-level="2.6" data-path="setting-up-for-this-course.html"><a href="setting-up-for-this-course.html#troubleshooting-common-issues"><i class="fa fa-check"></i><b>2.6</b> Troubleshooting Common Issues</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="building-a-docker-image.html"><a href="building-a-docker-image.html"><i class="fa fa-check"></i><b>3</b> Building a Docker Image</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="building-a-docker-image.html"><a href="building-a-docker-image.html#phase-1-repository-setup-and-planning"><i class="fa fa-check"></i><b>3.1</b> Phase 1: Repository Setup and Planning</a></li>
+<li class="chapter" data-level="3.2" data-path="building-a-docker-image.html"><a href="building-a-docker-image.html#phase-2-dockerfile-development"><i class="fa fa-check"></i><b>3.2</b> Phase 2: Dockerfile Development</a></li>
+<li class="chapter" data-level="3.3" data-path="building-a-docker-image.html"><a href="building-a-docker-image.html#phase-3-testing-and-iteration"><i class="fa fa-check"></i><b>3.3</b> Phase 3: Testing and Iteration</a></li>
+<li class="chapter" data-level="3.4" data-path="building-a-docker-image.html"><a href="building-a-docker-image.html#phase-4-troubleshooting-and-refinement"><i class="fa fa-check"></i><b>3.4</b> Phase 4: Troubleshooting and Refinement</a></li>
+<li class="chapter" data-level="3.5" data-path="building-a-docker-image.html"><a href="building-a-docker-image.html#phase-5-completion"><i class="fa fa-check"></i><b>3.5</b> Phase 5: Completion</a></li>
+<li class="chapter" data-level="3.6" data-path="building-a-docker-image.html"><a href="building-a-docker-image.html#suggestions-for-troubleshooting-and-best-practices"><i class="fa fa-check"></i><b>3.6</b> Suggestions for Troubleshooting and Best Practices</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="making-a-github-secret.html"><a href="making-a-github-secret.html"><i class="fa fa-check"></i><b>4</b> Making a GitHub Secret</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="making-a-github-secret.html"><a href="making-a-github-secret.html#phase-0-understanding-github-secrets"><i class="fa fa-check"></i><b>4.1</b> Phase 0: Understanding GitHub Secrets</a></li>
+<li class="chapter" data-level="4.2" data-path="making-a-github-secret.html"><a href="making-a-github-secret.html#phase-1-creating-your-personal-access-token"><i class="fa fa-check"></i><b>4.2</b> Phase 1: Creating Your Personal Access Token</a></li>
+<li class="chapter" data-level="4.3" data-path="making-a-github-secret.html"><a href="making-a-github-secret.html#phase-2-storing-the-secret-in-your-repository"><i class="fa fa-check"></i><b>4.3</b> Phase 2: Storing the Secret in Your Repository</a></li>
+<li class="chapter" data-level="4.4" data-path="making-a-github-secret.html"><a href="making-a-github-secret.html#phase-3-testing-your-secret"><i class="fa fa-check"></i><b>4.4</b> Phase 3: Testing Your Secret</a></li>
+<li class="chapter" data-level="4.5" data-path="making-a-github-secret.html"><a href="making-a-github-secret.html#phase-4-troubleshooting-and-refinement-1"><i class="fa fa-check"></i><b>4.5</b> Phase 4: Troubleshooting and Refinement</a></li>
+<li class="chapter" data-level="4.6" data-path="making-a-github-secret.html"><a href="making-a-github-secret.html#phase-5-completion-1"><i class="fa fa-check"></i><b>4.6</b> Phase 5: Completion</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="building-a-github-action.html"><a href="building-a-github-action.html"><i class="fa fa-check"></i><b>5</b> Building a GitHub Action</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="building-a-github-action.html"><a href="building-a-github-action.html#phase-1-repository-setup-and-planning-1"><i class="fa fa-check"></i><b>5.1</b> Phase 1: Repository Setup and Planning</a></li>
+<li class="chapter" data-level="5.2" data-path="building-a-github-action.html"><a href="building-a-github-action.html#phase-2-github-action-development"><i class="fa fa-check"></i><b>5.2</b> Phase 2: GitHub Action Development</a></li>
+<li class="chapter" data-level="5.3" data-path="building-a-github-action.html"><a href="building-a-github-action.html#phase-3-testing-and-iteration-1"><i class="fa fa-check"></i><b>5.3</b> Phase 3: Testing and Iteration</a></li>
+<li class="chapter" data-level="5.4" data-path="building-a-github-action.html"><a href="building-a-github-action.html#phase-4-troubleshooting-and-refinement-2"><i class="fa fa-check"></i><b>5.4</b> Phase 4: Troubleshooting and Refinement</a></li>
+<li class="chapter" data-level="5.5" data-path="building-a-github-action.html"><a href="building-a-github-action.html#phase-6-completion"><i class="fa fa-check"></i><b>5.5</b> Phase 6: Completion</a></li>
+<li class="chapter" data-level="5.6" data-path="building-a-github-action.html"><a href="building-a-github-action.html#suggestions-for-troubleshooting-and-best-practices-1"><i class="fa fa-check"></i><b>5.6</b> Suggestions for Troubleshooting and Best Practices</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="about-the-authors.html"><a href="about-the-authors.html"><i class="fa fa-check"></i>About the Authors</a></li>
+<li class="chapter" data-level="6" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i><b>6</b> References</a></li>
+<li class="divider"></li>
+<p style="text-align:center;"> <a href="https://www.ottrproject.org/" target="blank" > This content was published with</a> <a href="https://bookdown.org/" target="blank"> bookdown using</a> </p>
+<p style="text-align:center;"> <a href="https://github.com/jhudsl/OTTR_Template"> The OTTR Template by:</a></p>
+<p style="text-align:center;"> <a href="https://hutchdatascience.org/"> The Fred Hutch Data Science Lab </a></p>
+<p style="text-align:center; font-size: 12px;"> <a href="https://github.com/rstudio4edu/rstudio4edu-book/"> Style adapted from: rstudio4edu-book </a> <a href ="https://creativecommons.org/licenses/by/2.0/"> (CC-BY 2.0) </a></p>
+<p style="padding-left: 40px;"><div class="trapezoid" style = "padding-left: 40px;"><span>  <a href="https://forms.gle/hc8Xt3Y2Znjb6M4Y7"> Click here to provide feedback</a> <img src="assets/itcr_arrow.png" style=" width: 10%" ></span></div></p>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Making Reproducible Science – a Capstone Project Course</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<head>
+  <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,initial-scale=1.0">
+  <!--script src="https://kit.fontawesome.com/6a26f47516.js"></script-->
+  <!--<script src="assets/hideOutput.js"></script>-->
+  <link href="assets/style_ITN.css" rel="stylesheet">
+</head>
+        
+
+
+<div class="hero-image-container"> 
+  <img class= "hero-image" src="assets/itcr_main_image.png">
+</div>
+<div id="building-a-docker-image" class="section level1 hasAnchor" number="3">
+<h1><span class="header-section-number">Chapter 3</span> Building a Docker Image<a href="building-a-docker-image.html#building-a-docker-image" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p><img src="03-build-an-image_files/figure-html/1ExTZsKDHKM0fIi0_tB80qd8cHvqjEDyNJp-OsnvZ19o_g361b9572af4_0_181.png" alt="This course will demonstrate how to:Recap Docker image building techniques Create an original Docker image " width="100%" /></p>
+<div id="phase-1-repository-setup-and-planning" class="section level2 hasAnchor" number="3.1">
+<h2><span class="header-section-number">3.1</span> Phase 1: Repository Setup and Planning<a href="building-a-docker-image.html#phase-1-repository-setup-and-planning" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="step-1-set-up-your-working-environment" class="section level3 hasAnchor" number="3.1.1">
+<h3><span class="header-section-number">3.1.1</span> Step 1: Set Up Your Working Environment<a href="building-a-docker-image.html#step-1-set-up-your-working-environment" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><input type="checkbox"> Navigate to your capstone sandbox repository.<br/>
+<input type="checkbox"> Locate the <code>Docker_Assignment/docker/Dockerfile</code> - you will be making changes within this file.<br/></p>
+<div class="notice">
+<p>Important: Don’t change the name or location of this file.</p>
+</div>
+</div>
+<div id="step-2-switch-to-your-working-branch-if-needed" class="section level3 hasAnchor" number="3.1.2">
+<h3><span class="header-section-number">3.1.2</span> Step 2: Switch to Your Working Branch (if needed)<a href="building-a-docker-image.html#step-2-switch-to-your-working-branch-if-needed" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><input type="checkbox"> Verify that you’re on the branch you created during the set up instructions.<br/>
+     • The example used the name <code>docker-assignment</code>.</p>
+<p><strong>Option A: Using GitHub Desktop</strong></p>
+<p><input type="checkbox"> Check the “Current Branch” Dropdown on the top left of the screen. <br/>
+<input type="checkbox"> Use the menu to select the branch if you are not on the branch you expect to be on. <br/></p>
+<div class="click_to_expand_block">
+<details>
+<summary>
+<strong>Option B: Using a command-line interface</strong>
+</summary>
+<div class="sourceCode" id="cb3"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb3-1"><a href="building-a-docker-image.html#cb3-1" tabindex="-1"></a><span class="fu">git</span> status</span>
+<span id="cb3-2"><a href="building-a-docker-image.html#cb3-2" tabindex="-1"></a></span>
+<span id="cb3-3"><a href="building-a-docker-image.html#cb3-3" tabindex="-1"></a><span class="co"># The first line of the output of this command will report what branch you are on...</span></span>
+<span id="cb3-4"><a href="building-a-docker-image.html#cb3-4" tabindex="-1"></a><span class="co"># On branch docker-assignment</span></span></code></pre></div>
+<p>If you are not on the branch you expect to be on, you can <a href="https://git-scm.com/docs/git-checkout">“checkout”</a> or <a href="https://git-scm.com/docs/git-switch">“switch”</a> your branch.</p>
+</details>
+</div>
+</div>
+<div id="step-3-analyze-your-capstone-project-needs" class="section level3 hasAnchor" number="3.1.3">
+<h3><span class="header-section-number">3.1.3</span> Step 3: Analyze Your Capstone Project Needs<a href="building-a-docker-image.html#step-3-analyze-your-capstone-project-needs" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>In general, you may already have a reason for building a custom docker image, or a specific set of tools you wish to package together. The following questions and guidelines are helpful for real-world development of a custom docker image.</p>
+<p><em>Here are some situations you might find yourself in where a docker image is helpful</em>:<br/>
+• You are building a Github action and need a specialized group of packages.<br/>
+• You are building an analysis that you need a collaborator to run.<br/>
+• You are building software you want to be reliable in its deployment.<br/></p>
+<p><em>Questions to ask yourself</em>:<br/>
+• What programming languages you’re using (R, Python, etc.)<br/>
+• What packages/libraries your analysis scripts require<br/>
+• What types of security concerns does this project have?<br/>
+• Are there publicly available docker images that could cover your needs already?<br/></p>
+<p>For this capstone project specifically, you will create a custom docker image with very little guidance as to what packages it will include. Think about a couple of packages that are helpful in your day to day work, and build a docker image with that in mind.</p>
+</div>
+</div>
+<div id="phase-2-dockerfile-development" class="section level2 hasAnchor" number="3.2">
+<h2><span class="header-section-number">3.2</span> Phase 2: Dockerfile Development<a href="building-a-docker-image.html#phase-2-dockerfile-development" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="step-4-examine-the-base-setup" class="section level3 hasAnchor" number="3.2.1">
+<h3><span class="header-section-number">3.2.1</span> Step 4: Examine the Base Setup<a href="building-a-docker-image.html#step-4-examine-the-base-setup" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><input type="checkbox"> Open <code>Docker_Assignment/docker/Dockerfile</code><br/>
+<input type="checkbox"> Look on <a href="https://hub.docker.com/">Docker Hub</a> for what base image best suits your needs – what’s the smallest image you can get away with that is from a verified source?<br/>
+<input type="checkbox"> Understand what’s already included in the base image already. If you’re not sure what’s already included, consider <a href="https://docs.docker.com/desktop/use-desktop/images/#inspect-an-image">inspecting the image with Docker Desktop</a><br/>
+     • Note: You don’t need to add a package that’s already there.<br/>
+     • Will it work with R or Python packages or both?<br/>
+<input type="checkbox"> Once you’ve chosen a base image, <a href="https://hutchdatascience.org/Containers_for_Scientists/no_toc/05-modifying-containers.html#activity-instructions">add it to your Dockerfile</a>.<br/></p>
+</div>
+<div id="step-5-add-packages-incrementally" class="section level3 hasAnchor" number="3.2.2">
+<h3><span class="header-section-number">3.2.2</span> Step 5: Add Packages Incrementally<a href="building-a-docker-image.html#step-5-add-packages-incrementally" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><input type="checkbox"> Start by adding just one or two additional packages to your Dockerfile<br/>
+<input type="checkbox"> Use the <a href="https://hutchdatascience.org/Containers_for_Scientists/no_toc/05-modifying-containers.html#templates-for-adding-packages">templates from the course</a>:<br/>
+     • For R packages: <code>RUN Rscript -e "install.packages('packagename')"</code><br/>
+     • For Python packages: <code>RUN pip3 install packagename</code><br/>
+<input type="checkbox"> Add comments explaining what each package does<br/></p>
+</div>
+<div id="step-6-build-locally" class="section level3 hasAnchor" number="3.2.3">
+<h3><span class="header-section-number">3.2.3</span> Step 6: Build Locally<a href="building-a-docker-image.html#step-6-build-locally" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><input type="checkbox"> If developing locally (e.g., working through Command Line or GitHub Desktop, rather than on <a href="https://github.com/">github.com</a> directly), <a href="https://hutchdatascience.org/Containers_for_Scientists/no_toc/05-modifying-containers.html#step-3-build-the-image-from-the-dockerfile">test your Dockerfile</a> with:<br/></p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb4-1"><a href="building-a-docker-image.html#cb4-1" tabindex="-1"></a><span class="bu">cd</span> Docker_Assignment/docker</span>
+<span id="cb4-2"><a href="building-a-docker-image.html#cb4-2" tabindex="-1"></a><span class="ex">docker</span> build . <span class="at">-t</span> my-capstone-image</span></code></pre></div>
+<p><input type="checkbox"> Iterate fixing any build errors and re-building before pushing to GitHub. This saves time and GitHub Actions usage.<br/></p>
+<p><img src="03-build-an-image_files/figure-html/1ExTZsKDHKM0fIi0_tB80qd8cHvqjEDyNJp-OsnvZ19o_g361b9572af4_0_0.png" alt="This table contains common Docker issues you might encounter while building your docker image locally" width="100%" /></p>
+<div class="notice">
+<p>If you’re not developing locally, opening a pull request with changes to your Dockerfile on GitHub should trigger an evaluation action as explained in the next phase.</p>
+</div>
+</div>
+</div>
+<div id="phase-3-testing-and-iteration" class="section level2 hasAnchor" number="3.3">
+<h2><span class="header-section-number">3.3</span> Phase 3: Testing and Iteration<a href="building-a-docker-image.html#phase-3-testing-and-iteration" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="step-7-open-your-pull-request" class="section level3 hasAnchor" number="3.3.1">
+<h3><span class="header-section-number">3.3.1</span> Step 7: Open Your Pull Request<a href="building-a-docker-image.html#step-7-open-your-pull-request" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><input type="checkbox"> Commit your Dockerfile changes to your branch<br/>
+<input type="checkbox"> Push the branch to GitHub<br/>
+<input type="checkbox"> Open a pull request from your branch to the main branch<br/></p>
+<div class="notice">
+<p>Changes to the <code>Docker_Assignment/docker/Dockerfile</code> triggers the <code>Docker Assignment Eval</code> test. Can you guess why?</p>
+<details>
+<summary>
+Automatic Evaluation after changes to the Dockerfile
+</summary>
+<p>The capstone sandbox is using a GitHub Action with a <a href="https://github.com/fhdsl/capstone-sandbox/blob/5eb0a09fba7de605bacc8f7b98d1ed9693b9ef1d/.github/workflows/docker_assignment_eval.yml#L3-L7">trigger that is defined by changes to the Dockerfile within a pull request wanting to merge to main</a> to evaluate the Dockerfile.</p>
+<p><img src="03-build-an-image_files/figure-html/1ExTZsKDHKM0fIi0_tB80qd8cHvqjEDyNJp-OsnvZ19o_g361b9572af4_0_196.png" alt="Ruby wants to know if her analysis is reproducibly so she sets up an automation tool to re-run her analysis whenever she pushes changes to her analysis. This robot has a computer for a body and says ‘I will re-run Ruby’s analysis consistently and instantly upon whatever trigger she sets up.’" width="100%" /></p>
+</details>
+</div>
+</div>
+<div id="step-8-monitor-the-automated-testing-interpret-the-results" class="section level3 hasAnchor" number="3.3.2">
+<h3><span class="header-section-number">3.3.2</span> Step 8: Monitor the Automated Testing &amp; Interpret the Results<a href="building-a-docker-image.html#step-8-monitor-the-automated-testing-interpret-the-results" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><input type="checkbox"> On <a href="github.com">github.com</a>, within your pull request, watch for the <code>Docker Assignment Eval</code> check to start running. This GitHub Action will attempt to build your Dockerfile.<br/>
+<input type="checkbox"> Wait for it to complete. It will comment on your PR whether it successfully built or not.<br/>
+     • Success: You’ll get a validation code in the comment<br/>
+     • Failure: You’ll get error messages explaining what went wrong. Read the error messages carefully - they contain clues for fixing issues<br/>
+<input type="checkbox"> Interpret the results and proceed accordingly:<br/>
+     <input type="checkbox"> If the test’s comment provides a validation code, skip to Phase 5.<br/>
+     <input type="checkbox"> If the test’s comment contains error messages, visit Phase 4: Troubleshooting and Refinement of these instructions.<br/></p>
+</div>
+</div>
+<div id="phase-4-troubleshooting-and-refinement" class="section level2 hasAnchor" number="3.4">
+<h2><span class="header-section-number">3.4</span> Phase 4: Troubleshooting and Refinement<a href="building-a-docker-image.html#phase-4-troubleshooting-and-refinement" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="step-9-debug-build-failures" class="section level3 hasAnchor" number="3.4.1">
+<h3><span class="header-section-number">3.4.1</span> Step 9: Debug Build Failures<a href="building-a-docker-image.html#step-9-debug-build-failures" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Common issues to check: <br/>
+<input type="checkbox"> Typos in package names<br/>
+<input type="checkbox"> Missing dependencies (install system packages before language packages). Google or a <a href="https://doi-org.fhcrc.idm.oclc.org/10.1038/d41586-023-03023-4">code trained LLM</a> (e.g., <a href="https://www.phind.com/">Phind</a>) can be helpful for determining missing dependencies.<br/>
+<input type="checkbox"> Incorrect syntax in RUN commands<br/>
+<input type="checkbox"> Base image doesn’t support your installation method<br/></p>
+</div>
+<div id="step-10-iterate-until-success" class="section level3 hasAnchor" number="3.4.2">
+<h3><span class="header-section-number">3.4.2</span> Step 10: Iterate Until Success<a href="building-a-docker-image.html#step-10-iterate-until-success" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><input type="checkbox"> Make changes to your Dockerfile on your branch<br/>
+<input type="checkbox"> Commit and push changes<br/>
+<input type="checkbox"> Each push will trigger a new test run<br/>
+<input type="checkbox"> Keep refining until you get a successful build!<br/></p>
+<p><img src="03-build-an-image_files/figure-html/1ExTZsKDHKM0fIi0_tB80qd8cHvqjEDyNJp-OsnvZ19o_g368818bb4f3_0_417.png" alt="You may have to troubleshoot iteratively until your dockerfile builds successfully. Git commit and push edits to your dockerfile and check your existing pull request to receive evaluation from automated assignment checks. Interpret the results. If you were not successful, troubleshoot and iterate this process as needed, checking your pre-existing pull request for new evaluation results after making additional changes. Or if you were successful in your assignment, submit the verification code to your coursera quiz (or move on to the next section if you are not using coursera or some certification method to take this course)" width="100%" /></p>
+</div>
+</div>
+<div id="phase-5-completion" class="section level2 hasAnchor" number="3.5">
+<h2><span class="header-section-number">3.5</span> Phase 5: Completion<a href="building-a-docker-image.html#phase-5-completion" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="step-11-collect-your-validation-code" class="section level3 hasAnchor" number="3.5.1">
+<h3><span class="header-section-number">3.5.1</span> Step 11: Collect Your Validation Code<a href="building-a-docker-image.html#step-11-collect-your-validation-code" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><input type="checkbox"> Once your build succeeds, copy the validation code from the PR comment. You’ll need the code in order to submit your quiz.<br/></p>
+<div class="notice">
+<p>Important: Make sure it’s a real validation code, not an error message or status code used to identify an error.</p>
+</div>
+</div>
+<div id="step-12-submit-your-quiz" class="section level3 hasAnchor" number="3.5.2">
+<h3><span class="header-section-number">3.5.2</span> Step 12: Submit Your Quiz<a href="building-a-docker-image.html#step-12-submit-your-quiz" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><input type="checkbox"> Go to your Coursera Graded Assignment (“Building a Docker Image”)<br/>
+<input type="checkbox"> Paste the validation code<br/>
+<input type="checkbox"> Submit the quiz to get credit for your work<br/></p>
+</div>
+</div>
+<div id="suggestions-for-troubleshooting-and-best-practices" class="section level2 hasAnchor" number="3.6">
+<h2><span class="header-section-number">3.6</span> Suggestions for Troubleshooting and Best Practices<a href="building-a-docker-image.html#suggestions-for-troubleshooting-and-best-practices" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Remember, this assignment is designed to give you hands-on experience with the container building process. The automated testing system provides immediate feedback, making it easier to learn through iteration rather than getting everything perfect on the first try.</p>
+<div id="start-simple" class="section level3 hasAnchor" number="3.6.1">
+<h3><span class="header-section-number">3.6.1</span> Start Simple<a href="building-a-docker-image.html#start-simple" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<ul>
+<li>Begin with just the most essential packages for your analysis</li>
+<li>You can always add more in subsequent iterations</li>
+<li>A working simple image is better than a broken complex one</li>
+<li>Reference tips from the <a href="https://hutchdatascience.org/Containers_for_Scientists/">Containers for Scientists course</a> as needed.</li>
+</ul>
+</div>
+<div id="leverage-the-automated-testing" class="section level3 hasAnchor" number="3.6.2">
+<h3><span class="header-section-number">3.6.2</span> Leverage the Automated Testing<a href="building-a-docker-image.html#leverage-the-automated-testing" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<ul>
+<li>The GitHub Action is your friend - it provides immediate feedback</li>
+<li>Don’t be afraid to make multiple attempts</li>
+<li>Each unsuccessful iteration and new error message teaches you something about container building</li>
+</ul>
+</div>
+<div id="read-error-messages-carefully" class="section level3 hasAnchor" number="3.6.3">
+<h3><span class="header-section-number">3.6.3</span> Read Error Messages Carefully<a href="building-a-docker-image.html#read-error-messages-carefully" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<ul>
+<li>Error messages may contain the exact solution you need to fix your problem</li>
+<li>Look for phrases like “package not found” or “missing dependency”</li>
+<li>Google specific error messages if they’re unclear</li>
+<li>Copy and paste the error code and include any relevant context to a <a href="https://doi-org.fhcrc.idm.oclc.org/10.1038/d41586-023-03023-4">code trained LLM</a> (e.g., <a href="https://www.phind.com/">Phind</a>) for additional help.</li>
+</ul>
+</div>
+<div id="document-your-process" class="section level3 hasAnchor" number="3.6.4">
+<h3><span class="header-section-number">3.6.4</span> Document Your Process<a href="building-a-docker-image.html#document-your-process" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<ul>
+<li>Add comments to your Dockerfile explaining your choices</li>
+<li>Comments &amp; documentation help you remember your reasoning if you need to modify it later and may make debugging easier</li>
+</ul>
+
+</div>
+</div>
+</div>
+<hr>
+<center> 
+  <div class="footer">
+      All illustrations <a href="https://creativecommons.org/licenses/by/4.0/">CC-BY. </a>
+      <br>
+      All other materials <a href= "https://creativecommons.org/licenses/by/4.0/"> CC-BY </a> unless noted otherwise.
+  </div>
+</center>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="setting-up-for-this-course.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="making-a-github-secret.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "section"
+}
+});
+});
+</script>
+
+</body>
+
+</html>
