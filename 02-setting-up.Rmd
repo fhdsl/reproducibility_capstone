@@ -101,9 +101,21 @@ git branch
 
 </div>
 
-```
-ADD info here about coursera quiz for workflow file URL
-```
+## Phase 4: Completion
+
+### Step 6: Collect a workflow URL
+
+<input type="checkbox"> Navigate to [github.com](github.com), specifically your repository/copy of the capstone sandbox.<br/>
+<input type="checkbox"> Navigate to the `.github/workflows` directory.<br/>
+<input type="checkbox"> Click on **one** of the workflow files that are present there.<br/>
+<input type="checkbox"> Copy the URL from your web browser for this workflow file.<br/>
+  &nbsp;&nbsp;&nbsp;&nbsp; • The URL will look like: `https://github.com/your-username/your-repository-name/blob/main(or-your-branch)/.github/workflows/file_name.yml`<br/>
+
+### Step 7: Submit your Quiz
+
+<input type="checkbox"> Go to your Coursera Graded Assignment ("Setting Up").<br/>
+<input type="checkbox"> Paste the URL you copied in Step 6.<br/>
+<input type="checkbox"> Submit the quiz to get credit for your work.<br/>
 
 ## Your Setup is Complete.... What are the Next Steps?
 
