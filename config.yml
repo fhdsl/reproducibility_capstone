@@ -1,0 +1,13 @@
+default:
+  actions: "<img src='https://raw.githubusercontent.com/ottrproject/cheatsheets/main/resources/icons//actions.png' alt='actions icon' class = icon >"
+  collab: "<img src='https://raw.githubusercontent.com/ottrproject/cheatsheets/main/resources/icons//collaborator.png' alt='collaborator icon' class = icon >"
+  copy: "<img src='https://raw.githubusercontent.com/ottrproject/cheatsheets/main/resources/icons//copy.png' alt='copy icon' class = icon >"
+  dev: "<img src='https://raw.githubusercontent.com/ottrproject/cheatsheets/main/resources/icons//developer_settings.png' alt='developer settings icon' class = icon >"
+  edit: "<img src='https://raw.githubusercontent.com/ottrproject/cheatsheets/main/resources/icons//edit.png' alt='edit icon' class = icon >"
+  pages: "<img src='https://raw.githubusercontent.com/ottrproject/cheatsheets/main/resources/icons//pages.png' alt='pages icon' class = icon >"
+  PR: "<img src='https://raw.githubusercontent.com/ottrproject/cheatsheets/main/resources/icons//pull_request.png' alt='pull request icon' class = icon >"
+  profile: "<img src='https://raw.githubusercontent.com/ottrproject/cheatsheets/main/resources/icons//profile_photo.png' alt='profile photo icon' class = icon >"
+  token: "<img src='https://raw.githubusercontent.com/ottrproject/cheatsheets/main/resources/icons//personal_tokens.png' alt='personal access token icon' class = icon >"
+  search: "<img src='https://raw.githubusercontent.com/ottrproject/cheatsheets/main/resources/icons//search.png' alt='search icon' class = icon >"
+  secrets: "<img src='https://raw.githubusercontent.com/ottrproject/cheatsheets/main/resources/icons//secrets_and_variables.png' alt='secrets and variables icon' class = icon >"
+  settings: "<img src = https://raw.githubusercontent.com/ottrproject/cheatsheets/main/resources/icons/settings_gear.png  alt = 'settings gear icon' class = icon >"  
