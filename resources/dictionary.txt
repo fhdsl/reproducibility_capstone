@@ -21,6 +21,7 @@ dropdown
 enforceability
 faq
 favicon
+fhdsl
 FirstName
 Funder
 fyi
@@ -40,6 +41,7 @@ impactful
 ITCR
 itcrtraining
 ITN
+Kraken
 LastName
 Leanpub
 Licensor
@@ -70,6 +72,7 @@ RMarkdown
 Savonen
 sexualized
 socio
+submenu
 synched
 tada
 UE
