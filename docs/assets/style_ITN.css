@@ -15,6 +15,12 @@ pre code {
   white-space: inherit;
 }
 
+/*-----------icon------*/
+
+.icon{
+  width: 3%;
+}
+
 /*---------------Hero Image------------------*/
 
 /* next 3 rules are for setting large image at top of each page and pushing down the book content to appear beneath the image */

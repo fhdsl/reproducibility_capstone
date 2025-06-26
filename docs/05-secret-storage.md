@@ -21,9 +21,9 @@
 
 ### Step 3: Navigate to GitHub Token Settings
 1. Go to your GitHub profile (click your profile picture in the top right)
-2. Click "Settings" from the dropdown menu
+2. Click "Settings" from the dropdown menu (you will see a gear icon <img src = https://raw.githubusercontent.com/ottrproject/cheatsheets/main/resources/icons/settings_gear.png  alt = 'settings gear icon' class = icon >)
 3. Scroll down to "Developer settings" in the left sidebar (at the bottom)
-4. Click "Personal access tokens"
+4. Click "Personal access tokens" <img src='https://raw.githubusercontent.com/ottrproject/cheatsheets/main/resources/icons//personal_tokens.png' alt='personal access token icon' class = icon >
 5. Select "Tokens (classic)" from the submenu
 
 ```
@@ -100,7 +100,7 @@ Actions tab showing workflow list with "GitHub Secret Evaluation" highlighted an
 ```
 
 ### Step 11: Monitor the Evaluation
-1. Watch for the workflow to start running (you'll see a yellow circle, then green checkmark or red X)
+1. Watch for the workflow to start running (you'll see a yellow circle, then green check mark or red X)
 2. The evaluation will take a few moments to check if your secret exists and is valid
 3. Don't worry if it takes a minute - the system needs to verify everything is configured correctly
 
@@ -172,7 +172,7 @@ After completing the assignment:
 Check these items:
 - Secret name is exactly: ASSIGNMENT_SECRET
 - Secret is stored in your copy of the capstone-sandbox repository settings
-- The repository is the correct sandbox repository (not fhdsl/capstone-sandbox but instead your own copy)
+- The repository is the correct sandbox repository (not `fhdsl/capstone-sandbox` but instead your own copy)
 
 
 _The following troubleshooting tips do not apply to the assignment itself but may apply in other scenarios where you are using a similar setup_: 
@@ -194,7 +194,7 @@ What to do to fix:
 Ensure:
 - You're triggering from the correct repository
 - You're selecting the main branch
-- The workflow file exists in .github/workflows/
+- The workflow file exists in `.github/workflows/`
 - You have permissions to run workflows
 
 This assignment teaches a crucial skill for modern computational research: secure credential management. 
