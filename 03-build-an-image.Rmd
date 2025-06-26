@@ -153,7 +153,11 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1ExTZsKDHKM0fIi0_
 
 ## Phase 5: Completion
 
-### Step 11: Collect Your Validation Code
+::: {.certificate}
+
+If you are taking the course on Coursera:
+
+**Collect Your Validation Code**
 
 <input type="checkbox"> Once your build succeeds, copy the validation code from the PR comment. You'll need the code in order to submit your quiz.<br/>
 
@@ -161,8 +165,6 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1ExTZsKDHKM0fIi0_
 Important: Make sure it's a real validation code, not an error message or status code used to identify an error.
 :::
 
-
-::: {.certificate}
 
 **Submit Your Quiz**
 
