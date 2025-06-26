@@ -15,6 +15,12 @@ pre code {
   white-space: inherit;
 }
 
+/*-----------icon------*/
+
+.icon{
+  width: 3%;
+}
+
 /*---------------Hero Image------------------*/
 
 /* next 3 rules are for setting large image at top of each page and pushing down the book content to appear beneath the image */
@@ -42,8 +48,42 @@ pre code {
 
 /* ------------Links------------------ */
 
-.book .book-body .page-wrapper .page-inner section.normal a {
+.book .book-body .page-wrapper .page-inner section.normal a:not(.github_button) {
   color: #e0471c;
+}
+
+.github_button {
+    border-radius: 8px;
+    border: 1px solid #black;
+    background: #20873e;
+    color: white !important;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.github_button_link {
+    background: #20873e;
+    color: white !important;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+/*-----------icon------*/
+
+.icon{
+  width: 3%;
 }
 
 
@@ -58,11 +98,11 @@ h1, h2, h3, h4 {
 }
 
 
-.book .book-body .page-wrapper .page-inner section.normal h1, 
-.book .book-body .page-wrapper .page-inner section.normal h2, 
-.book .book-body .page-wrapper .page-inner section.normal h3, 
-.book .book-body .page-wrapper .page-inner section.normal h4, 
-.book .book-body .page-wrapper .page-inner section.normal h5, 
+.book .book-body .page-wrapper .page-inner section.normal h1,
+.book .book-body .page-wrapper .page-inner section.normal h2,
+.book .book-body .page-wrapper .page-inner section.normal h3,
+.book .book-body .page-wrapper .page-inner section.normal h4,
+.book .book-body .page-wrapper .page-inner section.normal h5,
 .book .book-body .page-wrapper .page-inner section.normal h6 {
     margin-top: 2.275em;
     margin-bottom: 1em;
@@ -80,7 +120,7 @@ h1, h2, h3, h4 {
   font-family: 'Lora';
   color: #0b8d96;
 }
-  
+
 
 /*----------DROP CAPS--------------*/
 
@@ -146,7 +186,7 @@ color: #193a5c
 }
 
 /* all TOC list items, basically */
-.book .book-summary ul.summary li a, 
+.book .book-summary ul.summary li a,
 .book .book-summary ul.summary li span {
   padding-top: 8px;
   padding-bottom: 8px;
@@ -157,26 +197,26 @@ color: #193a5c
 
 .summary a:hover {
   color: #e0471c !important;
-} 
+}
 
 .book .book-summary ul.summary li.active>a { /*active TOC links*/
   color: #e0471c !important;
   border-left: solid 4px;
   border-color: #e0471c;
   padding-left: 11px !important;
-} 
+}
 
 .trapezoid {
   width: 130px;
   text-align: center;
-  height: 15; 
+  height: 15;
   position: relative;
   border-right: 50px solid transparent;
   border-bottom: 50px solid #dbdbdb;
   border-left: 50px solid transparent;
   box-sizing: content-box;
 }
-.trapezoid span { 
+.trapezoid span {
   position: absolute;
   top: 5px;
   bottom: 5px;
@@ -227,7 +267,7 @@ li.appendix span, li.part span { /* for TOC part names */
 }
 
 .summary > li:first-child {
-  height: auto !important; 
+  height: auto !important;
 }
 
 /* --------------Two columns--------------- */
@@ -441,12 +481,12 @@ div.note {
   margin-bottom: 0;
 }
 
-iframe { 
-   -moz-transform-origin: top left; 
-   -webkit-transform-origin: top left; 
-   -o-transform-origin: top left; 
-   -ms-transform-origin: top left; 
-   transform-origin: top left; 
+iframe {
+   -moz-transform-origin: top left;
+   -webkit-transform-origin: top left;
+   -o-transform-origin: top left;
+   -ms-transform-origin: top left;
+   transform-origin: top left;
 }
 
 .iframe-container {
@@ -513,14 +553,14 @@ a.anchor {
 }
 
 
-.hasAnchor:hover a.anchor, 
+.hasAnchor:hover a.anchor,
 a.anchor:hover {
   /*visibility: visible;*/
   opacity: 0.6;
 }
 
 /* disable anchors for headers with "no-anchor" class */
-.no-anchor .hasAnchor:hover a.anchor, 
+.no-anchor .hasAnchor:hover a.anchor,
 .no-anchor a.anchor:hover {
   opacity: 0 !important;
 }
@@ -548,4 +588,14 @@ a.anchor:hover {
   font-family: "Lora", serif;
   font-size: .85em;
   color: #193a5c;
+}
+
+/*____Drop Down Backgrounds___*/
+
+.click_to_expand_block {
+    padding: 1em;
+    padding-top: .5em;
+    border: 1px grey;
+    background: #E8E8E8;
+    color: black;
 }

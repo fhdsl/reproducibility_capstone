@@ -18,18 +18,24 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1ExTZsKDHKM0fIi0_
 
 The course is intended for cancer researchers, bioinformaticians, and data scientists who work with computational analyses in cancer research contexts and want to enhance the reproducibility, efficiency, and shareability of their work.
 
+This capstone course builds on foundational concepts from the ITCR Training Network's [Reproducibility in Cancer Informatics](https://jhudatascience.org/Reproducibility_in_Cancer_Informatics/introduction.html), [Advanced Reproducibility in Cancer Informatics](https://jhudatascience.org/Adv_Reproducibility_in_Cancer_Informatics/introduction.html), [Containers for Scientists](https://hutchdatascience.org/Containers_for_Scientists/), and [GitHub Automation for Scientists](https://hutchdatascience.org/GitHub_Automation_for_Scientists/) courses. Students should be comfortable with basic GitHub operations, including creating repositories, making commits, and opening pull requests before beginning this capstone.
+
+
+```{r prereqs, out.width="100%", fig.alt = "Prior to using this capstone, students should be comfortable with basic GitHub operations such as creating repositories or opening pull requests. Students may need to review the I T N courses on reproducibility practices and tools: Reproducibility in cancer informatics, Advanced reproducibility in cancer informatics, GitHub automation for scientists, and containers for scientists.", echo = FALSE, fig.link = "https://www.itcrtraining.org/courses"}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1ExTZsKDHKM0fIi0_tB80qd8cHvqjEDyNJp-OsnvZ19o/edit?slide=id.g366a6ed3497_0_211#slide=id.g366a6ed3497_0_211")
+```
+
 _This capstone course is written for individuals who:_
 
-- This capstone course builds on foundational concepts from the ITCR Training Network's Reproducibility Series (see list below)
-Conduct computational analyses for cancer research, including genomics, proteomics, imaging, or clinical data analysis
-- Want to put the reproducibility skill sets together and get more practice in doing this in a “real world” setting. 
+- Conduct computational analyses for cancer research, including genomics, proteomics, imaging, or clinical data analysis.
+- Have completed the ITN reproducibility courses mentioned above
+- Want to put the reproducibility skill sets together and get more practice in doing this in a “real world” setting.
 
 
-```{r, out.width = "100%", fig.alt = "For individuals who: Have completed the Intro Reproducibility, Advanced Reproducibility, Containers for Scientists, and GitHub Automation course in this series. Want to put the reproducibility skill sets together and get more practice in doing this in a real world setting.", echo = FALSE}
+```{r for_individuals_who, out.width = "100%", fig.alt = "For individuals who: Have completed the Intro Reproducibility, Advanced Reproducibility, Containers for Scientists, and GitHub Automation course in this series. Want to put the reproducibility skill sets together and get more practice in doing this in a real world setting.", echo = FALSE}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1ExTZsKDHKM0fIi0_tB80qd8cHvqjEDyNJp-OsnvZ19o/edit?slide=id.g30a4c584926_0_5#slide=id.g30a4c584926_0_5")
 ```
 
-This capstone course builds on foundational concepts from the ITCR Training Network's [Reproducibility in Cancer Informatics](https://jhudatascience.org/Reproducibility_in_Cancer_Informatics/introduction.html), [Advanced Reproducibility in Cancer Informatics](https://jhudatascience.org/Adv_Reproducibility_in_Cancer_Informatics/introduction.html), [Containers for Scientists](https://hutchdatascience.org/Containers_for_Scientists/), and [GitHub Automation for Scientists](https://hutchdatascience.org/GitHub_Automation_for_Scientists/) courses. Students should be comfortable with basic GitHub operations, including creating repositories, making commits, and opening pull requests before beginning this capstone.
 
 
 ## Curriculum
@@ -37,8 +43,13 @@ This capstone course builds on foundational concepts from the ITCR Training Netw
 The course covers practical application of containerization and automation technologies specifically tailored for cancer informatics workflows. Unlike introductory courses that focus on individual concepts, this capstone emphasizes integration and real-world application of multiple technologies working together.
 
 
-```{r, out.width = "100%", fig.alt = "This course will demonstrate how to:
-Recap the best practices of reproducibility we have covered in this specialization. Create an original docker image. Create an original GitHub Action. Have your original docker image and github action work together", echo = FALSE}
+```{r topics_covered, out.width = "100%", fig.alt = "Topics covered in the reproducibility capstone include a review of best practices when using reproducibility tools as well as hands-on real-world practice creating images and containers with docker, automation with GitHub actions, using images and automation together, and creating GitHub secrets to enable use of these reproducbility practices within a GitHub environment", echo = FALSE}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1ExTZsKDHKM0fIi0_tB80qd8cHvqjEDyNJp-OsnvZ19o/edit?slide=id.g366a6ed3497_0_0#slide=id.g366a6ed3497_0_0")
+```
+
+## Objectives
+
+```{r learning_objectives, out.width = "100%", fig.alt = "This course will demonstrate how to: Review the best practices of reproducibility we have covered in this specialization. Create an original docker image. Create a GitHub secret. Create an original GitHub Action. Have your original docker image and github action work together", echo = FALSE}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1ExTZsKDHKM0fIi0_tB80qd8cHvqjEDyNJp-OsnvZ19o/edit?slide=id.g30a4c584926_0_0#slide=id.g30a4c584926_0_0")
 ```
 
@@ -46,9 +57,15 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1ExTZsKDHKM0fIi0_
 
 The capstone uses a practical, project-based assessment model where students work with a provided computational sandbox environment to complete real-world tasks. Rather than traditional exams, students demonstrate mastery by successfully implementing containerized workflows and automated pipelines that pass automated evaluation criteria.
 
-**Assignment 1: Custom Container Development** - Students modify and extend Docker containers to support specific cancer analysis requirements, demonstrating understanding of containerization principles and bioinformatics software management.
+```{r out.width = "100%", echo=FALSE, fig.alt = "This capstone course has multiple hands-on assignments that are provided in Github repository sandbox"}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1ExTZsKDHKM0fIi0_tB80qd8cHvqjEDyNJp-OsnvZ19o/edit?slide=id.g368818bb4f3_0_162#slide=id.g368818bb4f3_0_162")
+```
 
-**Assignment 2: Automated Workflow Implementation** - Students create GitHub Actions that automatically execute and validate cancer data analysis pipelines, showing proficiency in continuous integration concepts and workflow automation.
+**Custom Container Development Assignment** - Students create Docker containers to support specific cancer analysis requirements, demonstrating understanding of containerization principles and bioinformatics software management.
+
+**Working with GitHub Secrets Assignment** -- Students create a personal access token, store the token as a GitHub secret in a repository and access that secret in a GitHub Actions workflow, displaying application of best practices in security when handling sensitive information.
+
+**Automated Workflow Implementation Assignment** - Students create GitHub Actions that automatically execute and validate cancer data analysis pipelines, showing proficiency in continuous integration concepts and workflow automation.
 
 Each assignment utilizes automated evaluation systems that provide immediate feedback and validation codes upon successful completion, simulating real-world development environments where code must pass automated testing before deployment.
 
@@ -71,4 +88,4 @@ Each assignment builds on previous work and integrates multiple technologies. St
 **Real-world Application:**
 Throughout the course, students are encouraged to consider how the techniques they're learning apply to their own research contexts. The assignments use cancer informatics examples, but the principles and technologies transfer to a wide range of computational research domains.
 
-We also recommend that students leverage the broader ITCR Training Network community and resources, including the [GitHub repository discussions](https://www.itcrtraining.org/), course forums, and peer collaboration opportunities to enhance their learning experience and build lasting professional connections in the cancer informatics community.
+We also recommend that students leverage the [broader ITCR Training Network community and resources](https://www.itcrtraining.org/) to enhance their learning experience and build lasting professional connections in the cancer informatics community.
