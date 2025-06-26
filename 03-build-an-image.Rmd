@@ -1,6 +1,6 @@
 # Building a Docker Image
 
-```{r, out.width = "100%", fig.alt = "This course will demonstrate how to:Recap Docker image building techniques Create an original Docker image ", echo = FALSE}
+```{r, out.width = "100%", fig.alt = "Learning Objectives: Recognize and plan out Docker image needs for a project; Examine a Dockerfile and add packages; Test and monitor the use of a Docker image", echo = FALSE}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1ExTZsKDHKM0fIi0_tB80qd8cHvqjEDyNJp-OsnvZ19o/edit?slide=id.g361b9572af4_0_181#slide=id.g361b9572af4_0_181")
 ```
 
