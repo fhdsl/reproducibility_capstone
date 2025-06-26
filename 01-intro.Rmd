@@ -10,7 +10,7 @@ Cancer research in the 21st century is increasingly data-driven, with researcher
 
 The modern cancer informatics landscape demands not just analytical skills, but also proficiency in reproducible computational practices. Research has shown that computational analyses are often difficult or impossible to reproduce without direct contact with the original researchers [@BeaulieuJones2017]. This reproducibility crisis extends beyond academic concerns—it directly impacts the translation of research findings into clinical applications and the overall efficiency of cancer research efforts.
 
-```{r, out.width = "100%", fig.alt = "Welcome to Reproducibility Capstone. This course is brought to you by the I T C R Training Network.", echo = FALSE}
+```{r, out.width = "100%", fig.alt = "Welcome to Making Science Reproducible, a Capstone Project Course. This course is brought to you by the I T C R Training Network.", echo = FALSE}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1ExTZsKDHKM0fIi0_tB80qd8cHvqjEDyNJp-OsnvZ19o/edit?slide=id.g30a4bb0444d_0_948#slide=id.g30a4bb0444d_0_948")
 ```
 
@@ -57,7 +57,7 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1ExTZsKDHKM0fIi0_
 
 The capstone uses a practical, project-based assessment model where students work with a provided computational sandbox environment to complete real-world tasks. Rather than traditional exams, students demonstrate mastery by successfully implementing containerized workflows and automated pipelines that pass automated evaluation criteria.
 
-```{r out.width = "100%", echo=FALSE, fig.alt = "This capstone course has multiple hands-on assignments that are provided in Github repository sandbox"}
+```{r out.width = "100%", echo=FALSE, fig.alt = "This course has a companion github repository template that provides a sandbox environment for learners to use to complete the hands-on assignments."}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1ExTZsKDHKM0fIi0_tB80qd8cHvqjEDyNJp-OsnvZ19o/edit?slide=id.g368818bb4f3_0_162#slide=id.g368818bb4f3_0_162")
 ```
 
