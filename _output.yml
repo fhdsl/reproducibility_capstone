@@ -1,5 +1,6 @@
 bookdown::gitbook:
-  css: assets/style_ITN.css
+  toc_depth: 2
+  css: [assets/style_ITN.css]
   includes:
     before_body: assets/big-image-itcr.html
     after_body: assets/footer.html
