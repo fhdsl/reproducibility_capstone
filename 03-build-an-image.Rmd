@@ -162,7 +162,7 @@ Important: Make sure it's a real validation code, not an error message or status
 :::
 
 
-::: {coursera}
+::: {.certificate}
 ### Step 12: Submit Your Quiz
 
 <input type="checkbox"> Go to your Coursera Graded Assignment ("Building a Docker Image")<br/>

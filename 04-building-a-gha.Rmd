@@ -201,7 +201,7 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1ExTZsKDHKM0fIi0_
 
 ## Phase 6: Completion
 
-:::{certificate}
+:::{.certificate}
 
 If you are taking the course on Coursera:
 
