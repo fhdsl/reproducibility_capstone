@@ -161,15 +161,23 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1ExTZsKDHKM0fIi0_
 Important: Make sure it's a real validation code, not an error message or status code used to identify an error.
 :::
 
+
+::: {coursera}
 ### Step 12: Submit Your Quiz
 
 <input type="checkbox"> Go to your Coursera Graded Assignment ("Building a Docker Image")<br/>
 <input type="checkbox"> Paste the validation code<br/>
 <input type="checkbox"> Submit the quiz to get credit for your work<br/>
 
+`r config::get("icons8")`
+
+:::
+
 ## Suggestions for Troubleshooting and Best Practices
 
 Remember, this assignment is designed to give you hands-on experience with the container building process. The automated testing system provides immediate feedback, making it easier to learn through iteration rather than getting everything perfect on the first try.
+
+
 
 ### Start Simple
 

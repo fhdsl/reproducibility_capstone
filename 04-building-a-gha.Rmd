@@ -201,17 +201,24 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1ExTZsKDHKM0fIi0_
 
 ## Phase 6: Completion
 
-Note that if you are not taking this course through Coursera or Leanpub for certification then you can ignore this phase
+:::{certificate}
 
-### Step 11: Collect Your Validation Code
+If you are taking the course on Coursera:
+
+
+**Collect Your Validation Code**
 
 <input type="checkbox"> Once your GitHub Action runs successfully, copy the validation code from the PR comment. Keep this code safe for your quiz submission.<br/>
 
-### Step 12: Submit Your Quiz
+**Submit Your Quiz**
 
 <input type="checkbox"> Go to your Coursera Graded Assignment ("Building a GitHub Action")<br/>
 <input type="checkbox"> Paste the validation code when prompted<br/>
 <input type="checkbox"> Submit the quiz to get credit for your work<br/>
+
+`r config::get("icons8")`
+
+:::
 
 ## Suggestions for Troubleshooting and Best Practices
 
