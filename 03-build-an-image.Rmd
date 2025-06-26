@@ -160,7 +160,7 @@ Because you've received a validation code (congrats!), you can treat that like a
 <input type="checkbox"> Click the green <div class = "github_button"> Merge pull request </div> button. <br/>
 <input type="checkbox"> Adjust the Commit message and extended description as you see fit. <br/>
 <input type="checkbox"> Click the green <div class="github_button"> Confirm merge</div> button. <br/>
-<input type="checkbox"> Finally, after you see "Pull Request successfully merged and closed displayed, you can click the gray "Delete branch" button. <br/>
+<input type="checkbox"> Finally, after you see "Pull Request successfully merged and closed displayed, you can click the gray <div class="github_gray_button"> Delete branch</div> button. <br/>
 
 ### Step 12: Collect Your Validation Code
 
