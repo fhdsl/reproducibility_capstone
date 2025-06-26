@@ -2,6 +2,7 @@
 AnVIL
 Audiographer
 Audiography
+authenticator
 automagic
 BIPOC
 Bloomberg
@@ -27,8 +28,10 @@ GDSCN
 Generis
 GH
 Github
+github
 GitHub
 GitKraken
+GitLFS
 https
 ies
 iframe
@@ -46,6 +49,7 @@ Markua
 mentorship
 MERCHANTABILITY
 Muschelli
+nbsp
 NCI
 NHGRI
 OTTR
@@ -53,7 +57,10 @@ ottrpal
 ottrproject
 PATs
 Pandoc
+Phind
+PII
 png
+PowerShell
 pre
 preprint
 repo
