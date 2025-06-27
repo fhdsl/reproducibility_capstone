@@ -145,15 +145,24 @@ Common issues to check: <br/>
 
 ## Phase 5: Completion
 
-### Step 11: Collect Your Validation Code
+### Step 11: Merge Your Pull Request
 
-<input type="checkbox"> Once your build succeeds, copy the validation code from the PR comment. You'll need the code in order to submit your quiz.<br/>
+Because you've received a validation code (congrats!), you can treat this like a team member approved your pull request. Go ahead and merge the PR and delete your branch so that your Dockerfile will be on the main branch, available for use in a later assignment if you want it.
+
+<input type="checkbox"> Click the green <div class = "github_button"> Merge pull request </div> button. <br/>
+<input type="checkbox"> Adjust the commit message and extended description as you see fit. <br/>
+<input type="checkbox"> Click the green <div class="github_button"> Confirm merge</div> button. <br/>
+<input type="checkbox"> Finally, after you see "Pull Request successfully merged and closed displayed, you can click the gray <div class="github_gray_button"> Delete branch</div> button. <br/>
+
+### Step 12: Collect Your Validation Code
+
+<input type="checkbox"> Copy the validation code from the pull request comment earlier in the thread/above where you've merged and deleted your branch. You'll need the code in order to submit your quiz.<br/>
 
 ::: {.notice}
 Important: Make sure it's a real validation code, not an error message or status code used to identify an error.
 :::
 
-### Step 12: Submit Your Quiz
+### Step 13: Submit Your Quiz
 
 <input type="checkbox"> Go to your Coursera Graded Assignment ("Building a Docker Image")<br/>
 <input type="checkbox"> Paste the validation code<br/>
