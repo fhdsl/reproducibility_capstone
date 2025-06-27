@@ -1,6 +1,6 @@
 # Making a GitHub Secret
 
-<img src="05-secret-storage_files/figure-html//1ExTZsKDHKM0fIi0_tB80qd8cHvqjEDyNJp-OsnvZ19o_g360ed975019_0_0.png" alt="This course will demonstrate how to: Recap GitHub secrets. Create an a Personal Access Token. Store a GitHub secret Access that secret" width="100%" />
+<img src="05-secret-storage_files/figure-html//1ExTZsKDHKM0fIi0_tB80qd8cHvqjEDyNJp-OsnvZ19o_g360ed975019_0_0.png" alt="Learning Objectives: Recognize the purpose of GitHub secrets; Explain how to store your GitHub secrets in a secure way; Create a personal access token (PAT) and store it in your GitHub repository; Test your GitHub secret" width="100%" />
 
 ## Phase 0: Understanding GitHub Secrets
 
@@ -203,15 +203,22 @@ If you need to fix issues and re-test:<br/>
 
 ## Phase 5: Completion
 
-### Step 12: Collect Your Validation Code
+::: {.certificate}
+
+If you are taking this course on Coursera: 
+
+**Collect Your Validation Code**
 
 <input type="checkbox"> Once your evaluation action succeeds, copy the validation code from the Issue description. You'll need the code in order to submit your quiz.<br/>
 
-### Step 13: Submit Your Quiz
+**Submit Your Quiz on Coursera**
 
 <input type="checkbox"> Go to your Coursera Graded Assignment ("Making a GitHub Secret")<br/>
 <input type="checkbox"> Paste the validation code exactly as provided in the issue<br/>
 <input type="checkbox"> Submit the quiz to get credit for your work<br/>
+
+<div class = 'iconstyle'>icons from [icons8](https://icons8.com/) </div>
+:::
 
 ### Step 14: Clean Up (Optional but Recommended)
 

@@ -14,7 +14,14 @@ The modern cancer informatics landscape demands not just analytical skills, but 
 
 The course is intended for cancer researchers, bioinformaticians, and data scientists who work with computational analyses in cancer research contexts and want to enhance the reproducibility, efficiency, and shareability of their work.
 
-This capstone course builds on foundational concepts from the ITCR Training Network's [Reproducibility in Cancer Informatics](https://jhudatascience.org/Reproducibility_in_Cancer_Informatics/introduction.html), [Advanced Reproducibility in Cancer Informatics](https://jhudatascience.org/Adv_Reproducibility_in_Cancer_Informatics/introduction.html), [Containers for Scientists](https://hutchdatascience.org/Containers_for_Scientists/), and [GitHub Automation for Scientists](https://hutchdatascience.org/GitHub_Automation_for_Scientists/) courses. Students should be comfortable with basic GitHub operations, including creating repositories, making commits, and opening pull requests before beginning this capstone.
+This capstone course builds on foundational concepts from the following ITCR Training Network's courses:
+
+- [Intro to Reproducibility in Cancer Informatics](https://jhudatascience.org/Reproducibility_in_Cancer_Informatics/)
+- [Advanced Reproducibility in Cancer Informatics](https://hutchdatascience.org/ITN_course_search/Adv_Reproducibility_in_Cancer_Informatics_coursePage.html)
+- [Containers for Scientists](https://hutchdatascience.org/ITN_course_search/Containers_for_Scientists_coursePage.html)
+- [GitHub Automation for Scientists](https://hutchdatascience.org/ITN_course_search/GitHub_Automation_for_Scientists_coursePage.html) 
+
+Students should be comfortable with basic GitHub operations, including creating repositories, making commits, and opening pull requests before beginning this capstone.
 
 
 <a href="https://www.itcrtraining.org/courses" target="_blank"><img src="resources/images/01-intro_files/figure-html//1ExTZsKDHKM0fIi0_tB80qd8cHvqjEDyNJp-OsnvZ19o_g366a6ed3497_0_211.png" alt="Prior to using this capstone, students should be comfortable with basic GitHub operations such as creating repositories or opening pull requests. Students may need to review the I T N courses on reproducibility practices and tools: Reproducibility in cancer informatics, Advanced reproducibility in cancer informatics, GitHub automation for scientists, and containers for scientists." width="100%" /></a>
@@ -22,7 +29,7 @@ This capstone course builds on foundational concepts from the ITCR Training Netw
 _This capstone course is written for individuals who:_
 
 - Conduct computational analyses for cancer research, including genomics, proteomics, imaging, or clinical data analysis.
-- Have completed the ITN reproducibility courses mentioned above
+- Have completed the ITN reproducibility courses mentioned above.
 - Want to put the reproducibility skill sets together and get more practice in doing this in a “real world” setting.
 
 
@@ -32,14 +39,14 @@ _This capstone course is written for individuals who:_
 
 ## Curriculum
 
-The course covers practical application of containerization and automation technologies specifically tailored for cancer informatics workflows. Unlike introductory courses that focus on individual concepts, this capstone emphasizes integration and real-world application of multiple technologies working together.
+The course covers practical application of containerization and automation technologies specifically tailored for cancer informatics workflows. Unlike introductory courses that focus on individual concepts, this capstone emphasizes integration and **real-world application** of multiple technologies working together.
 
 
 <img src="resources/images/01-intro_files/figure-html//1ExTZsKDHKM0fIi0_tB80qd8cHvqjEDyNJp-OsnvZ19o_g366a6ed3497_0_0.png" alt="Topics covered in the reproducibility capstone include a review of best practices when using reproducibility tools as well as hands-on real-world practice creating images and containers with docker, automation with GitHub actions, using images and automation together, and creating GitHub secrets to enable use of these reproducibility practices within a GitHub environment" width="100%" />
 
 ## Objectives
 
-<img src="resources/images/01-intro_files/figure-html//1ExTZsKDHKM0fIi0_tB80qd8cHvqjEDyNJp-OsnvZ19o_g30a4c584926_0_0.png" alt="This course will demonstrate how to: Review the best practices of reproducibility we have covered in this specialization. Create an original docker image. Create a GitHub secret. Create an original GitHub Action. Have your original docker image and github action work together" width="100%" />
+<img src="resources/images/01-intro_files/figure-html//1ExTZsKDHKM0fIi0_tB80qd8cHvqjEDyNJp-OsnvZ19o_g30a4c584926_0_0.png" alt="This course will demonstrate how to: Apply the best practices of reproducibility we have covered in this specialization, Create and implement an original Docker image, Create and store a GitHub secret, and Create and test an original GitHub Action" width="100%" />
 
 **Assessment Approach:**
 

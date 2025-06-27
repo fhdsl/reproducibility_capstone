@@ -1,7 +1,7 @@
 # Building a GitHub Action
 
 
-<img src="04-building-a-gha_files/figure-html//1ExTZsKDHKM0fIi0_tB80qd8cHvqjEDyNJp-OsnvZ19o_g361b9572af4_0_186.png" alt="This course will demonstrate how to: Recap GitHub Action building techniques Create an original GitHub Action" width="100%" />
+<img src="04-building-a-gha_files/figure-html//1ExTZsKDHKM0fIi0_tB80qd8cHvqjEDyNJp-OsnvZ19o_g361b9572af4_0_186.png" alt="Learning Objectives: Recognize the uses of GitHub Actions and plan for project needs, Build and implement a GitHub Action, Test and monitor a Github Action" width="100%" />
 
 ## Phase 1: Repository Setup and Planning
 
@@ -193,17 +193,24 @@ You'll find specific error messages in the actions logs. Check them out!
 
 ## Phase 6: Completion
 
-Note that if you are not taking this course through Coursera or Leanpub for certification then you can ignore this phase
+:::{.certificate}
 
-### Step 11: Collect Your Validation Code
+If you are taking the course on Coursera:
+
+
+**Collect Your Validation Code**
 
 <input type="checkbox"> Once your GitHub Action runs successfully, copy the validation code from the PR comment. Keep this code safe for your quiz submission.<br/>
 
-### Step 12: Submit Your Quiz
+**Submit Your Quiz**
 
 <input type="checkbox"> Go to your Coursera Graded Assignment ("Building a GitHub Action")<br/>
 <input type="checkbox"> Paste the validation code when prompted<br/>
 <input type="checkbox"> Submit the quiz to get credit for your work<br/>
+
+<div class = 'iconstyle'>icons from [icons8](https://icons8.com/) </div>
+
+:::
 
 ## Suggestions for Troubleshooting and Best Practices
 
