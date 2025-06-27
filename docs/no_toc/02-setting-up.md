@@ -1,8 +1,10 @@
 # Setting up for this course
 
+<img src="02-setting-up_files/figure-html//1ExTZsKDHKM0fIi0_tB80qd8cHvqjEDyNJp-OsnvZ19o_g360ed975019_0_188.png" alt="Learning Objectives: Create a repository on GitHub from our template; Clone the repository onto your local computer; Create a branch on your repository for the next assignment" width="100%" />
+
 ## Phase 1: Creating Your Repository from Template
 
-<img src="02-setting-up_files/figure-html//1ExTZsKDHKM0fIi0_tB80qd8cHvqjEDyNJp-OsnvZ19o_g360ed975019_0_188.png" alt="Welcome to Reproducibility Capstone. This course is brought to you by the I T C R Training Network." width="100%" />
+You will need to use a template repository on GitHub that we made for this course to have all the necessary pieces.
 
 ### Step 1: Access the Course Template
 
@@ -109,11 +111,18 @@ git branch
 <input type="checkbox"> Copy the URL from your web browser for this workflow file.<br/>
   &nbsp;&nbsp;&nbsp;&nbsp; • The URL will look like: `https://github.com/your-username/your-repository-name/blob/main(or-your-branch)/.github/workflows/file_name.yml`<br/>
 
-### Step 7: Submit your Quiz
+::: {.certificate}
+
+If you are taking the course on Coursera:
+
+**Submit your Coursera Quiz**
 
 <input type="checkbox"> Go to your Coursera Graded Assignment ("Setting Up").<br/>
 <input type="checkbox"> Paste the URL you copied in Step 6.<br/>
 <input type="checkbox"> Submit the quiz to get credit for your work.<br/>
+
+<div class = 'iconstyle'>icons from [icons8](https://icons8.com/) </div>
+:::
 
 ## Your Setup is Complete.... What are the Next Steps?
 

@@ -1,6 +1,6 @@
 # Building a Docker Image
 
-<img src="03-build-an-image_files/figure-html//1ExTZsKDHKM0fIi0_tB80qd8cHvqjEDyNJp-OsnvZ19o_g361b9572af4_0_181.png" alt="This course will demonstrate how to:Recap Docker image building techniques Create an original Docker image " width="100%" />
+<img src="03-build-an-image_files/figure-html//1ExTZsKDHKM0fIi0_tB80qd8cHvqjEDyNJp-OsnvZ19o_g361b9572af4_0_181.png" alt="Learning Objectives: Recognize and plan out Docker image needs for a project; Examine a Dockerfile and add packages; Test and monitor the use of a Docker image" width="100%" />
 
 ## Phase 1: Repository Setup and Planning
 
@@ -141,9 +141,7 @@ Common issues to check: <br/>
 <input type="checkbox"> Each push will trigger a new test run<br/>
 <input type="checkbox"> Keep refining until you get a successful build!<br/>
 
-<img src="03-build-an-image_files/figure-html//1ExTZsKDHKM0fIi0_tB80qd8cHvqjEDyNJp-OsnvZ19o_g368818bb4f3_0_417.png" alt="You may have to troubleshoot iteratively until your dockerfile builds successfully. Git commit and push edits to your dockerfile and check your existing pull request to receive evaluation from automated assignment checks. Interpret the results. If you were not successful, troubleshoot and iterate this process as needed, checking your pre-existing pull request for new evaluation results after making additional changes. Or if you were successful in your assignment, submit the verification code to your coursera quiz (or move on to the next section if you are not using coursera or some certification method to take this course)" width="100%" />
-
-## Phase 5: Completion
+<img src="03-build-an-image_files/figure-html//1ExTZsKDHKM0fIi0_tB80qd8cHvqjEDyNJp-OsnvZ19o_g368818bb4f3_0_417.png" alt="You may have to troubleshoot iteratively until your dockerfile builds successfully. Git commit and push edits to your dockerfile and check your existing pull request to receive evaluation from automated assignment checks. Interpret the results. If you were not successful, troubleshoot and iterate this process as needed, checking your pre-existing pull request for new evaluation results after making additional changes. Or if you were successful in your assignment, submit the verification code to your Coursera quiz (or move on to the next section if you are not using Coursera or some certification method to take this course)" width="100%" />
 
 ### Step 11: Merge Your Pull Request
 
@@ -154,7 +152,14 @@ Because you've received a validation code (congrats!), you can treat this like a
 <input type="checkbox"> Click the green <div class="github_button"> Confirm merge</div> button. <br/>
 <input type="checkbox"> Finally, after you see "Pull Request successfully merged and closed displayed, you can click the gray <div class="github_gray_button"> Delete branch</div> button. <br/>
 
-### Step 12: Collect Your Validation Code
+## Phase 5: Completion
+
+
+::: {.certificate}
+
+If you are taking the course on Coursera:
+
+**Collect Your Validation Code**
 
 <input type="checkbox"> Copy the validation code from the pull request comment earlier in the thread/above where you've merged and deleted your branch. You'll need the code in order to submit your quiz.<br/>
 
@@ -162,15 +167,25 @@ Because you've received a validation code (congrats!), you can treat this like a
 Important: Make sure it's a real validation code, not an error message or status code used to identify an error.
 :::
 
-### Step 13: Submit Your Quiz
+
+**Submit Your Quiz**
+
 
 <input type="checkbox"> Go to your Coursera Graded Assignment ("Building a Docker Image")<br/>
 <input type="checkbox"> Paste the validation code<br/>
 <input type="checkbox"> Submit the quiz to get credit for your work<br/>
 
+<div class = 'iconstyle'>icons from [icons8](https://icons8.com/) </div>
+
+:::
+
+
+
 ## Suggestions for Troubleshooting and Best Practices
 
 Remember, this assignment is designed to give you hands-on experience with the container building process. The automated testing system provides immediate feedback, making it easier to learn through iteration rather than getting everything perfect on the first try.
+
+
 
 ### Start Simple
 
