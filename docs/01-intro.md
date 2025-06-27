@@ -8,7 +8,7 @@ Cancer research in the 21st century is increasingly data-driven, with researcher
 
 The modern cancer informatics landscape demands not just analytical skills, but also proficiency in reproducible computational practices. Research has shown that computational analyses are often difficult or impossible to reproduce without direct contact with the original researchers [@BeaulieuJones2017]. This reproducibility crisis extends beyond academic concerns—it directly impacts the translation of research findings into clinical applications and the overall efficiency of cancer research efforts.
 
-<img src="resources/images/01-intro_files/figure-html//1ExTZsKDHKM0fIi0_tB80qd8cHvqjEDyNJp-OsnvZ19o_g30a4bb0444d_0_948.png" alt="Welcome to Reproducibility Capstone. This course is brought to you by the I T C R Training Network." width="100%" />
+<img src="resources/images/01-intro_files/figure-html//1ExTZsKDHKM0fIi0_tB80qd8cHvqjEDyNJp-OsnvZ19o_g30a4bb0444d_0_948.png" alt="Welcome to Making Science Reproducible, a Capstone Project Course. This course is brought to you by the I T C R Training Network." width="100%" />
 
 ## Target Audience
 
@@ -35,7 +35,7 @@ _This capstone course is written for individuals who:_
 The course covers practical application of containerization and automation technologies specifically tailored for cancer informatics workflows. Unlike introductory courses that focus on individual concepts, this capstone emphasizes integration and real-world application of multiple technologies working together.
 
 
-<img src="resources/images/01-intro_files/figure-html//1ExTZsKDHKM0fIi0_tB80qd8cHvqjEDyNJp-OsnvZ19o_g366a6ed3497_0_0.png" alt="Topics covered in the reproducibility capstone include a review of best practices when using reproducibility tools as well as hands-on real-world practice creating images and containers with docker, automation with GitHub actions, using images and automation together, and creating GitHub secrets to enable use of these reproducbility practices within a GitHub environment" width="100%" />
+<img src="resources/images/01-intro_files/figure-html//1ExTZsKDHKM0fIi0_tB80qd8cHvqjEDyNJp-OsnvZ19o_g366a6ed3497_0_0.png" alt="Topics covered in the reproducibility capstone include a review of best practices when using reproducibility tools as well as hands-on real-world practice creating images and containers with docker, automation with GitHub actions, using images and automation together, and creating GitHub secrets to enable use of these reproducibility practices within a GitHub environment" width="100%" />
 
 ## Objectives
 
@@ -45,7 +45,7 @@ The course covers practical application of containerization and automation techn
 
 The capstone uses a practical, project-based assessment model where students work with a provided computational sandbox environment to complete real-world tasks. Rather than traditional exams, students demonstrate mastery by successfully implementing containerized workflows and automated pipelines that pass automated evaluation criteria.
 
-<img src="resources/images/01-intro_files/figure-html//1ExTZsKDHKM0fIi0_tB80qd8cHvqjEDyNJp-OsnvZ19o_g368818bb4f3_0_162.png" alt="This capstone course has multiple hands-on assignments that are provided in Github repository sandbox" width="100%" />
+<img src="resources/images/01-intro_files/figure-html//1ExTZsKDHKM0fIi0_tB80qd8cHvqjEDyNJp-OsnvZ19o_g368818bb4f3_0_162.png" alt="This course has a companion github repository template that provides a sandbox environment for learners to use to complete the hands-on assignments." width="100%" />
 
 **Custom Container Development Assignment** - Students create Docker containers to support specific cancer analysis requirements, demonstrating understanding of containerization principles and bioinformatics software management.
 
@@ -75,3 +75,11 @@ Each assignment builds on previous work and integrates multiple technologies. St
 Throughout the course, students are encouraged to consider how the techniques they're learning apply to their own research contexts. The assignments use cancer informatics examples, but the principles and technologies transfer to a wide range of computational research domains.
 
 We also recommend that students leverage the [broader ITCR Training Network community and resources](https://www.itcrtraining.org/) to enhance their learning experience and build lasting professional connections in the cancer informatics community.
+
+## Where do you need to invest?
+
+This course is to help you apply what we have learned in the previous courses to a real world application. What you build in this capstone is completely up to you, but for your own benefit we suggest you try to make something you will use in your work beyond this specialization.
+
+Think about work on GitHub that you are doing manually, or a project where you are struggling to easily reproduce the results. Those may be ripe opportunities for you to build something. However, keep in mind that it's OK to start small and build up to these goals as you learn.
+
+Use a few minutes for introspective reflection about where you are spending a lot of time and effort to reproduce something that could use some reproducibility investment (like a Github Action or Docker image). Consider attempting to develop such reproducibility investments for these projects in your upcoming assignments.
