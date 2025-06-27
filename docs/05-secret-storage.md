@@ -84,7 +84,7 @@ Navigation path: Profile → Settings → Developer settings → Personal access
 
 ### Step 4: Generate and Copy Token
 
-<input type="checkbox"> Scroll to bottom and click the green <div class="github_button">Generate token</div> button.<br/>
+<p class=buttontext><input type="checkbox">  Scroll to bottom and click the green <div class="github_button">Generate token</div> button.<br/></p>
 <input type="checkbox"> CRITICAL: Copy the token immediately - GitHub will only show it once (perhaps keep the window open as you copy it)<br/>
 <input type="checkbox"> The token will look like: `ghp_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx`<br/>
 
@@ -111,7 +111,7 @@ Repository navigation: Repository → Settings → Secrets and variables → Act
 <input type="checkbox"> Enter the secret details:<br/>
    &nbsp;&nbsp;&nbsp;&nbsp; <input type="checkbox"> Name: `ASSIGNMENT_SECRET`<br/>
    &nbsp;&nbsp;&nbsp;&nbsp; <input type="checkbox"> Secret: Paste your personal access token from Step 4<br/>
-<input type="checkbox"> Click the green <div class="github_button"> Add secret</div> button <br/>
+<p class=buttontext><input type="checkbox"> Click the green <div class="github_button"> Add secret</div> button <br/></p>
 
 ::: {.warning}
 Your repository secret must be named `ASSIGNMENT_SECRET` **exactly**. It is case sensitive.
@@ -137,8 +137,8 @@ In order to report success or failure, the test will open an Issue in your GitHu
 <input type="checkbox"> Navigate to the "Actions" tab in your repository <br/>
 <input type="checkbox"> Look for "GitHub Secret Evaluation" in the workflows list on the left <br/>
 <input type="checkbox"> Click on "GitHub Secret Evaluation" <br/>
-<input type="checkbox"> Click the "Run workflow" dropdown (you may need to select branch "main"). <br/>
-<input type="checkbox"> Click green <div class="github_button"> Run workflow</div> button again to confirm <br/>
+<input type="checkbox"> Click the "Run workflow" dropdown (you may need to select branch "main") <br/>
+<p class=buttontext><input type="checkbox"> Click the green <div class="github_button"> Run workflow</div> button again to confirm<br/></p>
 
 
 <img src="05-secret-storage_files/figure-html//1ExTZsKDHKM0fIi0_tB80qd8cHvqjEDyNJp-OsnvZ19o_g36aecf6d4eb_0_0.png" alt="Go to the Actions tab (on the top banner) to find the evaluation GitHub Action for the GitHub Secret Assignment in the left panel. From there, select the Run workflow button in the top right. Verify it is running on the main branch and click the green run workflow button." width="100%" />
@@ -220,7 +220,7 @@ If you are taking this course on Coursera:
 <div class = 'iconstyle'>icons from [icons8](https://icons8.com/) </div>
 :::
 
-### Step 14: Clean Up (Optional but Recommended)
+### Clean Up (Optional but Recommended)
 
 After completing the assignment:<br/>
 <input type="checkbox"> Consider revoking the PAT if you don't plan to use it further<br/>
