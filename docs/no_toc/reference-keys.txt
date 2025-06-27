@@ -4,6 +4,7 @@ target-audience
 curriculum
 objectives
 how-to-use-the-course
+where-do-you-need-to-invest
 setting-up-for-this-course
 phase-1-creating-your-repository-from-template
 step-1-access-the-course-template
@@ -38,8 +39,9 @@ phase-4-troubleshooting-and-refinement
 step-9-debug-build-failures
 step-10-iterate-until-success
 phase-5-completion
-step-11-collect-your-validation-code
-step-12-submit-your-quiz
+step-11-merge-your-pull-request
+step-12-collect-your-validation-code
+step-13-submit-your-quiz
 suggestions-for-troubleshooting-and-best-practices
 start-simple
 leverage-the-automated-testing
@@ -72,8 +74,8 @@ invalid-token-error
 workflow-doesnt-run
 step-11-re-running-evaluation
 phase-5-completion-1
-step-12-collect-your-validation-code
-step-13-submit-your-quiz
+step-12-collect-your-validation-code-1
+step-13-submit-your-quiz-1
 step-14-clean-up-optional-but-recommended
 building-a-github-action
 phase-1-repository-setup-and-planning-1
@@ -91,8 +93,8 @@ phase-4-troubleshooting-and-refinement-2
 step-9-debug-common-issues
 step-10-iterate-until-success-1
 phase-6-completion
-step-11-collect-your-validation-code-1
-step-12-submit-your-quiz-1
+step-11-collect-your-validation-code
+step-12-submit-your-quiz
 suggestions-for-troubleshooting-and-best-practices-1
 start-simple-and-build-up
 use-course-knowledge
