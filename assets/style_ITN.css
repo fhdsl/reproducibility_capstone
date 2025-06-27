@@ -15,6 +15,10 @@ pre code {
   white-space: inherit;
 }
 
+p {
+  white-space: nowrap;
+}
+
 /*-----------icon------*/
 
 .icon{
