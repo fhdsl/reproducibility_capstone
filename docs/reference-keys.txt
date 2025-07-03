@@ -71,7 +71,7 @@ invalid-token-error
 workflow-doesnt-run
 step-11-re-running-evaluation
 phase-5-completion-1
-step-14-clean-up-optional-but-recommended
+clean-up-optional-but-recommended
 building-a-github-action
 phase-1-repository-setup-and-planning-1
 step-1-set-up-your-working-environment-1
