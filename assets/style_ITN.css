@@ -652,6 +652,7 @@ a.anchor:hover {
     padding: 1em;
     padding-top: .5em;
     border: 1px grey;
+    display: inline;
     background: #E8E8E8;
     color: black;
 }
