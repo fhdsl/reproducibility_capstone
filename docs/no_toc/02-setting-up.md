@@ -9,7 +9,7 @@ You will need to use a template repository on GitHub that we made for this cours
 ### Step 1: Access the Course Template
 
 <input type="checkbox"> Navigate to the [course sandbox template repository](https://github.com/fhdsl/capstone-sandbox)<br/>
-<input type="checkbox"> Look for the <div class = "github_button"> <a  href="https://github.com/new?template_name=capstone-sandbox&template_owner=fhdsl" class = "github_button_link"> Use this template</a></div> green button at the top of the repository page<br/>
+<p class = buttontext><input type="checkbox"> Look for the <div class = "github_button"> <a  href="https://github.com/new?template_name=capstone-sandbox&template_owner=fhdsl" class = "github_button_link"> Use this template</a></div> green button at the top of the repository page<br/></p>
 
 ::: {.notice}
 Important: Do NOT fork the repository - you must use the template option
@@ -17,7 +17,7 @@ Important: Do NOT fork the repository - you must use the template option
 
 ### Step 2: Configure Your New Repository
 
-<input type="checkbox"> Click <div class = "github_button"> <a href="https://github.com/new?template_name=capstone-sandbox&template_owner=fhdsl" class = "github_button_link"> Use this template</a></div> and select the "Create a new repository" option (if needed).<br/>
+<p class = buttontext><input type="checkbox"> Click <div class = "github_button"> <a href="https://github.com/new?template_name=capstone-sandbox&template_owner=fhdsl" class = "github_button_link"> Use this template</a></div> and select the "Create a new repository" option (if needed).<br/></p>
 <input type="checkbox"> Fill out the repository creation form:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox"> Include all branches: Leave **unchecked** (we only need the main branch)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox"> Repository name: Choose a meaningful name (e.g., `your-username-capstone-sandbox`)<br/>
