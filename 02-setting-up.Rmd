@@ -56,7 +56,7 @@ If you need any recap on how to file pull requests remember you can return to th
 Alternatively, you can use a command-line interface (e.g., Command Prompt, PowerShell, the Command Line) rather than GitHub Desktop. If you need to install Git, GitHub provides a [guide for various platforms](https://github.com/git-guides/install-git). Instructions within these command-line interface sections will be using "bash".
 
 1. Copy the repository URL:<br/>
-    <input type="checkbox"> On your repository page, click the <div class = "github_button"> Code </div> green button <br/>
+    <p class = buttontext><input type="checkbox"> On your repository page, click the <div class = "github_button"> Code </div> green button <br/></p>
     <input type="checkbox"> Copy the HTTPS URL (should look like: `https://github.com/yourusername/your-repo-name.git`) <br/>
 
 2. Clone the repository, using the HTTPS URL you've just copied:
