@@ -226,11 +226,11 @@ Remember: This assignment builds on both the containers knowledge (for choosing 
 
 ### Start Simple and Build Up
 
-- Begin with a basic action that you know will work
+- Begin with a basic action that you know will work.
 - Your action should be useful but not overly complex. Focus on demonstrating GitHub Actions concepts rather than building production software.
-- Test early and often to catch issues quickly
-- Add complexity gradually, testing each addition
-- Use marketplace actions: Leverage existing actions when possible
+- Test early and often to catch issues quickly.
+- Add complexity gradually, testing each addition.
+- Use marketplace actions: Leverage existing actions when possible.
 
 ### Use Course Knowledge
 
@@ -254,7 +254,7 @@ Remember: This assignment builds on both the containers knowledge (for choosing 
 ### Read Error Messages Carefully
 
 - Error messages (in the actions logs) often contain the exact solution
-- Check the logs: Go to Actions tab and examine detailed output
+- Check the logs: Go to Actions tab `r config::get("actions")` and examine detailed output
 - Print debugging info: Use `echo` commands to verify assumptions
 - Google specific error messages if they're unclear
 - Copy and paste the error code and include any relevant context to a [code trained LLM](https://doi-org.fhcrc.idm.oclc.org/10.1038/d41586-023-03023-4) (e.g., [Phind](https://www.phind.com/)) for additional help.
