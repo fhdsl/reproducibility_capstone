@@ -27,7 +27,7 @@ In order to isolate your work and enable the automated evaluation system this sa
 
 ### Step 3: Move File to Correct Location
 
-GitHub Actions must be in the `.github/workflows/` directory for Github to recognize them as a GitHub Action
+GitHub Actions must be in the `.github/workflows/` directory for Github to recognize them as a GitHub Action.
 
 <input type="checkbox"> Move `GitHub_Action_Assignment.yml` to `.github/workflows/GitHub_Action_Assignment.yml` <br/>
 
@@ -254,7 +254,7 @@ Remember: This assignment builds on both the containers knowledge (for choosing 
 ### Read Error Messages Carefully
 
 - Error messages (in the actions logs) often contain the exact solution
-- Check the logs: Go to Actions tab `r config::get("actions")` and examine detailed output
+- Check the logs: Go to the Actions tab `r config::get("actions")` and examine detailed output
 - Print debugging info: Use `echo` commands to verify assumptions
 - Google specific error messages if they're unclear
 - Copy and paste the error code and include any relevant context to a [code trained LLM](https://doi-org.fhcrc.idm.oclc.org/10.1038/d41586-023-03023-4) (e.g., [Phind](https://www.phind.com/)) for additional help.
