@@ -9,6 +9,6 @@ default:
   profile: "<img src='https://raw.githubusercontent.com/ottrproject/cheatsheets/main/resources/icons//profile_photo.png' alt='profile photo icon' class = icon >"
   token: "<img src='https://raw.githubusercontent.com/ottrproject/cheatsheets/main/resources/icons//personal_tokens.png' alt='personal access token icon' class = icon >"
   search: "<img src='https://raw.githubusercontent.com/ottrproject/cheatsheets/main/resources/icons//search.png' alt='search icon' class = icon >"
-  secrets: "<img src='https://raw.githubusercontent.com/fhdsl/reproducibility_capstone/icons_again/resources/icons//secrets_and_variables.png' alt='secrets and variables icon' class = icon >"
+  secrets: "<img src='https://raw.githubusercontent.com/fhdsl/reproducibility_capstone/main/resources/icons//secrets_and_variables.png' alt='secrets and variables icon' class = icon >"
   settings: "<img src = https://raw.githubusercontent.com/ottrproject/cheatsheets/main/resources/icons/settings_gear.png  alt = 'settings gear icon' class = icon >"  
   icons8: "<div class = 'iconstyle'>icons from [icons8](https://icons8.com/) </div>"
