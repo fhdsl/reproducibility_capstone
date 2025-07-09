@@ -107,7 +107,7 @@ git branch
 
 ### Step 6: Collect a workflow URL
 
-<input type="checkbox"> Navigate to [github.com](github.com), specifically your repository/copy of the capstone sandbox.<br/>
+<input type="checkbox"> Navigate to [github.com](https://github.com/), specifically your repository/copy of the capstone sandbox.<br/>
 <input type="checkbox"> Navigate to the `.github/workflows` directory.<br/>
 <input type="checkbox"> Click on **one** of the workflow files that are present there.<br/>
 <input type="checkbox"> Copy the URL from your web browser for this workflow file.<br/>
