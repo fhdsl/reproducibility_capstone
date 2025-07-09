@@ -116,7 +116,7 @@ The capstone sandbox is using a GitHub Action with a [trigger that is defined by
 
 ### Step 8: Monitor the Automated Testing & Interpret the Results
 
-<input type="checkbox"> On [github.com](github.com), within your pull request, watch for the `Docker Assignment Eval` check to start running. This GitHub Action will attempt to build your Dockerfile.<br/>
+<input type="checkbox"> On [github.com](https://github.com/), within your pull request, watch for the `Docker Assignment Eval` check to start running. This GitHub Action will attempt to build your Dockerfile.<br/>
 <input type="checkbox"> Wait for it to complete. It will comment on your PR whether it successfully built or not.<br/>
   &nbsp;&nbsp;&nbsp;&nbsp; • Success: You'll get a validation code in the comment<br/>
   &nbsp;&nbsp;&nbsp;&nbsp; • Failure: You'll get error messages explaining what went wrong. Read the error messages carefully - they contain clues for fixing issues<br/>
