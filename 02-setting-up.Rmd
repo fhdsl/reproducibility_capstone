@@ -10,6 +10,7 @@ You will need to use a template repository on GitHub that we made for this cours
 
 ### Step 1: Access the Course Template
 
+<input type="checkbox"> Go to [github.com](https://github.com/login) and make sure you are logged in<br/>
 <input type="checkbox"> Navigate to the [course sandbox template repository](https://github.com/fhdsl/capstone-sandbox)<br/>
 <p class = buttontext><input type="checkbox"> Look for the <div class = "github_button"> <a  href="https://github.com/new?template_name=capstone-sandbox&template_owner=fhdsl" class = "github_button_link"> Use this template</a></div> green button at the top of the repository page<br/></p>
 
@@ -22,6 +23,7 @@ Important: Do NOT fork the repository - you must use the template option
 <p class = buttontext><input type="checkbox"> Click <div class = "github_button"> <a href="https://github.com/new?template_name=capstone-sandbox&template_owner=fhdsl" class = "github_button_link"> Use this template</a></div> and select the "Create a new repository" option (if needed).<br/></p>
 <input type="checkbox"> Fill out the repository creation form:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox"> Include all branches: Leave **unchecked** (we only need the main branch)<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox"> Owner: Choose an owner (e.g., `your-username`, if needed)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox"> Repository name: Choose a meaningful name (e.g., `your-username-capstone-sandbox`)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox"> Description: Add a brief description of your capstone project<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox"> Visibility: Set to **Public** (required for the automated evaluation system to work)<br/>
@@ -37,7 +39,7 @@ Important: Do NOT fork the repository - you must use the template option
 ## Phase 2: Local Setup and Cloning
 
 For this course you may use whatever git client (GitHub Desktop, GitKraken, etc) you are most comfortable with, or no git client at all.
-If you need any recap on how to file pull requests remember you can return to the other courses in this series for reference, particularly the [Advanced Reproducibility course](https://jhudatascience.org/Adv_Reproducibility_in_Cancer_Informatics/no_toc/using-version-control-with-github.html#start-a-github-repository).
+If you need a recap on how to file pull requests remember you can return to the other courses in this series for reference, particularly the [Advanced Reproducibility course](https://jhudatascience.org/Adv_Reproducibility_in_Cancer_Informatics/no_toc/using-version-control-with-github.html#start-a-github-repository).
 
 ### Step 4: Clone Your Repository
 
