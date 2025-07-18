@@ -123,7 +123,7 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1ExTZsKDHKM0fIi0_
 ### Step 8: Monitor the Automated Testing & Interpret the Results
 
 <input type="checkbox"> On [github.com](https://github.com/), within your pull request, watch for the `Docker Assignment Eval` check to start running. This GitHub Action will attempt to build your Dockerfile.<br/>
-<input type="checkbox"> Wait for it to complete. It will comment on your PR whether it successfully built or not.<br/>
+<input type="checkbox"> Wait for it to complete. It will comment on your PR whether it successfully built or not. If you don't see the comment try refreshing your browser<br/>
   &nbsp;&nbsp;&nbsp;&nbsp; • Success: You'll get a validation code in the comment<br/>
   &nbsp;&nbsp;&nbsp;&nbsp; • Failure: You'll get error messages explaining what went wrong. Read the error messages carefully - they contain clues for fixing issues<br/>
 <input type="checkbox"> Interpret the results and proceed accordingly:<br/>
@@ -153,7 +153,7 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1ExTZsKDHKM0fIi0_
 
 ### Step 11: Merge Your Pull Request
 
-Because you've received a validation code (congrats!), you can treat this like a team member approved your pull request. Go ahead and merge the PR and delete your branch so that your Dockerfile will be on the main branch, available for use in a later assignment if you want it.
+Once you've received a validation code (congrats!), you can treat this like a team member approved your pull request. Go ahead and merge the PR and delete your branch so that your Dockerfile will be on the main branch, available for use in a later assignment if you want it.
 
 <input type="checkbox"> Click the green <div class = "github_button"> Merge pull request </div> button. <br/>
 <input type="checkbox"> Adjust the commit message and extended description as you see fit. <br/>
