@@ -80,7 +80,7 @@ For this capstone project specifically, you will create a custom docker image wi
 
 ### Step 6: Build Locally
 
-<input type="checkbox"> If developing locally (e.g., working through Command Line or GitHub Desktop, rather than on [github.com](https://github.com/) directly), [test your Dockerfile](https://hutchdatascience.org/Containers_for_Scientists/no_toc/05-modifying-containers.html#step-3-build-the-image-from-the-dockerfile) with:<br/>
+<input type="checkbox"> If developing locally (e.g., working through Command Line or GitHub Desktop, rather than on [github.com](https://github.com/) directly), make sure the Docker application is running, and [test your Dockerfile](https://hutchdatascience.org/Containers_for_Scientists/no_toc/05-modifying-containers.html#step-3-build-the-image-from-the-dockerfile) with:<br/>
 
 ```bash
 cd Docker_Assignment/docker
