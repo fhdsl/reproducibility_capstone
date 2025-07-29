@@ -4,7 +4,7 @@
 
 ## Motivation
 
-Cancer research in the 21st century is increasingly data-driven, with researchers generating and analyzing vast amounts of genomic, proteomic, imaging, and clinical data. The ability to effectively manage, analyze, and share these complex datasets has become as crucial as traditional laboratory skills. However, many cancer researchers find themselves working with computational tools and workflows that were developed in isolation, making it difficult to reproduce results, collaborate effectively, or scale their analyses.
+Cancer research in the 21st century is increasingly data-driven, with researchers generating and analyzing vast amounts of genomic, proteomic, imaging, and clinical data. The ability to effectively manage, analyze, and share these complex datasets has become as crucial as traditional laboratory skills. However, many cancer researchers find themselves working with computational tools and workflows that were not developed using robust software engineering practices. These tools often suffer from poor documentation, lack of version control, inadequate testing, and limited interoperability. Such limitations hinder collaboration, impede scalability, and make it difficult to reproduce results reliably.
 
 The modern cancer informatics landscape demands not just analytical skills, but also proficiency in reproducible computational practices. Research has shown that computational analyses are often difficult or impossible to reproduce without direct contact with the original researchers [@BeaulieuJones2017]. This reproducibility crisis extends beyond academic concerns—it directly impacts the translation of research findings into clinical applications and the overall efficiency of cancer research efforts.
 
@@ -16,7 +16,7 @@ The course is intended for cancer researchers, bioinformaticians, and data scien
 
 This capstone course builds on foundational concepts from the following ITCR Training Network's courses:
 
-- [Intro to Reproducibility in Cancer Informatics](https://jhudatascience.org/Reproducibility_in_Cancer_Informatics/)
+- [Intro to Reproducibility in Cancer Informatics](https://hutchdatascience.org/ITN_course_search/Reproducibility_in_Cancer_Informatics_coursePage.html)
 - [Advanced Reproducibility in Cancer Informatics](https://hutchdatascience.org/ITN_course_search/Adv_Reproducibility_in_Cancer_Informatics_coursePage.html)
 - [Containers for Scientists](https://hutchdatascience.org/ITN_course_search/Containers_for_Scientists_coursePage.html)
 - [GitHub Automation for Scientists](https://hutchdatascience.org/ITN_course_search/GitHub_Automation_for_Scientists_coursePage.html) 
@@ -30,7 +30,7 @@ _This capstone course is written for individuals who:_
 
 - Conduct computational analyses for cancer research, including genomics, proteomics, imaging, or clinical data analysis.
 - Have completed the ITN reproducibility courses mentioned above.
-- Want to put the reproducibility skill sets together and get more practice in doing this in a “real world” setting.
+- Want to put the reproducibility skill sets together and get more practice doing this in a “real world” setting.
 
 
 <img src="resources/images/01-intro_files/figure-html//1ExTZsKDHKM0fIi0_tB80qd8cHvqjEDyNJp-OsnvZ19o_g30a4c584926_0_5.png" alt="For individuals who: Have completed the Intro Reproducibility, Advanced Reproducibility, Containers for Scientists, and GitHub Automation course in this series. Want to put the reproducibility skill sets together and get more practice in doing this in a real world setting." width="100%" />
@@ -85,7 +85,7 @@ We also recommend that students leverage the [broader ITCR Training Network comm
 
 ## Where do you need to invest?
 
-This course is to help you apply what we have learned in the previous courses to a real world application. What you build in this capstone is completely up to you, but for your own benefit we suggest you try to make something you will use in your work beyond this specialization.
+This course aims to help you apply what we have learned in the previous courses to a real world application. What you build in this capstone is completely up to you, but for your own benefit we suggest you try to make something you will use in your work beyond this specialization.
 
 Think about work on GitHub that you are doing manually, or a project where you are struggling to easily reproduce the results. Those may be ripe opportunities for you to build something. However, keep in mind that it's OK to start small and build up to these goals as you learn.
 

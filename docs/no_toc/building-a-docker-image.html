@@ -311,7 +311,7 @@ div.csl-indent {
 </div>
 <div id="step-6-build-locally" class="section level3 hasAnchor" number="3.2.3">
 <h3><span class="header-section-number">3.2.3</span> Step 6: Build Locally<a href="building-a-docker-image.html#step-6-build-locally" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p><input type="checkbox"> If developing locally (e.g., working through Command Line or GitHub Desktop, rather than on <a href="https://github.com/">github.com</a> directly), <a href="https://hutchdatascience.org/Containers_for_Scientists/no_toc/05-modifying-containers.html#step-3-build-the-image-from-the-dockerfile">test your Dockerfile</a> with:<br/></p>
+<p><input type="checkbox"> If developing locally (e.g., working through Command Line or GitHub Desktop, rather than on <a href="https://github.com/">github.com</a> directly), make sure the Docker application is running, and <a href="https://hutchdatascience.org/Containers_for_Scientists/no_toc/05-modifying-containers.html#step-3-build-the-image-from-the-dockerfile">test your Dockerfile</a> with:<br/></p>
 <div class="sourceCode" id="cb4"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb4-1"><a href="building-a-docker-image.html#cb4-1" tabindex="-1"></a><span class="bu">cd</span> Docker_Assignment/docker</span>
 <span id="cb4-2"><a href="building-a-docker-image.html#cb4-2" tabindex="-1"></a><span class="ex">docker</span> build . <span class="at">-t</span> my-capstone-image</span></code></pre></div>
 <p><input type="checkbox"> Iterate fixing any build errors and re-building before pushing to GitHub. This saves time and GitHub Actions usage.<br/></p>
@@ -342,7 +342,7 @@ Automatic Evaluation after changes to the Dockerfile
 <div id="step-8-monitor-the-automated-testing-interpret-the-results" class="section level3 hasAnchor" number="3.3.2">
 <h3><span class="header-section-number">3.3.2</span> Step 8: Monitor the Automated Testing &amp; Interpret the Results<a href="building-a-docker-image.html#step-8-monitor-the-automated-testing-interpret-the-results" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p><input type="checkbox"> On <a href="https://github.com/">github.com</a>, within your pull request, watch for the <code>Docker Assignment Eval</code> check to start running. This GitHub Action will attempt to build your Dockerfile.<br/>
-<input type="checkbox"> Wait for it to complete. It will comment on your PR whether it successfully built or not.<br/>
+<input type="checkbox"> Wait for it to complete. It will comment on your PR whether it successfully built or not. If you don’t see the comment try refreshing your browser<br/>
      • Success: You’ll get a validation code in the comment<br/>
      • Failure: You’ll get error messages explaining what went wrong. Read the error messages carefully - they contain clues for fixing issues<br/>
 <input type="checkbox"> Interpret the results and proceed accordingly:<br/>
@@ -370,7 +370,7 @@ Automatic Evaluation after changes to the Dockerfile
 </div>
 <div id="step-11-merge-your-pull-request" class="section level3 hasAnchor" number="3.4.3">
 <h3><span class="header-section-number">3.4.3</span> Step 11: Merge Your Pull Request<a href="building-a-docker-image.html#step-11-merge-your-pull-request" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>Because you’ve received a validation code (congrats!), you can treat this like a team member approved your pull request. Go ahead and merge the PR and delete your branch so that your Dockerfile will be on the main branch, available for use in a later assignment if you want it.</p>
+<p>Once you’ve received a validation code (congrats!), you can treat this like a team member approved your pull request. Go ahead and merge the PR and delete your branch so that your Dockerfile will be on the main branch, available for use in a later assignment if you want it.</p>
 <input type="checkbox"> Click the green
 <div class="github_button">
 Merge pull request
