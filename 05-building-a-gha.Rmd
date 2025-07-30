@@ -5,7 +5,7 @@
 ottrpal::include_slide("https://docs.google.com/presentation/d/1ExTZsKDHKM0fIi0_tB80qd8cHvqjEDyNJp-OsnvZ19o/edit?slide=id.g361b9572af4_0_186#slide=id.g361b9572af4_0_186")
 ```
 
-## Phase 0: Revisiting the importance of Automation
+## Phase 0: Revisiting the Importance of Automation
 
 GitHub Actions are useful as a continuous integration, continuous deployment tool to automatically test an analysis or rerun the steps of analysis anytime there is a change.
 
