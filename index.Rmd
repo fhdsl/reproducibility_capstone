@@ -10,6 +10,8 @@ description: "Description about Course/Book."
 favicon: assets/ITN_favicon.ico
 ---
 
+<!-- Open all links in new tab-->
+<base target="_blank"/>
 
 ```{r include=FALSE}
 # automatically create a bib database for R packages
