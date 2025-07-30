@@ -23,7 +23,7 @@ This capstone course builds on foundational concepts from the following ITCR Tra
 - [Intro to Reproducibility in Cancer Informatics](https://hutchdatascience.org/ITN_course_search/Reproducibility_in_Cancer_Informatics_coursePage.html)
 - [Advanced Reproducibility in Cancer Informatics](https://hutchdatascience.org/ITN_course_search/Adv_Reproducibility_in_Cancer_Informatics_coursePage.html)
 - [Containers for Scientists](https://hutchdatascience.org/ITN_course_search/Containers_for_Scientists_coursePage.html)
-- [GitHub Automation for Scientists](https://hutchdatascience.org/ITN_course_search/GitHub_Automation_for_Scientists_coursePage.html) 
+- [GitHub Automation for Scientists](https://hutchdatascience.org/ITN_course_search/GitHub_Automation_for_Scientists_coursePage.html)
 
 Students should be comfortable with basic GitHub operations, including creating repositories, making commits, and opening pull requests before beginning this capstone.
 
@@ -59,6 +59,33 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1ExTZsKDHKM0fIi0_
 ```{r learning_objectives, out.width = "100%", fig.alt = "This course will demonstrate how to: Apply the best practices of reproducibility we have covered in this specialization, Create and implement an original Docker image, Create and store a GitHub secret, and Create and test an original GitHub Action", echo = FALSE}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1ExTZsKDHKM0fIi0_tB80qd8cHvqjEDyNJp-OsnvZ19o/edit?slide=id.g30a4c584926_0_0#slide=id.g30a4c584926_0_0")
 ```
+<div class="click_to_expand_block">
+
+<details><summary>Connecting the Learning Objectives to the Prerequisite courses</summary>
+
+The [Intro to](https://jhudatascience.org/Reproducibility_in_Cancer_Informatics/no_toc/) and [Advanced Reproducibility in Cancer Informatics](https://jhudatascience.org/Adv_Reproducibility_in_Cancer_Informatics/no_toc/) courses both provide an overview of **best practices** such as
+
+* Utilizing [organization in your project](https://jhudatascience.org/Reproducibility_in_Cancer_Informatics/no_toc/organizing-your-project.html)
+* Composing [exploratory analyses or reports in Notebooks](https://jhudatascience.org/Reproducibility_in_Cancer_Informatics/no_toc/using-notebooks.html)
+* [Documenting analyses and software](https://jhudatascience.org/Reproducibility_in_Cancer_Informatics/no_toc/documenting-analyses.html),
+* Using [version control and branches](https://jhudatascience.org/Adv_Reproducibility_in_Cancer_Informatics/no_toc/using-version-control-with-github.html) for code
+* [Data sharing (when appropriate)](https://jhudatascience.org/Adv_Reproducibility_in_Cancer_Informatics/no_toc/providing-data.html)
+* [Requesting code review](https://jhudatascience.org/Adv_Reproducibility_in_Cancer_Informatics/no_toc/engaging-in-code-review---as-an-author.html)
+* [Using automation](https://jhudatascience.org/Adv_Reproducibility_in_Cancer_Informatics/no_toc/automation-as-a-reproducibility-tool.html).
+* [Software versioning](https://jhudatascience.org/Reproducibility_in_Cancer_Informatics/no_toc/managing-package-versions.html)
+* [Using containers for managing software](https://jhudatascience.org/Adv_Reproducibility_in_Cancer_Informatics/no_toc/launching-a-docker-image.html)
+
+While the intro and advanced reproducibility courses provide overviews about the more advanced topics like automation and containers, the [GitHub Automation for Scientists](https://hutchdatascience.org/GitHub_Automation_for_Scientists/no_toc/index.html) and [Containers for Scientists](https://hutchdatascience.org/Containers_for_Scientists/no_toc/) courses explore these topics, respectively, in more depth. Automation can be used as a continuous integration, continuous deployment tool such that automatic tests are set up to run whenever code is updated. Other automations can occur on a schedule or due to other events happening (like opening a pull request on GitHub).
+
+The "create and implement an original **Docker image**" learning objective is putting into practice the theory from the [Containers for Scientists course](https://hutchdatascience.org/Containers_for_Scientists/no_toc/). Containers are used to package software with defined versions together so that a computing environment can be consistently and clearly defined as well as easily shared or used by many people.
+
+Context on what a **GitHub Secret** is, why you would use secrets, and instructions on creating and storing a GitHub Secret are [covered briefly in the GitHub Automation for Scientists course](https://hutchdatascience.org/GitHub_Automation_for_Scientists/github-action-variables.html#setting-and-grabbing-secrets), but additional context is provided at the beginning of the GitHub Secrets exercise within this capstone.
+
+The "create and test an original **GitHub Action**" learning objective is putting into practice the theory from the [GitHub Automation for Scientists course](https://hutchdatascience.org/GitHub_Automation_for_Scientists/no_toc/index.html). In addition, depending on the automation that is created, learners may need to incorporate use of a GitHub Secret and a Docker image.  
+
+</details>
+
+</div>
 
 **Assessment Approach:**
 
