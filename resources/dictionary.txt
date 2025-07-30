@@ -4,6 +4,7 @@ Audiographer
 Audiography
 authenticator
 automagic
+automations
 BIPOC
 Bloomberg
 Bookdown
@@ -70,6 +71,7 @@ reproducibility
 rmarkdown
 RMarkdown
 Savonen
+scalability
 sexualized
 socio
 submenu
