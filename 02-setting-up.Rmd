@@ -4,15 +4,13 @@
 ottrpal::include_slide("https://docs.google.com/presentation/d/1ExTZsKDHKM0fIi0_tB80qd8cHvqjEDyNJp-OsnvZ19o/edit?slide=id.g360ed975019_0_188#slide=id.g360ed975019_0_188")
 ```
 
-## Phase 0:
+## Phase 0: Revisiting Working with GitHub
 
-This setting up activity will utilize several fundamental principles overviewed in the [Intro to](https://jhudatascience.org/Reproducibility_in_Cancer_Informatics/no_toc/index.html) and [Advanced Reproducibility in Cancer Informatics](https://jhudatascience.org/Adv_Reproducibility_in_Cancer_Informatics/no_toc/index.html) courses. Revisit these courses as needed for more information on these concepts, including
+This setting up activity will utilize several fundamental principles summarized in the [Intro to](https://jhudatascience.org/Reproducibility_in_Cancer_Informatics/no_toc/index.html) and [Advanced Reproducibility in Cancer Informatics](https://jhudatascience.org/Adv_Reproducibility_in_Cancer_Informatics/no_toc/index.html) courses. Revisit these courses as needed for more information on these concepts, including
 
 * [cloning a repository that exists online to your local computer](https://jhudatascience.org/Adv_Reproducibility_in_Cancer_Informatics/no_toc/using-version-control-with-github.html#git-clone)
 * [creating branches in order to develop code, analysis, etc. in a working copy of your repository](https://jhudatascience.org/Adv_Reproducibility_in_Cancer_Informatics/no_toc/using-version-control-with-github.html#create-a-branch)
-* [where GitHub Action workflow files (or yaml files) are expected to be within a repository](https://jhudatascience.org/Adv_Reproducibility_in_Cancer_Informatics/no_toc/automation-as-a-reproducibility-tool.html#structure-of-github-actions-file) for GitHub to recognize them as a workflow file.
-
-
+* [where GitHub Action workflow files (yaml files) are expected to be within a repository](https://jhudatascience.org/Adv_Reproducibility_in_Cancer_Informatics/no_toc/automation-as-a-reproducibility-tool.html#structure-of-github-actions-file) for GitHub to recognize them as a workflow file.
 
 ## Phase 1: Creating Your Repository from Template
 
@@ -151,7 +149,6 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1ExTZsKDHKM0fIi0_
 The automated evaluation system depends on this workflow, so following these steps precisely is crucial for getting your validation codes!
 
 Note that the validation codes are really only needed if you are participating in this capstone as a part of the Coursera or Leanpub platforms (for certification). If you are not taking this course for certification, there is no structure in place to verify the validation code you receive.
-
 
 ### Reminders of Best Practices for Success while Working with GitHub
 
