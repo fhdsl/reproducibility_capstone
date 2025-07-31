@@ -90,6 +90,7 @@ Resubmission
 scm
 submenu
 YAML
+yaml
 bioinformaticians
 bioinformatics
 proteomic
