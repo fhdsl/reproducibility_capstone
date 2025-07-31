@@ -7,6 +7,7 @@ objectives
 how-to-use-the-course
 where-do-you-need-to-invest
 setting-up-for-this-course
+phase-0-revisiting-working-with-github
 phase-1-creating-your-repository-from-template
 step-1-access-the-course-template
 step-2-configure-your-new-repository
@@ -24,6 +25,7 @@ repository-not-found-when-cloning
 permission-denied-when-pushing
 automated-evaluation-not-running
 building-a-docker-image
+phase-0-revisiting-the-importance-of-docker-images
 phase-1-repository-setup-and-planning
 step-1-set-up-your-working-environment
 step-2-switch-to-your-working-branch-if-needed
@@ -74,6 +76,7 @@ step-11-re-running-evaluation
 phase-5-completion-1
 clean-up-optional-but-recommended
 building-a-github-action
+phase-0-revisiting-the-importance-of-automation
 phase-1-repository-setup-and-planning-1
 step-1-set-up-your-working-environment-1
 step-2-create-your-working-branch
