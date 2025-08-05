@@ -2,6 +2,22 @@
 
 <img src="03-build-an-image_files/figure-html//1ExTZsKDHKM0fIi0_tB80qd8cHvqjEDyNJp-OsnvZ19o_g361b9572af4_0_181.png" alt="Learning Objectives: Recognize and plan out Docker image needs for a project; Examine a Dockerfile and add packages; Test and monitor the use of a Docker image" width="100%" />
 
+## Phase 0: Revisiting the Importance of Docker Images
+
+Docker is a prominent and widely used platform for creating containers. A Docker image specifically is the recipe or snapshot of a container, specifically defining what software (and their versions) should be packaged together. Once built, the container serves as a computing environment with the desired software, specifically an environment that will match the environment used by anyone else building that image. The Containers for Scientists course provides [more explanation about how Docker images and containerization works](https://hutchdatascience.org/Containers_for_Scientists/no_toc/02-why-containers.html#how-does-this-work).
+
+<img src="03-build-an-image_files/figure-html//1ExTZsKDHKM0fIi0_tB80qd8cHvqjEDyNJp-OsnvZ19o_g361b9572af4_0_539.png" alt="Relationship between an image and a container: In general, package managers like Docker work by capturing a snapshot of the environment and when that environment snapshot is shared, it attempts to rebuild it. In this example we show one computing environment, and using a package manager, we can take  snapshot of it. That snapshot can be shared to another computer which can be used to attempt to build the computing environment on this computer. This will help address some differences in package versions between two individual’s computers." width="100%" />
+
+Docker images are defined within a Dockerfile and usually begin by [specifying a base image](https://hutchdatascience.org/Containers_for_Scientists/no_toc/06-writing-dockerfiles.html) (another Docker image). When the image is being built, the base image will be pulled and serve as the starting or base layer of your new image. Then, additional packages can be added, though decide on what [template for specifying packages is most appropriate](https://hutchdatascience.org/Containers_for_Scientists/no_toc/06-writing-dockerfiles.html#templates-for-adding-packages) depending on what types of packages (e.g., R or Python) you want and what your base image will work with.
+
+Revisit the [Containers for Scientists course](https://hutchdatascience.org/Containers_for_Scientists/no_toc/index.html) for more information on
+
+* [creating a Dockerfile](https://hutchdatascience.org/Containers_for_Scientists/no_toc/06-writing-dockerfiles.html)
+* [troubleshooting tips](https://hutchdatascience.org/Containers_for_Scientists/no_toc/06-writing-dockerfiles.html#troubleshooting-tips-for-building-images)
+* [using a container](https://hutchdatascience.org/Containers_for_Scientists/no_toc/03-using-containers.html)
+* [how to access to specific data or analysis files](https://hutchdatascience.org/Containers_for_Scientists/no_toc/04-using-volumes.html) in a running container
+* [how to build or test your image](https://hutchdatascience.org/Containers_for_Scientists/no_toc/05-modifying-containers.html#step-3-build-the-image-from-the-dockerfile) as you develop it
+
 ## Phase 1: Repository Setup and Planning
 
 ### Step 1: Set Up Your Working Environment

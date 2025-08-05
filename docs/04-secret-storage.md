@@ -8,17 +8,17 @@
 
 [GitHub Secrets](https://docs.github.com/en/actions/concepts/security/about-secrets) are encrypted environment variables stored securely in your repository. They allow you to store sensitive information (like usernames, API keys, tokens, passwords) without exposing them in your code. Secrets are only accessible to GitHub Actions during workflow runs and appear as `*` in logs.
 
-This assignment teaches you a fundamental skill for secure automation in research environments
+This assignment teaches you a fundamental skill for secure automation in research environments.
 
 ### Why Personal Access Tokens Matter
 
 [Personal Access Tokens (PATs)](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens) provide secure authentication for GitHub Actions. They're an alternative to passwords for GitHub authentication. They allow automated workflows to perform actions that require permissions (like creating issues, pushing to repositories, etc.). In research contexts, PATs enable automated data sharing, publication workflows, and collaborative tools
 
 ::: {.warning}
-Important: PATs should be treated like passwords - never share them publicly
+Important: PATs should be treated like passwords - never share them publicly.
 :::
 
-Often, and in this assignment, you will begin by generating a personal access token in GitHub settings and [storing that as a repository secret](https://docs.github.com/en/actions/security-for-github-actions/security-guides/using-secrets-in-github-actions#creating-secrets-for-a-repository) that can be [utilized within workflows/GitHub Actions](https://docs.github.com/en/actions/security-for-github-actions/security-guides/using-secrets-in-github-actions#using-secrets-in-a-workflow). But, as mentioned above, GitHub secrets do not always have to be personal access tokens.
+Often, and in this assignment, you will begin by generating a personal access token in GitHub settings and [storing that as a repository secret](https://docs.github.com/en/actions/security-for-github-actions/security-guides/using-secrets-in-github-actions#creating-secrets-for-a-repository) that can be [utilized within workflows/GitHub Actions](https://docs.github.com/en/actions/security-for-github-actions/security-guides/using-secrets-in-github-actions#using-secrets-in-a-workflow). But, as mentioned above, GitHub Secrets do not always have to be personal access tokens.
 
 ### Best Practices and Security Considerations
 
@@ -205,7 +205,7 @@ If you need to fix issues and re-test:<br/>
 
 ::: {.certificate}
 
-If you are taking this course on Coursera: 
+If you are taking this course on Coursera:
 
 **Collect Your Validation Code**
 
