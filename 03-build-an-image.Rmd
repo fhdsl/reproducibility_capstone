@@ -12,9 +12,15 @@ Docker is a prominent and widely used platform for creating containers. A Docker
 ottrpal::include_slide("https://docs.google.com/presentation/d/1ExTZsKDHKM0fIi0_tB80qd8cHvqjEDyNJp-OsnvZ19o/edit?slide=id.g361b9572af4_0_539#slide=id.g361b9572af4_0_539")
 ```
 
-Docker images are defined within a Dockerfile and usually begin by [specifying a base image](https://hutchdatascience.org/Containers_for_Scientists/no_toc/06-writing-dockerfiles.html) (another Docker image). When the image is being built, the base image will be pulled and serve as the starting or base layer of your new image. Then, additional packages can be added, though the [template for specifying packages](https://hutchdatascience.org/Containers_for_Scientists/no_toc/06-writing-dockerfiles.html#templates-for-adding-packages) depending on what types of packages (e.g., R or Python) you want and what your base image will work with.
+Docker images are defined within a Dockerfile and usually begin by [specifying a base image](https://hutchdatascience.org/Containers_for_Scientists/no_toc/06-writing-dockerfiles.html) (another Docker image). When the image is being built, the base image will be pulled and serve as the starting or base layer of your new image. Then, additional packages can be added, though decide on what [template for specifying packages is most appropriate](https://hutchdatascience.org/Containers_for_Scientists/no_toc/06-writing-dockerfiles.html#templates-for-adding-packages) depending on what types of packages (e.g., R or Python) you want and what your base image will work with.
 
-Revisit the Containers for Scientists course for more information on [creating a Dockerfile](https://hutchdatascience.org/Containers_for_Scientists/no_toc/06-writing-dockerfiles.html) and [troubleshooting tips](https://hutchdatascience.org/Containers_for_Scientists/no_toc/06-writing-dockerfiles.html#troubleshooting-tips-for-building-images). The Containers for Scientists course additionally provides information on [using a container](https://hutchdatascience.org/Containers_for_Scientists/no_toc/03-using-containers.html) including instructions if you need your container (once running) to have [access to specific data or analysis files](https://hutchdatascience.org/Containers_for_Scientists/no_toc/04-using-volumes.html), and [how to build or test your image](https://hutchdatascience.org/Containers_for_Scientists/no_toc/05-modifying-containers.html#step-3-build-the-image-from-the-dockerfile) as you develop it.
+Revisit the [Containers for Scientists course](https://hutchdatascience.org/Containers_for_Scientists/no_toc/index.html) for more information on
+
+* [creating a Dockerfile](https://hutchdatascience.org/Containers_for_Scientists/no_toc/06-writing-dockerfiles.html)
+* [troubleshooting tips](https://hutchdatascience.org/Containers_for_Scientists/no_toc/06-writing-dockerfiles.html#troubleshooting-tips-for-building-images)
+* [using a container](https://hutchdatascience.org/Containers_for_Scientists/no_toc/03-using-containers.html)
+* [how to access to specific data or analysis files](https://hutchdatascience.org/Containers_for_Scientists/no_toc/04-using-volumes.html) in a running container
+* [how to build or test your image](https://hutchdatascience.org/Containers_for_Scientists/no_toc/05-modifying-containers.html#step-3-build-the-image-from-the-dockerfile) as you develop it
 
 ## Phase 1: Repository Setup and Planning
 

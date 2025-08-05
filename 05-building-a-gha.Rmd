@@ -13,7 +13,13 @@ GitHub Actions [can be triggered](https://hutchdatascience.org/GitHub_Automation
 
 Building a GitHub Action often utilizes [GitHub secrets](https://hutchdatascience.org/GitHub_Automation_for_Scientists/github-action-variables.html#setting-and-grabbing-secrets) and/or [Docker images](https://hutchdatascience.org/GitHub_Automation_for_Scientists/automating-re-running-analyses.html#jobs) -- the subjects of the assignments before this one.
 
-If needed, revisit the [GitHub Automation for Scientists](https://hutchdatascience.org/GitHub_Automation_for_Scientists/no_toc/index.html) course for a more thorough refresher on [what GitHub Actions are](https://hutchdatascience.org/GitHub_Automation_for_Scientists/no_toc/github-actions-fundamentals.html), [what they can be used for](https://hutchdatascience.org/GitHub_Automation_for_Scientists/no_toc/scientific-software-development-best-practices.html#automation-for-scientific-software), [why to use them](https://hutchdatascience.org/GitHub_Automation_for_Scientists/no_toc/why-automation.html#continuous-integration-continuous-deployment), and [how to create](https://hutchdatascience.org/GitHub_Automation_for_Scientists/no_toc/automating-re-running-analyses.html) or [troubleshoot](https://hutchdatascience.org/GitHub_Automation_for_Scientists/no_toc/troubleshooting-github-actions.html) an action.
+If needed, revisit the [GitHub Automation for Scientists](https://hutchdatascience.org/GitHub_Automation_for_Scientists/no_toc/index.html) course for a more thorough refresher on
+
+* [what GitHub Actions are](https://hutchdatascience.org/GitHub_Automation_for_Scientists/no_toc/github-actions-fundamentals.html)
+* [what GitHub Actions can be used for](https://hutchdatascience.org/GitHub_Automation_for_Scientists/no_toc/scientific-software-development-best-practices.html#automation-for-scientific-software)
+* [why to use GitHub Actions](https://hutchdatascience.org/GitHub_Automation_for_Scientists/no_toc/why-automation.html#continuous-integration-continuous-deployment)
+* [how to create an action](https://hutchdatascience.org/GitHub_Automation_for_Scientists/no_toc/automating-re-running-analyses.html)
+* [how to troubleshoot an action](https://hutchdatascience.org/GitHub_Automation_for_Scientists/no_toc/troubleshooting-github-actions.html)
 
 ## Phase 1: Repository Setup and Planning
 
