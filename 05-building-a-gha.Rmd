@@ -5,6 +5,22 @@
 ottrpal::include_slide("https://docs.google.com/presentation/d/1ExTZsKDHKM0fIi0_tB80qd8cHvqjEDyNJp-OsnvZ19o/edit?slide=id.g361b9572af4_0_186#slide=id.g361b9572af4_0_186")
 ```
 
+## Phase 0: Revisiting the Importance of Automation
+
+GitHub Actions are useful as a continuous integration, continuous deployment tool to automatically test an analysis or rerun the steps of analysis anytime there is a change.
+
+GitHub Actions [can be triggered](https://hutchdatascience.org/GitHub_Automation_for_Scientists/no_toc/github-actions-fundamentals.html#on-when-a-thing-should-be-run) by specific events (such as opening a pull request, merging a branch, or opening an issue) or on a schedule (for example, once a month) , and can [perform many tasks](https://hutchdatascience.org/GitHub_Automation_for_Scientists/no_toc/github-actions-fundamentals.html#jobs-what-should-be-run), and even [use a specific container or environment](https://hutchdatascience.org/GitHub_Automation_for_Scientists/no_toc/github-actions-fundamentals.html#runs-on-with-what) to perform such tasks.
+
+Building a GitHub Action often utilizes [GitHub secrets](https://hutchdatascience.org/GitHub_Automation_for_Scientists/github-action-variables.html#setting-and-grabbing-secrets) and/or [Docker images](https://hutchdatascience.org/GitHub_Automation_for_Scientists/automating-re-running-analyses.html#jobs) -- the subjects of the assignments before this one.
+
+If needed, revisit the [GitHub Automation for Scientists](https://hutchdatascience.org/GitHub_Automation_for_Scientists/no_toc/index.html) course for a more thorough refresher on
+
+* [what GitHub Actions are](https://hutchdatascience.org/GitHub_Automation_for_Scientists/no_toc/github-actions-fundamentals.html)
+* [what GitHub Actions can be used for](https://hutchdatascience.org/GitHub_Automation_for_Scientists/no_toc/scientific-software-development-best-practices.html#automation-for-scientific-software)
+* [why to use GitHub Actions](https://hutchdatascience.org/GitHub_Automation_for_Scientists/no_toc/why-automation.html#continuous-integration-continuous-deployment)
+* [how to create an action](https://hutchdatascience.org/GitHub_Automation_for_Scientists/no_toc/automating-re-running-analyses.html)
+* [how to troubleshoot an action](https://hutchdatascience.org/GitHub_Automation_for_Scientists/no_toc/troubleshooting-github-actions.html)
+
 ## Phase 1: Repository Setup and Planning
 
 ### Step 1: Set Up Your Working Environment
