@@ -8,7 +8,7 @@ Cancer research in the 21st century is increasingly data-driven, with researcher
 
 The modern cancer informatics landscape demands not just analytical skills, but also proficiency in reproducible computational practices. Research has shown that computational analyses are often difficult or impossible to reproduce without direct contact with the original researchers [@BeaulieuJones2017]. This reproducibility crisis extends beyond academic concerns—it directly impacts the translation of research findings into clinical applications and the overall efficiency of cancer research efforts.
 
-<img src="resources/images/01-intro_files/figure-html//1ExTZsKDHKM0fIi0_tB80qd8cHvqjEDyNJp-OsnvZ19o_g30a4bb0444d_0_948.png" alt="Welcome to Making Science Reproducible, a Capstone Project Course. This course is brought to you by the I T C R Training Network." width="100%" />
+<img src="01-intro_files/figure-html//1ExTZsKDHKM0fIi0_tB80qd8cHvqjEDyNJp-OsnvZ19o_g30a4bb0444d_0_948.png" alt="Welcome to Making Science Reproducible, a Capstone Project Course. This course is brought to you by the I T C R Training Network." width="100%" />
 
 ## Target Audience
 
@@ -24,7 +24,7 @@ This capstone course builds on foundational concepts from the following ITCR Tra
 Students should be comfortable with basic GitHub operations, including creating repositories, making commits, and opening pull requests before beginning this capstone.
 
 
-<a href="https://www.itcrtraining.org/courses" target="_blank"><img src="resources/images/01-intro_files/figure-html//1ExTZsKDHKM0fIi0_tB80qd8cHvqjEDyNJp-OsnvZ19o_g366a6ed3497_0_211.png" alt="Prior to using this capstone, students should be comfortable with basic GitHub operations such as creating repositories or opening pull requests. Students may need to review the I T N courses on reproducibility practices and tools: Reproducibility in cancer informatics, Advanced reproducibility in cancer informatics, GitHub automation for scientists, and containers for scientists." width="100%" /></a>
+<a href="https://www.itcrtraining.org/courses" target="_blank"><img src="01-intro_files/figure-html//1ExTZsKDHKM0fIi0_tB80qd8cHvqjEDyNJp-OsnvZ19o_g366a6ed3497_0_211.png" alt="Prior to using this capstone, students should be comfortable with basic GitHub operations such as creating repositories or opening pull requests. Students may need to review the I T N courses on reproducibility practices and tools: Reproducibility in cancer informatics, Advanced reproducibility in cancer informatics, GitHub automation for scientists, and containers for scientists." width="100%" /></a>
 
 _This capstone course is written for individuals who:_
 
@@ -33,7 +33,7 @@ _This capstone course is written for individuals who:_
 - Want to put the reproducibility skill sets together and get more practice doing this in a “real world” setting.
 
 
-<img src="resources/images/01-intro_files/figure-html//1ExTZsKDHKM0fIi0_tB80qd8cHvqjEDyNJp-OsnvZ19o_g30a4c584926_0_5.png" alt="For individuals who: Have completed the Intro Reproducibility, Advanced Reproducibility, Containers for Scientists, and GitHub Automation course in this series. Want to put the reproducibility skill sets together and get more practice in doing this in a real world setting." width="100%" />
+<img src="01-intro_files/figure-html//1ExTZsKDHKM0fIi0_tB80qd8cHvqjEDyNJp-OsnvZ19o_g30a4c584926_0_5.png" alt="For individuals who: Have completed the Intro Reproducibility, Advanced Reproducibility, Containers for Scientists, and GitHub Automation course in this series. Want to put the reproducibility skill sets together and get more practice in doing this in a real world setting." width="100%" />
 
 
 
@@ -42,11 +42,11 @@ _This capstone course is written for individuals who:_
 The course covers practical application of containerization and automation technologies specifically tailored for cancer informatics workflows. Unlike introductory courses that focus on individual concepts, this capstone emphasizes integration and **real-world application** of multiple technologies working together.
 
 
-<img src="resources/images/01-intro_files/figure-html//1ExTZsKDHKM0fIi0_tB80qd8cHvqjEDyNJp-OsnvZ19o_g366a6ed3497_0_0.png" alt="Topics covered in the reproducibility capstone include a review of best practices when using reproducibility tools as well as hands-on real-world practice creating images and containers with docker, automation with GitHub actions, using images and automation together, and creating GitHub secrets to enable use of these reproducibility practices within a GitHub environment" width="100%" />
+<img src="01-intro_files/figure-html//1ExTZsKDHKM0fIi0_tB80qd8cHvqjEDyNJp-OsnvZ19o_g366a6ed3497_0_0.png" alt="Topics covered in the reproducibility capstone include a review of best practices when using reproducibility tools as well as hands-on real-world practice creating images and containers with docker, automation with GitHub actions, using images and automation together, and creating GitHub secrets to enable use of these reproducibility practices within a GitHub environment" width="100%" />
 
 ## Objectives
 
-<img src="resources/images/01-intro_files/figure-html//1ExTZsKDHKM0fIi0_tB80qd8cHvqjEDyNJp-OsnvZ19o_g30a4c584926_0_0.png" alt="This course will demonstrate how to: Apply the best practices of reproducibility we have covered in this specialization, Create and implement an original Docker image, Create and store a GitHub secret, and Create and test an original GitHub Action" width="100%" />
+<img src="01-intro_files/figure-html//1ExTZsKDHKM0fIi0_tB80qd8cHvqjEDyNJp-OsnvZ19o_g30a4c584926_0_0.png" alt="This course will demonstrate how to: Apply the best practices of reproducibility we have covered in this specialization, Create and implement an original Docker image, Create and store a GitHub secret, and Create and test an original GitHub Action" width="100%" />
 <div class="click_to_expand_block">
 
 <details><summary>Connecting the Learning Objectives to the Prerequisite courses</summary>
@@ -79,7 +79,7 @@ The "create and test an original **GitHub Action**" learning objective is puttin
 
 The capstone uses a practical, project-based assessment model where students work with a provided computational sandbox environment to complete real-world tasks. Rather than traditional exams, students demonstrate mastery by successfully implementing containerized workflows and automated pipelines that pass automated evaluation criteria.
 
-<img src="resources/images/01-intro_files/figure-html//1ExTZsKDHKM0fIi0_tB80qd8cHvqjEDyNJp-OsnvZ19o_g368818bb4f3_0_162.png" alt="This course has a companion github repository template that provides a sandbox environment for learners to use to complete the hands-on assignments." width="100%" />
+<img src="01-intro_files/figure-html//1ExTZsKDHKM0fIi0_tB80qd8cHvqjEDyNJp-OsnvZ19o_g368818bb4f3_0_162.png" alt="This course has a companion github repository template that provides a sandbox environment for learners to use to complete the hands-on assignments." width="100%" />
 
 **Custom Container Development Assignment** - Students create Docker containers to support specific cancer analysis requirements, demonstrating understanding of containerization principles and bioinformatics software management.
 
