@@ -2,6 +2,7 @@ bookdown::gitbook:
   toc_depth: 2
   css: [assets/style_ITN.css]
   includes:
+    in_header: GA_Script.html
     before_body: assets/big-image-itcr.html
     after_body: assets/footer.html
   highlight: tango
