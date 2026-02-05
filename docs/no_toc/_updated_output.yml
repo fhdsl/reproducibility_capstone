@@ -2,7 +2,9 @@ bookdown::gitbook:
   toc_depth: 2
   css: assets/style_ITN.css
   includes:
-    before_body: assets/big-image-itcr.html
+    before_body:
+    - GA_Script.Rhtml
+    - assets/big-image-itcr.html
     after_body: assets/footer.html
     in_header: /__w/reproducibility_capstone/reproducibility_capstone/docs/no_toc/assets/links.html
   highlight: tango
