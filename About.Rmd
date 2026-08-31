@@ -26,8 +26,8 @@ These credits are based on our [course contributors table guidelines](https://ww
 |Figure Artist(s)| [Carrie Wright], [Kate Isaac] |
 |Videographer(s)| [Candace Savonen] |
 |**Funding**||
-|Funder(s)| Institution/individual who funded course including grant number|
-|Funding Staff| Staff members who help with funding|
+|Funder|[National Cancer Institute (NCI)](https://www.cancer.gov/) UE5 CA254170|
+|Funding Staff| [Allison Peters](https://www.linkedin.com/in/allisonrpeters/), [Maleah O'Connor](https://www.linkedin.com/in/maleah-o-connor/)|
 
 &nbsp;
 
